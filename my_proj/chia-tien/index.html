@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chia tiền ăn uống</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 16px;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    background: #f4f5f7;
+    color: #222;
+  }
+  .container { max-width: 480px; margin: 0 auto; }
+  h1 { font-size: 1.5rem; margin: 8px 0 16px; text-align: center; }
+  h2 { font-size: 1.05rem; margin: 0 0 12px; }
+  .card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 16px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.08);
+  }
+  .row { display: flex; gap: 8px; margin-bottom: 8px; }
+  .row input { min-width: 0; padding: 10px; font-size: 1rem; border: 1px solid #ccc; border-radius: 8px; }
+  .row input.name { flex: 1.2; }
+  .row input.paid { flex: 1; text-align: right; }
+  .row button.remove {
+    flex: none; width: 40px; border: none; border-radius: 8px;
+    background: #fde8e8; color: #c0392b; font-size: 1rem; cursor: pointer;
+  }
+  .actions { display: flex; gap: 8px; margin-top: 12px; }
+  .actions button {
+    flex: 1; padding: 12px; font-size: 1rem; border: none; border-radius: 8px; cursor: pointer;
+  }
+  #addBtn { background: #e8eefc; color: #2851c7; }
+  #calcBtn { background: #2851c7; color: #fff; }
+  .summary div { display: flex; justify-content: space-between; padding: 4px 0; }
+  .summary strong { font-variant-numeric: tabular-nums; }
+  table { width: 100%; border-collapse: collapse; font-size: .95rem; }
+  th, td { padding: 8px 4px; border-bottom: 1px solid #eee; text-align: left; }
+  td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+  .plus { color: #1e8e3e; font-weight: 600; }
+  .minus { color: #c0392b; font-weight: 600; }
+  .zero { color: #888; }
+  ul.transfers { list-style: none; padding: 0; margin: 0; }
+  ul.transfers li { padding: 8px 0; border-bottom: 1px solid #eee; display: flex; justify-content: space-between; gap: 8px; }
+  ul.transfers li:last-child { border-bottom: none; }
+  .note { font-size: .85rem; color: #888; margin-top: 8px; }
+  .message { text-align: center; color: #888; }
+  .hidden { display: none; }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>🍜 Chia tiền ăn uống</h1>
+
+  <div class="card">
+    <h2>Ai đã trả bao nhiêu?</h2>
+    <div id="people"></div>
+    <div class="actions">
+      <button id="addBtn" type="button">+ Thêm người</button>
+      <button id="calcBtn" type="button">Tính tiền</button>
+    </div>
+  </div>
+
+  <div id="message" class="card message">Nhập ít nhất 2 người và số tiền đã trả.</div>
+
+  <div id="results" class="hidden">
+    <div class="card summary">
+      <h2>Tóm tắt</h2>
+      <div><span>Tổng bill</span><strong id="total"></strong></div>
+      <div><span>Số người</span><strong id="count"></strong></div>
+      <div><span>Mỗi người phải trả</span><strong id="share"></strong></div>
+    </div>
+
+    <div class="card">
+      <h2>Số dư từng người</h2>
+      <table>
+        <thead><tr><th>Tên</th><th class="num">Đã trả</th><th class="num">Chênh lệch</th></tr></thead>
+        <tbody id="balances"></tbody>
+      </table>
+      <div id="roundNote" class="note hidden"></div>
+    </div>
+
+    <div class="card">
+      <h2>Chuyển tiền</h2>
+      <ul id="transfers" class="transfers"></ul>
+    </div>
+  </div>
+</div>
+
+<script>
+  const peopleEl = document.getElementById('people');
+
+  const round1000 = x => Math.round(x / 1000) * 1000;
+  const money = n => round1000(n).toLocaleString('vi-VN') + 'đ';
+
+  function addRow(name = '', paid = '') {
+    const row = document.createElement('div');
+    row.className = 'row';
+
+    const nameInput = document.createElement('input');
+    nameInput.className = 'name';
+    nameInput.placeholder = 'Tên';
+    nameInput.value = name;
+
+    const paidInput = document.createElement('input');
+    paidInput.className = 'paid';
+    paidInput.type = 'number';
+    paidInput.min = '0';
+    paidInput.step = '1000';
+    paidInput.inputMode = 'numeric';
+    paidInput.placeholder = 'Đã trả (đ)';
+    paidInput.value = paid;
+
+    const removeBtn = document.createElement('button');
+    removeBtn.className = 'remove';
+    removeBtn.type = 'button';
+    removeBtn.textContent = '✕';
+    removeBtn.title = 'Xóa';
+    removeBtn.addEventListener('click', () => { row.remove(); render(); });
+
+    row.append(nameInput, paidInput, removeBtn);
+    peopleEl.appendChild(row);
+    return nameInput;
+  }
+
+  function readPeople() {
+    const people = [];
+    peopleEl.querySelectorAll('.row').forEach((row, i) => {
+      let name = row.querySelector('.name').value.trim();
+      let paid = parseFloat(row.querySelector('.paid').value);
+      if (!isFinite(paid) || paid < 0) paid = 0;
+      if (!name && paid === 0) return;           // dòng trống → bỏ qua
+      if (!name) name = 'Người ' + (i + 1);
+      people.push({ name, paid });
+    });
+    return people;
+  }
+
+  function calculate(people) {
+    const total = people.reduce((s, p) => s + p.paid, 0);
+    const share = total / people.length;
+    return {
+      total,
+      share,
+      people: people.map(p => ({ ...p, balance: p.paid - share })),
+    };
+  }
+
+  // Tham lam: người nợ nhiều nhất trả cho người được nhận nhiều nhất
+  function settle(people) {
+    const debtors = people.filter(p => p.balance < -0.5).map(p => ({ name: p.name, amt: -p.balance }));
+    const creditors = people.filter(p => p.balance > 0.5).map(p => ({ name: p.name, amt: p.balance }));
+    const transfers = [];
+    while (debtors.length && creditors.length) {
+      debtors.sort((a, b) => b.amt - a.amt);
+      creditors.sort((a, b) => b.amt - a.amt);
+      const d = debtors[0], c = creditors[0];
+      const amt = Math.min(d.amt, c.amt);
+      if (round1000(amt) > 0) transfers.push({ from: d.name, to: c.name, amt });
+      d.amt -= amt;
+      c.amt -= amt;
+      if (d.amt < 1) debtors.shift();
+      if (c.amt < 1) creditors.shift();
+    }
+    return transfers;
+  }
+
+  function render() {
+    const people = readPeople();
+    const message = document.getElementById('message');
+    const results = document.getElementById('results');
+    const total = people.reduce((s, p) => s + p.paid, 0);
+
+    if (people.length < 2 || total === 0) {
+      message.classList.remove('hidden');
+      results.classList.add('hidden');
+      return;
+    }
+    message.classList.add('hidden');
+    results.classList.remove('hidden');
+
+    const r = calculate(people);
+    document.getElementById('total').textContent = money(r.total);
+    document.getElementById('count').textContent = r.people.length;
+    document.getElementById('share').textContent = money(r.share);
+
+    const tbody = document.getElementById('balances');
+    tbody.innerHTML = '';
+    let roundedSum = 0;
+    r.people.forEach(p => {
+      const rb = round1000(p.balance);
+      roundedSum += rb;
+      const tr = document.createElement('tr');
+      const tdName = document.createElement('td');
+      tdName.textContent = p.name;
+      const tdPaid = document.createElement('td');
+      tdPaid.className = 'num';
+      tdPaid.textContent = money(p.paid);
+      const tdBal = document.createElement('td');
+      if (rb > 0) { tdBal.className = 'num plus'; tdBal.textContent = 'Nhận lại ' + money(rb); }
+      else if (rb < 0) { tdBal.className = 'num minus'; tdBal.textContent = 'Cần trả ' + money(-rb); }
+      else { tdBal.className = 'num zero'; tdBal.textContent = 'Đã đủ'; }
+      tr.append(tdName, tdPaid, tdBal);
+      tbody.appendChild(tr);
+    });
+
+    const note = document.getElementById('roundNote');
+    if (roundedSum !== 0) {
+      note.textContent = '(Chênh lệch do làm tròn: ' + Math.abs(roundedSum).toLocaleString('vi-VN') + 'đ)';
+      note.classList.remove('hidden');
+    } else {
+      note.classList.add('hidden');
+    }
+
+    const ul = document.getElementById('transfers');
+    ul.innerHTML = '';
+    const transfers = settle(r.people);
+    if (!transfers.length) {
+      const li = document.createElement('li');
+      li.className = 'zero';
+      li.textContent = 'Không ai cần chuyển tiền 🎉';
+      ul.appendChild(li);
+    }
+    transfers.forEach(t => {
+      const li = document.createElement('li');
+      const who = document.createElement('span');
+      who.textContent = t.from + ' → ' + t.to;
+      const amt = document.createElement('strong');
+      amt.textContent = money(t.amt);
+      li.append(who, amt);
+      ul.appendChild(li);
+    });
+  }
+
+  peopleEl.addEventListener('input', render);
+  document.getElementById('addBtn').addEventListener('click', () => addRow().focus());
+  document.getElementById('calcBtn').addEventListener('click', render);
+
+  for (let i = 0; i < 3; i++) addRow();
+  render();
+</script>
+</body>
+</html>
