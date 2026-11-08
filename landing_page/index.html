@@ -186,6 +186,15 @@ section[id]{scroll-margin-top:calc(var(--header-h) + 8px)}
 .about-text p{max-width:60ch;color:#2E3354}
 .about-text p + p{margin-top:18px}
 .about-text .lead{font-size:1.3rem;line-height:1.5;color:var(--ink);font-weight:500}
+.profile{margin:0;border-top:2px solid var(--ink)}
+.profile-row{display:grid;grid-template-columns:9rem 1fr;gap:8px 24px;padding:22px 0;border-bottom:1px solid var(--line)}
+.profile dt{font-weight:600;color:var(--muted);padding-top:4px}
+.profile dd{margin:0}
+.profile-list{margin:14px 0 0;padding:0;list-style:none}
+.profile-list li{position:relative;padding-left:22px;color:#2E3354;max-width:60ch}
+.profile-list li + li{margin-top:10px}
+.profile-list li::before{content:"";position:absolute;left:2px;top:.62em;width:8px;height:8px;border-radius:2px;background:var(--primary)}
+@media (max-width: 560px){.profile-row{grid-template-columns:1fr}}
 .stats{list-style:none;margin:0;padding:0;border-top:2px solid var(--ink)}
 .stats li{display:flex;align-items:baseline;justify-content:space-between;gap:16px;padding:20px 0;border-bottom:1px solid var(--line)}
 .stat-num{
@@ -196,35 +205,22 @@ section[id]{scroll-margin-top:calc(var(--header-h) + 8px)}
 .stat-label{color:var(--muted);text-align:right;max-width:18ch;line-height:1.35}
 
 /* ---------- Courses ---------- */
-.courses-grid{display:grid;grid-template-columns:repeat(3, 1fr);gap:20px}
+.courses-grid{display:grid;grid-template-columns:repeat(2, 1fr);gap:24px}
 .course{
   display:flex;flex-direction:column;
   background:var(--surface);
   border:1px solid var(--line);
   border-radius:16px;
-  padding:28px 26px 26px;
+  overflow:hidden;
   transition:border-color .2s;
 }
 .course:hover{border-color:var(--primary)}
-.level{align-self:flex-start;font-size:.85rem;font-weight:600;padding:4px 10px;border-radius:6px;background:var(--primary-soft);color:var(--primary-deep)}
-.level.lv-adv{background:#E3F4EC;color:#0E6B47}
-.level.lv-team{background:#FBE7EB;color:#9C2A40}
-.course h3{margin-top:18px;font-size:1.45rem;letter-spacing:-.02em}
+.course-img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;background:var(--primary-soft);border-bottom:1px solid var(--line)}
+.course-body{display:flex;flex-direction:column;flex:1;padding:24px 26px 26px}
+.course h3{font-size:1.4rem;line-height:1.2;letter-spacing:-.02em}
 .course p{margin-top:10px;color:var(--muted);font-size:1rem;flex:1}
-.course-meta{margin:22px 0 0;padding:16px 0 0;border-top:1px dashed var(--line);display:grid;grid-template-columns:1fr 1fr;gap:6px 12px;font-size:.92rem}
-.course-meta dt{color:var(--muted)}
-.course-meta dd{margin:0;text-align:right;font-weight:600}
-.course-price{margin-top:18px;display:flex;align-items:baseline;justify-content:space-between;gap:12px}
-.price{font-size:1.5rem;font-weight:750;letter-spacing:-.02em}
-.course-link{font-weight:600;color:var(--primary);text-decoration:none;font-size:.95rem}
+.course-link{align-self:flex-start;margin-top:20px;font-weight:600;color:var(--primary);text-decoration:none;font-size:.98rem}
 .course-link:hover{text-decoration:underline;text-underline-offset:3px}
-
-.course.featured{background:var(--primary);border-color:var(--primary);color:#fff}
-.course.featured p,.course.featured .course-meta dt{color:rgba(255,255,255,.78)}
-.course.featured .course-meta{border-top-color:rgba(255,255,255,.3)}
-.course.featured .level{background:rgba(255,255,255,.16);color:#fff}
-.course.featured .course-link{color:#fff}
-.featured-note{font-size:.85rem;font-weight:500;color:rgba(255,255,255,.85);margin-left:8px}
 
 /* ---------- Testimonials ---------- */
 .quotes{display:grid;grid-template-columns:repeat(3, 1fr);gap:clamp(24px, 3vw, 40px)}
@@ -302,7 +298,6 @@ section[id]{scroll-margin-top:calc(var(--header-h) + 8px)}
 @media (max-width: 960px){
   .hero-grid,.about-grid,.contact-grid{grid-template-columns:1fr}
   .hero h1{max-width:14ch}
-  .courses-grid{grid-template-columns:repeat(2, 1fr)}
   .quotes{grid-template-columns:1fr}
 }
 @media (max-width: 760px){
@@ -351,7 +346,7 @@ section[id]{scroll-margin-top:calc(var(--header-h) + 8px)}
     </button>
     <ul class="menu" id="menu">
       <li><a href="#gioi-thieu">Giới thiệu</a></li>
-      <li><a href="#san-pham">Sản phẩm</a></li>
+      <li><a href="#dich-vu">Dịch vụ</a></li>
       <li><a href="#phan-hoi">Phản hồi</a></li>
       <li><a href="#lien-he">Liên hệ</a></li>
       <li><a href="#lien-he" class="btn btn-primary">Tư vấn miễn phí</a></li>
@@ -368,7 +363,7 @@ section[id]{scroll-margin-top:calc(var(--header-h) + 8px)}
       <p class="hero-lead">Khoá học thực chiến 8 tuần: dùng Claude Code, Cursor và agent để xây sản phẩm thật, từ prompt đầu tiên đến bản deploy chạy trên mạng.</p>
       <div class="hero-actions">
         <a href="#lien-he" class="btn btn-primary">Đăng ký tư vấn miễn phí</a>
-        <a href="#san-pham" class="btn btn-ghost">Xem các khoá học</a>
+        <a href="#dich-vu" class="btn btn-ghost">Xem các khoá học</a>
       </div>
       <p class="hero-note">Khai giảng lớp mới <strong>ngày 23/11</strong>, còn 12 chỗ.</p>
     </div>
@@ -404,9 +399,23 @@ section[id]{scroll-margin-top:calc(var(--header-h) + 8px)}
     </div>
     <div class="about-grid">
       <div class="about-text reveal">
-        <p class="lead">Song Hành ra đời năm 2023, khi một nhóm kỹ sư phần mềm nhận ra cách họ viết code đã thay đổi hẳn chỉ trong vài tháng.</p>
-        <p>Công việc bây giờ là mô tả rõ vấn đề, chia nhỏ yêu cầu, đọc lại code AI viết và biết khi nào nên dừng nó lại. Đó là kỹ năng mới, và rất ít nơi dạy nó một cách bài bản.</p>
-        <p>Mỗi khoá học ở Song Hành xoay quanh một sản phẩm thật. Bạn làm theo cặp: một người cùng một AI agent, có mentor đang đi làm review từng pull request. Kết thúc khoá, bạn có một dự án đã deploy và một quy trình làm việc dùng được ngay ở công ty.</p>
+        <dl class="profile">
+          <div class="profile-row">
+            <dt>Học vấn</dt>
+            <dd><p class="lead">Đại học Bách khoa Hà Nội.</p></dd>
+          </div>
+          <div class="profile-row">
+            <dt>Kinh nghiệm</dt>
+            <dd>
+              <p class="lead">Nhiều năm làm việc thực tế với Python, AI và Machine Learning</p>
+              <ul class="profile-list">
+                <li>Computer Vision, NLP, Generative AI, LLM, RAG &amp; AI Agents.</li>
+                <li>Xây dựng, triển khai và tối ưu mô hình AI trên Cloud &amp; Edge Devices.</li>
+                <li>AI Workflow Automation, Vibe Coding và các công cụ AI hiện đại.</li>
+              </ul>
+            </dd>
+          </div>
+        </dl>
       </div>
       <ul class="stats reveal" aria-label="Số liệu nổi bật">
         <li><span class="stat-num" data-count="3200" data-suffix="+">0</span><span class="stat-label">học viên đã tốt nghiệp</span></li>
@@ -419,78 +428,48 @@ section[id]{scroll-margin-top:calc(var(--header-h) + 8px)}
 </section>
 
 <!-- ============ COURSES ============ -->
-<section class="section" id="san-pham">
+<section class="section" id="dich-vu">
   <div class="wrap">
     <div class="section-head reveal">
-      <h2>Chọn khoá học theo nơi bạn đang đứng</h2>
-      <p>Người mới bắt đầu, lập trình viên muốn tăng tốc hay cả đội kỹ thuật đều có lộ trình riêng. Học phí đã gồm tài khoản công cụ AI trong suốt khoá.</p>
+      <h2>Dịch vụ đào tạo</h2>
+      <p>Bốn khoá học thực chiến, từ lập trình cùng AI đến các công cụ mọi lập trình viên đều cần: Python, Docker, Git và GitHub.</p>
     </div>
 
     <div class="courses-grid">
       <article class="course reveal">
-        <span class="level">Cơ bản</span>
-        <h3>Vibe Coding từ số 0</h3>
-        <p>Chưa từng code vẫn học được. Bạn mô tả ý tưởng bằng tiếng Việt, AI viết code, còn bạn học cách đọc, sửa và đưa trang web lên mạng.</p>
-        <dl class="course-meta">
-          <dt>Thời lượng</dt><dd>6 tuần</dd>
-          <dt>Hình thức</dt><dd>Online</dd>
-        </dl>
-        <div class="course-price"><span class="price">2.900.000đ</span><a href="#lien-he" class="course-link" data-course="Vibe Coding từ số 0">Đăng ký</a></div>
-      </article>
-
-      <article class="course featured reveal">
-        <span class="level">Trung cấp<span class="featured-note">Nhiều người chọn nhất</span></span>
-        <h3>Claude Code thực chiến</h3>
-        <p>Làm chủ agent trong terminal: viết CLAUDE.md, quản lý context, dùng sub-agent và hook để giao cả tính năng lớn cho AI mà vẫn kiểm soát chất lượng.</p>
-        <dl class="course-meta">
-          <dt>Thời lượng</dt><dd>8 tuần</dd>
-          <dt>Hình thức</dt><dd>Online + offline</dd>
-        </dl>
-        <div class="course-price"><span class="price">5.900.000đ</span><a href="#lien-he" class="course-link" data-course="Claude Code thực chiến">Đăng ký</a></div>
+        <img class="course-img" src="assets/claude_code.jpg" alt="Khoá học Vibe Coding với Claude Code" loading="lazy" width="793" height="411">
+        <div class="course-body">
+          <h3>Vibe Coding Thực Chiến với Claude Code: Từ Zero đến Hero</h3>
+          <p>Làm chủ Vibe Coding, Vibe Engineering với Claude Code - lập trình nhanh hơn và hiệu quả hơn, nâng cao năng suất.</p>
+          <a href="#lien-he" class="course-link" data-course="Vibe Coding Thực Chiến với Claude Code: Từ Zero đến Hero">Đăng ký tư vấn</a>
+        </div>
       </article>
 
       <article class="course reveal">
-        <span class="level">Trung cấp</span>
-        <h3>Cursor cho lập trình viên</h3>
-        <p>Đưa AI vào IDE quen thuộc: sửa nhiều file một lúc, refactor code cũ, sinh test và đọc nhanh codebase lạ trong ngày đầu nhận việc.</p>
-        <dl class="course-meta">
-          <dt>Thời lượng</dt><dd>4 tuần</dd>
-          <dt>Hình thức</dt><dd>Online</dd>
-        </dl>
-        <div class="course-price"><span class="price">3.500.000đ</span><a href="#lien-he" class="course-link" data-course="Cursor cho lập trình viên">Đăng ký</a></div>
+        <img class="course-img" src="assets/python.jpg" alt="Khoá học lập trình Python" loading="lazy" width="1600" height="1068">
+        <div class="course-body">
+          <h3>Lập Trình Python Từ Cơ Bản Đến Nâng Cao Trong 30 Ngày</h3>
+          <p>Chinh Phục Python Trong 30 Ngày: Từ Cơ Bản Đến Nâng Cao (Tiếng Việt) - Lập trình Python.</p>
+          <a href="#lien-he" class="course-link" data-course="Lập Trình Python Từ Cơ Bản Đến Nâng Cao Trong 30 Ngày">Đăng ký tư vấn</a>
+        </div>
       </article>
 
       <article class="course reveal">
-        <span class="level lv-adv">Nâng cao</span>
-        <h3>Xây AI agent và MCP</h3>
-        <p>Tự viết agent gọi công cụ, kết nối dữ liệu nội bộ qua MCP server và đánh giá agent bằng bộ test riêng trước khi đưa vào vận hành.</p>
-        <dl class="course-meta">
-          <dt>Thời lượng</dt><dd>8 tuần</dd>
-          <dt>Hình thức</dt><dd>Offline Hà Nội</dd>
-        </dl>
-        <div class="course-price"><span class="price">7.900.000đ</span><a href="#lien-he" class="course-link" data-course="Xây AI agent và MCP">Đăng ký</a></div>
+        <img class="course-img" src="assets/docker.jpg" alt="Khoá học Docker" loading="lazy" width="520" height="341">
+        <div class="course-body">
+          <h3>Thành Thạo Docker Từ Cơ Bản Đến Nâng Cao</h3>
+          <p>Thành thạo Docker trong thực tế: Xây dựng, quản lý và triển khai ứng dụng nhanh chóng và hiệu quả.</p>
+          <a href="#lien-he" class="course-link" data-course="Thành Thạo Docker Từ Cơ Bản Đến Nâng Cao">Đăng ký tư vấn</a>
+        </div>
       </article>
 
       <article class="course reveal">
-        <span class="level lv-adv">Nâng cao</span>
-        <h3>Review và bảo mật code AI</h3>
-        <p>Nhận diện lỗi AI hay mắc, đặt quy tắc review, quét lỗ hổng tự động trong CI để code sinh ra nhanh nhưng vẫn an toàn khi lên production.</p>
-        <dl class="course-meta">
-          <dt>Thời lượng</dt><dd>3 tuần</dd>
-          <dt>Hình thức</dt><dd>Online</dd>
-        </dl>
-        <div class="course-price"><span class="price">3.200.000đ</span><a href="#lien-he" class="course-link" data-course="Review và bảo mật code AI">Đăng ký</a></div>
-      </article>
-
-      <article class="course reveal">
-        <span class="level lv-team">Doanh nghiệp</span>
-        <h3>Chuyển đổi đội kỹ thuật</h3>
-        <p>Chương trình riêng cho team từ 8 người: khảo sát quy trình hiện tại, đào tạo tại văn phòng và đồng hành 3 tháng để đo hiệu quả thật.</p>
-        <dl class="course-meta">
-          <dt>Thời lượng</dt><dd>Theo nhu cầu</dd>
-          <dt>Hình thức</dt><dd>Tại doanh nghiệp</dd>
-        </dl>
-        <div class="course-price"><span class="price">Báo giá riêng</span><a href="#lien-he" class="course-link" data-course="Chuyển đổi đội kỹ thuật">Liên hệ</a></div>
+        <img class="course-img" src="assets/git.jpg" alt="Khoá học Git và GitHub" loading="lazy" width="837" height="500">
+        <div class="course-body">
+          <h3>Làm Chủ Git và GitHub Từ A đến Z</h3>
+          <p>Git và Github thực chiến - quản lý mã nguồn chuyên nghiệp và làm việc nhóm hiệu quả.</p>
+          <a href="#lien-he" class="course-link" data-course="Làm Chủ Git và GitHub Từ A đến Z">Đăng ký tư vấn</a>
+        </div>
       </article>
     </div>
   </div>
