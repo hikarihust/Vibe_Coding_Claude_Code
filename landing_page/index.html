@@ -259,6 +259,9 @@ section[id]{scroll-margin-top:calc(var(--header-h) + 8px)}
 .err{font-size:.88rem;color:var(--del);min-height:0}
 .err:empty{display:none}
 .form .btn{width:100%;margin-top:6px;padding:16px}
+.form .btn[disabled]{opacity:.7;cursor:progress}
+.form-error{margin:0 0 12px;padding:12px 14px;border-radius:10px;background:#FFF0F2;color:#9C2A40;font-size:.95rem}
+.form-error:empty{display:none}
 .form-success{
   display:none;text-align:center;padding:40px 10px;
 }
@@ -534,7 +537,10 @@ section[id]{scroll-margin-top:calc(var(--header-h) + 8px)}
     </div>
     <div class="contact-grid">
       <div class="form reveal">
-        <form id="contact-form" novalidate>
+        <form id="contact-form" action="https://formspree.io/f/xkjjayzo" method="POST" novalidate>
+          <input type="hidden" name="_subject" value="Đăng ký tư vấn mới từ landing page Song Hành">
+          <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
+          <input type="hidden" name="course" id="course-field" value="">
           <div class="form-row">
             <div class="field">
               <label for="name">Họ và tên</label>
@@ -556,7 +562,8 @@ section[id]{scroll-margin-top:calc(var(--header-h) + 8px)}
             <label for="message">Nội dung <span class="opt">(không bắt buộc)</span></label>
             <textarea id="message" name="message" placeholder="Bạn quan tâm khoá nào, hoặc đang gặp khó khăn gì khi code cùng AI?"></textarea>
           </div>
-          <button type="submit" class="btn btn-primary">Gửi đăng ký</button>
+          <p class="form-error" id="form-error" role="alert"></p>
+          <button type="submit" class="btn btn-primary" id="submit-btn">Gửi đăng ký</button>
         </form>
         <div class="form-success" id="form-success" role="status" aria-live="polite" tabindex="-1">
           <svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="30" fill="#E3F4EC"/><path d="M20 33l8 8 16-17" fill="none" stroke="#13895B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -658,6 +665,7 @@ section[id]{scroll-margin-top:calc(var(--header-h) + 8px)}
       if(id === '#top') window.scrollTo({top:0, behavior: reduce ? 'auto' : 'smooth'});
       else target.scrollIntoView({behavior: reduce ? 'auto' : 'smooth', block:'start'});
       if(a.dataset.course){
+        document.getElementById('course-field').value = a.dataset.course;
         var msg = document.getElementById('message');
         if(!msg.value) msg.value = 'Tôi muốn đăng ký khoá "' + a.dataset.course + '".';
       }
@@ -774,20 +782,64 @@ section[id]{scroll-margin-top:calc(var(--header-h) + 8px)}
       if(this.closest('.field').classList.contains('invalid')) check(n);
     });
   });
+  var submitBtn = document.getElementById('submit-btn');
+  var formError = document.getElementById('form-error');
+  var sending = false;
+
   form.addEventListener('submit', function(e){
     e.preventDefault();
+    if(sending) return;
+    formError.textContent = '';
     var firstBad = null;
     Object.keys(rules).forEach(function(n){ if(!check(n) && !firstBad) firstBad = form.elements[n]; });
     if(firstBad){ firstBad.focus(); return; }
-    var name = form.elements.name.value.trim().split(/\s+/).pop();
-    document.getElementById('success-text').textContent =
-      'Cảm ơn ' + name + '. Tư vấn viên sẽ gọi lại số ' + form.elements.phone.value.trim() + ' trong 24 giờ làm việc.';
-    form.style.display = 'none';
-    success.classList.add('show');
-    success.focus();
+
+    sending = true;
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Đang gửi…';
+
+    var data = new FormData(form);
+    var fullName = form.elements.name.value.trim();
+    var phone = form.elements.phone.value.trim();
+    data.set('_replyto', form.elements.email.value.trim());
+
+    fetch(form.action, {
+      method: 'POST',
+      body: data,
+      headers: { 'Accept': 'application/json' }
+    })
+    .then(function(res){
+      if(res.ok) return null;
+      return res.json().then(function(json){
+        var msg = (json && json.errors && json.errors.length)
+          ? json.errors.map(function(er){ return er.message; }).join(' ')
+          : 'Máy chủ không nhận được yêu cầu.';
+        throw new Error(msg);
+      }, function(){ throw new Error('Máy chủ không nhận được yêu cầu.'); });
+    })
+    .then(function(){
+      var name = fullName.split(/\s+/).pop();
+      document.getElementById('success-text').textContent =
+        'Cảm ơn ' + name + '. Tư vấn viên sẽ gọi lại số ' + phone + ' trong 24 giờ làm việc.';
+      form.style.display = 'none';
+      success.classList.add('show');
+      success.focus();
+    })
+    .catch(function(err){
+      formError.textContent = 'Chưa gửi được: ' + (err && err.message && err.message !== 'Failed to fetch'
+        ? err.message
+        : 'không kết nối được máy chủ.') + ' Kiểm tra mạng rồi bấm gửi lại, hoặc gọi hotline 0901 234 567.';
+    })
+    .then(function(){
+      sending = false;
+      submitBtn.disabled = false;
+      submitBtn.textContent = 'Gửi đăng ký';
+    });
   });
   document.getElementById('send-another').addEventListener('click', function(){
     form.reset();
+    document.getElementById('course-field').value = '';
+    formError.textContent = '';
     success.classList.remove('show');
     form.style.display = '';
     form.elements.name.focus();
