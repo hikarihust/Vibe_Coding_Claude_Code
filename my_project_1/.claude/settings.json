@@ -6,7 +6,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "python hooks\\avoid_read_env.py",
+            "command": "python C:/study/Vibe_Coding_Claude_Code/my_project_1/hooks/avoid_read_env.py",
             "timeout": 30
           }
         ]

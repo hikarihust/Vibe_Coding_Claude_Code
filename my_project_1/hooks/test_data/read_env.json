@@ -1,0 +1,11 @@
+{
+  "session_id": "abc123-fake-session",
+  "transcript_path": "C:\\Users\\fake\\.claude\\projects\\fake\\abc123.jsonl",
+  "cwd": "C:\\study\\Vibe_Coding_Claude_Code\\my_project_1",
+  "permission_mode": "default",
+  "hook_event_name": "PreToolUse",
+  "tool_name": "Read",
+  "tool_input": {
+    "file_path": "C:\\study\\Vibe_Coding_Claude_Code\\my_project_1\\.env"
+  }
+}
