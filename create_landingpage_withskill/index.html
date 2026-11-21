@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Coding – Tiệm bánh ngọt</title>
+<meta name="description" content="AI Coding – tiệm bánh ngọt mới mở. Ngọt ngay từ dòng đầu tiên.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --raspberry: #F4B6C2;
+    --raspberry-deep: #C2264B;
+    --cocoa: #3A1E17;
+    --cocoa-soft: #6B4A40;
+    --pistachio: #DDE7C7;
+    --butter: #F7D774;
+    --sugar: #FFFBF7;
+
+    --display: "Be Vietnam Pro", system-ui, sans-serif;
+    --body: "Be Vietnam Pro", system-ui, sans-serif;
+
+    --step--1: 0.875rem;
+    --step-0: 1.0625rem;
+    --step-1: 1.3125rem;
+    --step-2: 1.75rem;
+    --step-3: 2.5rem;
+    --step-4: clamp(2.5rem, 6vw, 4rem);
+    --step-hero: clamp(4.5rem, 17vw, 15rem);
+
+    --gutter: clamp(1rem, 4vw, 3rem);
+    --max: 1200px;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    font-family: var(--body);
+    font-size: var(--step-0);
+    line-height: 1.6;
+    color: var(--cocoa);
+    background: var(--sugar);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  img { display: block; max-width: 100%; }
+  a { color: inherit; }
+  :focus-visible { outline: 3px solid var(--raspberry-deep); outline-offset: 3px; border-radius: 4px; }
+
+  .wrap { width: min(var(--max), 100% - 2 * var(--gutter)); margin-inline: auto; }
+
+  h1, h2, h3 { font-family: var(--display); line-height: 1.2; margin: 0; letter-spacing: -0.01em; }
+  h2 { font-size: var(--step-4); font-weight: 800; }
+  p { margin: 0; }
+
+  .btn {
+    display: inline-flex; align-items: center; gap: .5rem;
+    font: 600 var(--step-0)/1 var(--body);
+    padding: 1rem 1.6rem;
+    border-radius: 999px;
+    text-decoration: none;
+    background: var(--cocoa); color: var(--sugar);
+    border: 2px solid var(--cocoa);
+    transition: background .2s, color .2s;
+  }
+  .btn:hover { background: var(--raspberry-deep); border-color: var(--raspberry-deep); }
+  .btn--ghost { background: transparent; color: var(--cocoa); }
+  .btn--ghost:hover { background: var(--cocoa); color: var(--sugar); border-color: var(--cocoa); }
+
+  /* ---------- Header ---------- */
+  .site-header { background: var(--raspberry); }
+  .nav { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding-block: 1.25rem; }
+  .logo { font: 800 var(--step-1)/1 var(--display); text-decoration: none; display: flex; align-items: center; gap: .5rem; }
+  .logo svg { width: 28px; height: 28px; }
+  .nav ul { list-style: none; display: flex; gap: 2rem; margin: 0; padding: 0; }
+  .nav ul a { text-decoration: none; font-weight: 500; }
+  .nav ul a:hover { text-decoration: underline; text-underline-offset: 4px; text-decoration-thickness: 2px; }
+  .nav .btn { padding: .7rem 1.2rem; font-size: var(--step--1); }
+
+  /* ---------- Hero ---------- */
+  .hero {
+    background: var(--raspberry);
+    position: relative;
+    padding-bottom: 6rem;
+    overflow: hidden;
+  }
+  .hero::after { /* viền giấy lót bánh răng cưa */
+    content: ""; position: absolute; left: 0; right: 0; bottom: -1px; height: 28px;
+    background: radial-gradient(circle at 14px 28px, var(--pistachio) 14px, transparent 14.5px) 0 0 / 28px 28px repeat-x;
+  }
+  .wordmark {
+    font-size: var(--step-hero);
+    font-weight: 800;
+    line-height: 1;
+    padding-top: .1em;
+    letter-spacing: -0.035em;
+    color: var(--cocoa);
+    margin-top: clamp(1.5rem, 5vw, 3.5rem);
+    white-space: nowrap;
+    animation: rise .9s cubic-bezier(.2,.8,.2,1) both;
+  }
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1.1fr .9fr;
+    gap: clamp(2rem, 5vw, 4rem);
+    align-items: end;
+    margin-top: clamp(1.5rem, 4vw, 3rem);
+  }
+  .slogan { font: 700 var(--step-3)/1.3 var(--display); max-width: 14ch; letter-spacing: -0.01em; }
+  .hero-copy p { margin-top: 1.25rem; max-width: 42ch; color: var(--cocoa-soft); font-size: var(--step-1); line-height: 1.5; }
+  .hero-actions { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 2rem; }
+
+  .hero-photo { position: relative; justify-self: end; width: min(100%, 440px); margin-top: calc(var(--step-hero) * -0.5); }
+  .hero-photo .plate {
+    aspect-ratio: 1; border-radius: 50%; overflow: hidden;
+    border: 10px solid var(--sugar);
+    background: var(--butter);
+  }
+  .hero-photo .plate img { width: 100%; height: 100%; object-fit: cover; }
+  .sticker {
+    position: absolute; left: -1.5rem; bottom: 1rem;
+    width: 128px; height: 128px; border-radius: 50%;
+    background: var(--butter); color: var(--cocoa);
+    display: grid; place-items: center; text-align: center;
+    font: 800 1.05rem/1.1 var(--display);
+    transform: rotate(-12deg);
+    box-shadow: 0 0 0 4px var(--cocoa);
+    padding: .75rem;
+  }
+
+  @keyframes rise { from { opacity: 0; transform: translateY(40px); } to { opacity: 1; transform: none; } }
+
+  /* ---------- Menu ---------- */
+  .menu { background: var(--pistachio); padding-block: clamp(4rem, 9vw, 7rem); }
+  .menu-head { display: flex; justify-content: space-between; align-items: end; gap: 2rem; flex-wrap: wrap; margin-bottom: 3rem; }
+  .menu-head p { max-width: 44ch; color: var(--cocoa-soft); }
+
+  .menu-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+  .card {
+    background: var(--sugar);
+    border-radius: 28px;
+    padding: .75rem .75rem 1.5rem;
+    display: flex; flex-direction: column;
+  }
+  .card-img {
+    border-radius: 200px 200px 18px 18px; /* hình vòm như tủ kính bánh */
+    overflow: hidden;
+    aspect-ratio: 4 / 4.2;
+    background: var(--raspberry);
+  }
+  .card-img img { width: 100%; height: 100%; object-fit: cover; }
+  .card-body { padding: 1.25rem .75rem 0; display: flex; flex-direction: column; gap: .5rem; flex: 1; }
+  .card h3 { font-size: var(--step-2); font-weight: 600; }
+  .card p { color: var(--cocoa-soft); font-size: var(--step--1); line-height: 1.6; }
+  .price { margin-top: auto; padding-top: .75rem; font: 800 var(--step-1)/1 var(--display); }
+
+  .card--featured {
+    grid-column: span 2; grid-row: span 2;
+    background: var(--cocoa); color: var(--sugar);
+  }
+  .card--featured .card-img { aspect-ratio: 16 / 11; border-radius: 22px 22px 18px 18px; }
+  .card--featured h3 { font-size: var(--step-3); font-weight: 800; }
+  .card--featured p { color: #E9D8D2; font-size: var(--step-0); max-width: 48ch; }
+  .card--featured .tag {
+    align-self: flex-start;
+    background: var(--butter); color: var(--cocoa);
+    font-weight: 600; font-size: var(--step--1);
+    padding: .3rem .8rem; border-radius: 999px;
+  }
+  .card--featured .price { color: var(--butter); font-size: var(--step-2); }
+
+  /* ---------- Reviews ---------- */
+  .reviews { background: var(--cocoa); color: var(--sugar); padding-block: clamp(4rem, 9vw, 7rem); }
+  .reviews h2 { max-width: 16ch; }
+  .review-list {
+    display: grid; grid-template-columns: repeat(3, 1fr);
+    gap: clamp(1.5rem, 4vw, 3rem);
+    margin-top: 3.5rem;
+    list-style: none; padding: 0;
+  }
+  .review { border-top: 3px solid var(--raspberry); padding-top: 1.5rem; display: flex; flex-direction: column; gap: 1.25rem; }
+  .stars { color: var(--butter); letter-spacing: .15em; font-size: var(--step-1); }
+  .review blockquote { margin: 0; font: 400 var(--step-1)/1.55 var(--display); }
+  .review cite { font-style: normal; color: #D8C2BB; font-size: var(--step--1); margin-top: auto; }
+  .review cite strong { color: var(--sugar); display: block; font-size: var(--step-0); }
+
+  /* ---------- Contact ---------- */
+  .contact { background: var(--butter); padding-block: clamp(4rem, 9vw, 7rem); position: relative; }
+  .contact::before {
+    content: ""; position: absolute; left: 0; right: 0; top: -1px; height: 28px;
+    background: radial-gradient(circle at 14px 0, var(--cocoa) 14px, transparent 14.5px) 0 0 / 28px 28px repeat-x;
+  }
+  .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(2rem, 6vw, 5rem); align-items: start; }
+  .contact-intro p { margin-top: 1.25rem; max-width: 40ch; font-size: var(--step-1); line-height: 1.5; }
+  .contact-intro .btn { margin-top: 2rem; }
+  .info { display: grid; gap: 1.75rem; margin: 0; }
+  .info div { border-bottom: 2px solid var(--cocoa); padding-bottom: 1.25rem; }
+  .info dt { font-weight: 600; font-size: var(--step--1); color: var(--cocoa-soft); }
+  .info dd { margin: .25rem 0 0; font: 600 var(--step-1)/1.45 var(--display); }
+  .info dd a { text-decoration: none; }
+  .info dd a:hover { text-decoration: underline; text-underline-offset: 4px; }
+  .hours { display: grid; grid-template-columns: auto 1fr; gap: .15rem 1.5rem; }
+
+  /* ---------- Footer ---------- */
+  footer { background: var(--cocoa); color: #D8C2BB; padding-block: 2rem; font-size: var(--step--1); }
+  footer .wrap { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem; }
+  footer strong { color: var(--sugar); font-family: var(--display); }
+
+  /* ---------- Responsive ---------- */
+  @media (max-width: 900px) {
+    .hero-grid { grid-template-columns: 1fr; }
+    .hero-photo { justify-self: center; margin-top: 1rem; width: min(100%, 360px); }
+    .menu-grid { grid-template-columns: repeat(2, 1fr); }
+    .review-list { grid-template-columns: 1fr; }
+    .contact-grid { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 640px) {
+    .nav ul { display: none; }
+    .menu-grid { grid-template-columns: 1fr; }
+    .card--featured { grid-column: auto; grid-row: auto; }
+    .sticker { width: 100px; height: 100px; font-size: .9rem; left: -.5rem; }
+    .wordmark { white-space: normal; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation: none !important; transition: none !important; }
+    html { scroll-behavior: auto; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav wrap" aria-label="Điều hướng chính">
+    <a href="#" class="logo" aria-label="AI Coding – trang chủ">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M4 18h24l-2.5 10h-19z" fill="#3A1E17"/><path d="M6 18c0-6 4.5-10 10-10s10 4 10 10" fill="#FFFBF7" stroke="#3A1E17" stroke-width="2"/><circle cx="16" cy="6" r="3" fill="#C2264B"/></svg>
+      AI Coding
+    </a>
+    <ul>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#danh-gia">Đánh giá</a></li>
+      <li><a href="#lien-he">Liên hệ</a></li>
+    </ul>
+    <a class="btn" href="tel:0901234567">Gọi đặt bánh</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <h1 class="wordmark">AI Coding</h1>
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <p class="slogan">Ngọt ngay từ dòng đầu tiên.</p>
+          <p>Tiệm bánh nhỏ mới mở ở Hà Nội. Mỗi sáng chúng tôi nướng mẻ bánh mới bằng bơ Pháp, trứng gà ta và trái cây theo mùa, bán đến khi hết.</p>
+          <div class="hero-actions">
+            <a class="btn" href="#menu">Xem menu</a>
+            <a class="btn btn--ghost" href="#lien-he">Tìm đường đến tiệm</a>
+          </div>
+        </div>
+        <div class="hero-photo">
+          <div class="plate">
+            <img src="images/hero-banh-kem-mam-xoi.jpg" alt="Miếng bánh kem nhiều lớp phủ mâm xôi tươi">
+          </div>
+          <div class="sticker">Mới khai trương!</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="menu" id="menu" aria-labelledby="menu-title">
+    <div class="wrap">
+      <div class="menu-head">
+        <h2 id="menu-title">Hôm nay có gì trong tủ kính</h2>
+        <p>Sáu món ra lò mỗi ngày. Bánh kem nguyên ổ nên đặt trước một ngày để chúng tôi chuẩn bị kịp.</p>
+      </div>
+
+      <div class="menu-grid">
+        <article class="card card--featured">
+          <div class="card-img">
+            <img src="images/banh-socola.jpg" alt="Bánh sô-cô-la phủ ganache chảy và kem bắt hoa" loading="lazy">
+          </div>
+          <div class="card-body">
+            <span class="tag">Bán chạy nhất</span>
+            <h3>Bánh sô-cô-la Hello World</h3>
+            <p>Ba lớp cốt sô-cô-la đen 70% xen ganache mịn, phủ một lớp gương bóng. Đậm, ít ngọt, rất hợp với một ly cà phê đen.</p>
+            <span class="price">65.000đ / miếng</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-img">
+            <img src="images/croissant.jpg" alt="Bánh croissant bơ vàng giòn" loading="lazy">
+          </div>
+          <div class="card-body">
+            <h3>Croissant bơ Pháp</h3>
+            <p>Gấp bột 27 lớp, vỏ giòn tan, ruột thơm mùi bơ.</p>
+            <span class="price">38.000đ</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-img">
+            <img src="images/macaron.jpg" alt="Bánh macaron nhiều màu" loading="lazy">
+          </div>
+          <div class="card-body">
+            <h3>Macaron hộp 6</h3>
+            <p>Vỏ giòn, nhân mềm. Vị vải hoa hồng, trà xanh, chanh dây.</p>
+            <span class="price">120.000đ</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-img">
+            <img src="images/tiramisu.jpg" alt="Bánh tiramisu rắc bột ca cao" loading="lazy">
+          </div>
+          <div class="card-body">
+            <h3>Tiramisu</h3>
+            <p>Phô mai mascarpone, cà phê Robusta Đắk Lắk, rắc ca cao.</p>
+            <span class="price">55.000đ</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-img">
+            <img src="images/tart-chanh-day.jpg" alt="Bánh tart phủ meringue nướng, đã cắt một miếng" loading="lazy">
+          </div>
+          <div class="card-body">
+            <h3>Tart chanh dây</h3>
+            <p>Đế bơ giòn, nhân chanh dây chua dịu, viền meringue nướng.</p>
+            <span class="price">48.000đ</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-img">
+            <img src="images/donut.jpg" alt="Chồng donut phủ sô-cô-la và cốm màu" loading="lazy">
+          </div>
+          <div class="card-body">
+            <h3>Donut sô-cô-la cốm màu</h3>
+            <p>Chiên mỗi buổi chiều, phủ sô-cô-la đen và rắc cốm màu.</p>
+            <span class="price">32.000đ</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="reviews" id="danh-gia" aria-labelledby="reviews-title">
+    <div class="wrap">
+      <h2 id="reviews-title">Khách quen nói gì về tiệm</h2>
+      <ul class="review-list">
+        <li class="review">
+          <span class="stars" aria-label="5 trên 5 sao">★★★★★</span>
+          <blockquote>“Croissant ở đây giòn đến mức tôi phải ăn ngay trên xe. Tuần này đã ghé ba lần, chưa định dừng.”</blockquote>
+          <cite><strong>Minh Anh</strong>Nhân viên văn phòng, Cầu Giấy</cite>
+        </li>
+        <li class="review">
+          <span class="stars" aria-label="5 trên 5 sao">★★★★★</span>
+          <blockquote>“Đặt bánh sinh nhật trước một ngày, nhận đúng giờ, viết chữ đẹp. Cả nhà khen bánh không bị ngọt gắt.”</blockquote>
+          <cite><strong>Chị Hương</strong>Đặt bánh sinh nhật cho con</cite>
+        </li>
+        <li class="review">
+          <span class="stars" aria-label="5 trên 5 sao">★★★★★</span>
+          <blockquote>“Tiramisu đậm vị cà phê đúng kiểu tôi thích. Chỗ ngồi nhỏ nhưng ấm, có ổ cắm để ngồi làm việc cả buổi.”</blockquote>
+          <cite><strong>Tuấn</strong>Lập trình viên, khách mỗi sáng</cite>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="contact" id="lien-he" aria-labelledby="contact-title">
+    <div class="wrap contact-grid">
+      <div class="contact-intro">
+        <h2 id="contact-title">Ghé tiệm hoặc gọi đặt bánh</h2>
+        <p>Bánh kem nguyên ổ, hộp quà và tiệc công ty nhận đặt trước ít nhất 24 giờ. Giao nội thành Hà Nội trong vòng 5 km.</p>
+        <a class="btn" href="tel:0901234567">Gọi 0901 234 567</a>
+      </div>
+      <dl class="info">
+        <div>
+          <dt>Địa chỉ</dt>
+          <dd>Số 12 Phố Hàng Bông, Hoàn Kiếm, Hà Nội</dd>
+        </div>
+        <div>
+          <dt>Giờ mở cửa</dt>
+          <dd class="hours"><span>Thứ 2 – Thứ 6</span><span>7:00 – 21:00</span><span>Thứ 7 – Chủ nhật</span><span>7:30 – 22:00</span></dd>
+        </div>
+        <div>
+          <dt>Điện thoại &amp; email</dt>
+          <dd><a href="tel:0901234567">0901 234 567</a><br><a href="mailto:hello@aicoding.vn">hello@aicoding.vn</a></dd>
+        </div>
+        <div>
+          <dt>Mạng xã hội</dt>
+          <dd><a href="#">facebook.com/aicoding.bakery</a><br><a href="#">instagram.com/aicoding.bakery</a></dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span><strong>AI Coding</strong> – Ngọt ngay từ dòng đầu tiên.</span>
+    <span>© 2026 Tiệm bánh AI Coding. Ảnh bánh từ <a href="https://unsplash.com">Unsplash</a>.</span>
+  </div>
+</footer>
+
+<script>
+  // Nếu ảnh không tải được, giữ khung màu thay vì biểu tượng ảnh lỗi
+  document.querySelectorAll('img').forEach(function (img) {
+    img.addEventListener('error', function () { img.style.visibility = 'hidden'; });
+  });
+</script>
+</body>
+</html>
