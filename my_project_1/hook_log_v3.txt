@@ -1,0 +1,2 @@
+Hook ran on: c:\study\Vibe_Coding_Claude_Code\my_project_1\check_ruff_v3.py:
+Found 1 error (1 fixed, 0 remaining).
