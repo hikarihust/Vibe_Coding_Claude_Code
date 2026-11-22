@@ -1,0 +1,517 @@
+- generic [active] [ref=f5e1]:
+  - link "コンテンツへスキップ" [ref=f5e2] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=f5e3]:
+    - navigation "メインナビゲーション" [ref=f5e4]:
+      - generic [ref=f5e6]:
+        - link [ref=f5e7] [cursor=pointer]:
+          - /url: /?s_tid=gn_logo
+          - img "MathWorks" [ref=f5e8]
+        - button "Toggle Search" [ref=f5e10] [cursor=pointer]:
+          - generic [ref=f5e11]: 
+        - text:  
+        - button "トグル メイン ナビゲーション" [ref=f5e13] [cursor=pointer]:
+          - generic [ref=f5e14]: 
+        - text:       
+  - heading "ディープラーニング (深層学習)" [level=1] [ref=f5e22]
+  - main [ref=f5e24]:
+    - generic [ref=f5e26]:
+      - generic [ref=f5e39]:
+        - heading "ディープラーニング (深層学習) とは" [level=2] [ref=f5e40]
+        - heading "スマート エンジニアリング システム設計へのディープラーニング (深層学習) の適用" [level=3] [ref=f5e41]
+      - paragraph [ref=f5e55]: ディープラーニング (深層学習) とは、ニューラル ネットワークを使用する機械学習の一分野であり、例から学ぶという人間の自然な行動をコンピューターに学習させるための手法です。ディープラーニングでは、モデルが画像、テキスト、音声などのデータから分類タスクまたは回帰タスクを直接実行するよう学習を行います。ディープラーニング モデルは極めて高い精度を誇り、しばしば人間の認識精度を超えることがあります。
+      - generic [ref=f5e56]:
+        - generic [ref=f5e68]:
+          - generic [ref=f5e72]:
+            - generic [ref=f5e74]:
+              - heading "ディープラーニングの仕組み" [level=2] [ref=f5e75]
+              - paragraph [ref=f5e76]:
+                - text: ディープラーニング モデルは、
+                - link "ニューラル ネットワーク" [ref=f5e77] [cursor=pointer]:
+                  - /url: /discovery/neural-network.html
+                - text: アーキテクチャに基づいています。人間の脳にヒントを得たニューラル ネットワークは、層構造内で相互接続されたノード、すなわちニューロンで構成されており、これらのニューロンが入力を望ましい出力に関連付けます。ニューラル ネットワークの入力層と出力層の間のニューロンは、隠れ層と呼ばれています。「ディープ」という言葉は通常、ニューラル ネットワーク内の隠れ層の数を指しています。ディープラーニング モデルは、数百または数千にもなる隠れ層を持つ場合があります。
+            - figure "一般的なニューラル ネットワーク アーキテクチャの表示。" [ref=f5e80]:
+              - img "ディープラーニング ネットワークは、相互接続された一連のニューロンからなる複数の層で構成されています。" [ref=f5e81]
+              - paragraph [ref=f5e83]: 一般的なニューラル ネットワーク アーキテクチャの表示。
+            - generic [ref=f5e85]:
+              - paragraph [ref=f5e86]: ディープラーニング モデルでは、大規模な一連のラベルデータを使用して学習が行われ、手動での特徴抽出を必要とせずにデータから特徴量を直接学習できる場合が多くあります。1958 年に初めて理論化された人工ニューラル ネットワークですが、ディープラーニングには高い計算能力が求められ、2000 年代まで利用することができませんでした。現在では、研究者は数百もの結合やニューロンを持つネットワークの構築および学習を行える計算リソースを利用できます。
+              - paragraph [ref=f5e87]: 高性能 GPU は、ディープラーニングの計算を効率化する並列アーキテクチャを有しています。クラスターまたはクラウド コンピューティングと組み合わせると、開発チームは、ディープラーニング ネットワークの学習時間を数週間から数時間以内に削減できるようになります。
+            - figure [ref=f5e94]:
+              - generic [ref=f5e96]:
+                - 'link "エンジニアのための AI: AI システムの構築  ビデオの長さ 3:40" [ref=f5e97] [cursor=pointer]':
+                  - /url: /videos/ai-for-engineers-building-an-ai-system-1603356830725.html
+                  - generic [ref=f5e98]: "エンジニアのための AI: AI システムの構築"
+                  - generic [ref=f5e100]:
+                    - text: 
+                    - generic [aria-hidden] [ref=f5e101]: 3:40
+                    - generic [ref=f5e102]: ビデオの長さ 3:40
+                - 'figure "エンジニアのための AI: AI システムの構築" [ref=f5e103]':
+                  - paragraph [ref=f5e105]:
+                    - 'link "エンジニアのための AI: AI システムの構築" [ref=f5e106] [cursor=pointer]':
+                      - /url: /videos/ai-for-engineers-building-an-ai-system-1603356830725.html
+            - generic [ref=f5e110]:
+              - heading "ディープラーニング モデルの種類" [level=3] [ref=f5e111]
+              - paragraph [ref=f5e112]:
+                - text: ディープラーニング モデルには、
+                - link "畳み込みニューラル ネットワーク" [ref=f5e113] [cursor=pointer]:
+                  - /url: /discovery/convolutional-neural-network.html
+                - text: (CNN)、
+                - link "リカレント ニューラル ネットワーク" [ref=f5e114] [cursor=pointer]:
+                  - /url: /discovery/rnn.html
+                - text: (RNN)、および
+                - link "トランスフォーマー モデル" [ref=f5e115] [cursor=pointer]:
+                  - /url: /matlabcentral/fileexchange/107375-transformer-models
+                - text: の 3 種類があります。
+              - paragraph [ref=f5e116]:
+                - text: "CNN: CNN では入力データを使用して学習済みの特徴を畳み込み、2D の畳み込み層を使用するため、画像などの 2D データの処理に特に適したアーキテクチャです。CNN では、画像から直接特徴量を抽出します。ネットワークが一連の画像で学習を行う間に関連する特徴量が学習されます。この自動化された"
+                - link "特徴抽出" [ref=f5e117] [cursor=pointer]:
+                  - /url: /discovery/feature-extraction.html
+                - text: により、画像分類タスクにおいてディープラーニング モデルは高い精度を実現しています。また、CNN は、時系列やテキストなど他のタイプのデータの分類に使用することもできます。
+            - figure "畳み込みニューラル ネットワークの例の可視化。" [ref=f5e120]:
+              - img "畳み込みニューラル ネットワークによるディープラーニングでは、特徴量を入力画像から自動的に学習し、クラスごとに確率を計算します。" [ref=f5e121]
+              - paragraph [ref=f5e123]: 畳み込みニューラル ネットワークの例の可視化。
+            - generic [ref=f5e125]:
+              - paragraph [ref=f5e126]:
+                - text: "RNN: リカレントニューラルネットワーク (RNN) は、時系列データまたはシーケンシャルデータを用いた予測を行うディープラーニングのネットワーク アーキテクチャです。RNN は、さまざまな長さのシーケンシャルデータを使用して、自然信号の分類、言語処理、動画解析などの問題を解く場合に特に効果的です。"
+                - link "長・短期記憶" [ref=f5e127] [cursor=pointer]:
+                  - /url: /discovery/lstm.html
+                - text: (LSTM) ネットワークは特別なタイプの RNN で、より長期的な依存関係の学習において単純な RNN よりも優れています。
+              - paragraph [ref=f5e128]:
+                - text: "トランスフォーマー: トランスフォーマーは、シーケンシャルデータの関係を追跡するよう設計されています。トランスフォーマーは、入力と出力の間の大域的な依存関係を取得するために自己注意機構を使用します。"
+                - link "自然言語処理" [ref=f5e129] [cursor=pointer]:
+                  - /url: /discovery/natural-language-processing.html
+                - text: で使用されることが多く、BERT や ChatGPT™ などの大規模言語モデル (LLM) の基礎となっています。
+            - generic [ref=f5e133]:
+              - heading "このトピックについてさらに詳しく" [level=4] [ref=f5e136]
+              - link " ディープ ネットワーク デザイナーを使用したシンプルなシーケンス分類ネットワークの作成" [ref=f5e138] [cursor=pointer]:
+                - /url: /help/deeplearning/getting-started-with-deep-learning-toolbox.html
+              - link " BERT による文書分類器の学習" [ref=f5e140] [cursor=pointer]:
+                - /url: /help/textanalytics/ug/train-bert-document-classifier.html
+            - generic [ref=f5e142]:
+              - heading "ディープラーニング モデルの作成方法" [level=3] [ref=f5e143]
+              - paragraph [ref=f5e144]:
+                - text: ディープラーニング モデルはゼロから作成するか、または
+                - link "事前学習済みのディープラーニング モデル" [ref=f5e145] [cursor=pointer]:
+                  - /url: /products/deep-learning/models.html
+                - text: を使用して始めることで、タスクに適用または導入できます。
+              - paragraph [ref=f5e146]:
+                - text: "ゼロからの学習: ディープラーニング モデルの学習をゼロから行うには、大規模なラベルデータセットを収集し、特徴量とモデルを学習するネットワーク アーキテクチャを設計します。これは、新しい用途や特定の用途、もしくはより一般的に、既存のモデルが存在しない用途に適したアプローチです。このアプローチの主なデメリットは、("
+                - link "グラウンド トゥルース" [ref=f5e147] [cursor=pointer]:
+                  - /url: /discovery/ground-truth.html
+                - text: のアノテーション付きの) 大規模なデータセットが必要となることや、タスクと計算リソースによっては学習に数時間から数週間かかる場合があることです。
+              - paragraph [ref=f5e148]:
+                - text: "転移学習: 画像分類、コンピューター ビジョン、音声処理、自然言語処理などのディープラーニングの用途では、"
+                - link "転移学習" [ref=f5e149] [cursor=pointer]:
+                  - /url: /discovery/transfer-learning.html
+                - text: のアプローチが広く使用されています。このアプローチでは、事前学習済みのディープラーニング モデルを微調整します。画像分類では SqueezeNet や GoogLeNet などの既存のモデルで始めて、未知のクラスを含む新しいデータを与えて学習させます。ネットワークに微調整を加えた後は、「1000 種類のオブジェクトの分類」ではなく「犬か猫かの分類」といった新しいタスクを行えるようになります。また、少ないデータ量で済むというメリットもあるため、学習時間を大幅に削減できます。
+              - paragraph [ref=f5e150]:
+                - text: 事前学習済みのディープラーニング モデルは、特徴抽出器としても使用できます。層の活性化状態を特徴として使用し、別の機械学習モデル (
+                - link "サポート ベクター マシン (SVM)" [ref=f5e151] [cursor=pointer]:
+                  - /url: /discovery/support-vector-machine.html
+                - text: など) の学習を行うことができます。または、事前学習済みのモデルを、別のディープラーニング モデルの基本構成として使用することも可能です。たとえば、画像分類の CNN をオブジェクト検出器の特徴抽出器として使用できます。
+            - generic [ref=f5e155]:
+              - heading "このトピックについてさらに詳しく" [level=4] [ref=f5e158]
+              - 'link " MATLAB によるディープラーニング: 10 行のコードで転移学習 (4:41)" [ref=f5e160] [cursor=pointer]':
+                - /url: /videos/deep-learning-with-matlab-transfer-learning-in-10-lines-of-matlab-code-1487714838381.html
+              - link " Deep Learning Toolbox、TensorFlow、PyTorch、ONNX 間の相互運用性" [ref=f5e162] [cursor=pointer]:
+                - /url: /help/deeplearning/ug/interoperability-between-deep-learning-toolbox-tensorflow-pytorch-and-onnx.html
+          - generic [ref=f5e166]:
+            - generic [ref=f5e168]:
+              - heading "ディープラーニングと機械学習の比較" [level=2] [ref=f5e169]
+              - paragraph [ref=f5e170]:
+                - text: ディープラーニングは
+                - link "機械学習" [ref=f5e171] [cursor=pointer]:
+                  - /url: /discovery/machine-learning.html
+                - text: の特殊な一形態であり、両者はいずれも
+                - link "人工知能 (AI)" [ref=f5e172] [cursor=pointer]:
+                  - /url: /discovery/artificial-intelligence.html
+                - text: 分野の一部です。機械学習では
+                - link "さまざまな手法やモデル" [ref=f5e173] [cursor=pointer]:
+                  - /url: /discovery/machine-learning-models.html
+                - text: が提供されており、アプリケーション、処理するデータのサイズ、解決したい問題のタイプに応じて選択できます。
+            - figure "AI アプリケーションのアルゴリズムとして、ディープラーニングと機械学習のどちらを選択するかは、システムの目標と要件によって異なります。" [ref=f5e176]:
+              - img "AI、機械学習、およびディープラーニングの 3 つすべてを示したイラストによる定義。" [ref=f5e177]
+              - paragraph [ref=f5e179]: AI アプリケーションのアルゴリズムとして、ディープラーニングと機械学習のどちらを選択するかは、システムの目標と要件によって異なります。
+            - paragraph [ref=f5e182]: 機械学習ではなくディープラーニングを選択する理由はなんでしょうか? 一言で言えば、精度です。一般的にディープラーニングでは、機械学習よりも高い精度が得られ、拡張ワークフローをより自動化できます。ディープラーニング モデルの主な短所は、より複雑であり、大規模な学習データセットが必要なことから、学習により長い時間がかかることです。これらの短所については、完全に対処する手法や影響を軽減する手法があります。
+            - generic [ref=f5e184]:
+              - heading "特徴量エンジニアリングの自動化" [level=3] [ref=f5e185]
+              - paragraph [ref=f5e186]:
+                - text: 機械学習のワークフローは、データから関連する特徴量を手動で抽出することから始まります。次に、その特徴量を使用して、新しいデータに対して予測を行えるモデルを作成します。ディープラーニングのワークフローを使用すると、
+                - link "画像認識" [ref=f5e187] [cursor=pointer]:
+                  - /url: /discovery/image-recognition.html
+                - text: や
+                - link "コンピューター ビジョン" [ref=f5e188] [cursor=pointer]:
+                  - /url: /discovery/computer-vision.html
+                - text: などの用途では、関連する特徴量が画像データから自動的に抽出されます。信号またはテキストデータを扱う場合、ディープラーニングにより必要な
+                - link "データ前処理" [ref=f5e189] [cursor=pointer]:
+                  - /url: /discovery/data-preprocessing.html
+                - text: を減らすことができます。
+            - figure "車両の分類における機械学習手法 (左) とディープラーニング(右) の比較。" [ref=f5e192]:
+              - img "機械学習と比較した場合、ディープラーニングでは画像分類タスクにおいて手動で特徴抽出を行う必要がありません。"
+              - paragraph [ref=f5e194]: 車両の分類における機械学習手法 (左) とディープラーニング(右) の比較。
+            - generic [ref=f5e196]:
+              - heading "学習データと学習時間" [level=3] [ref=f5e197]
+              - paragraph [ref=f5e198]:
+                - text: ディープラーニングの精度は、データ量に比例します。つまり、ディープラーニングのパフォーマンスは、学習データのサイズが大きくなるにつれ改善されていきます。一般的にディープラーニングでは、モデルの学習を行うために極めて膨大なデータが必要となります (画像分類に何千もの画像が必要になるなど)。高性能の
+                - link "GPU" [ref=f5e199] [cursor=pointer]:
+                  - /url: /solutions/gpu-computing.html
+                - text: を利用することで、学習時間を大幅に削減できます。また代案として、転移学習により事前学習済みのネットワークを変更して再学習を行うと、一般により高速化でき、ネットワークの学習をゼロから行うよりも少ないラベルデータで済ませることができます。
+              - paragraph [ref=f5e200]:
+                - text: 利用できる学習データが十分にない場合は、既存のデータを合成データで補完できます。合成データは、
+                - link "敵対的生成ネットワーク (GAN)" [ref=f5e201] [cursor=pointer]:
+                  - /url: /discovery/generative-adversarial-networks.html
+                - text: を使用するか、または物理システムのモデルを作成およびシミュレーションすることで生成できます。
+              - heading "モデルのサイズと複雑度" [level=3] [ref=f5e202]
+              - paragraph [ref=f5e203]: 機械学習モデルと比較すると、ディープラーニング モデルは何百もの相互接続された層で構築されているため、より複雑で大規模なものとなります。ディープラーニングの技術が進歩するにつれ、ディープラーニング ネットワーク アーキテクチャは複雑度を増していきます。モデルの複雑度とサイズは、ディープラーニングの精度に寄与します。
+              - paragraph [ref=f5e204]:
+                - text: その複雑さのために、ディープラーニング モデルは
+                - link "解釈可能性" [ref=f5e205] [cursor=pointer]:
+                  - /url: /discovery/interpretability.html
+                - text: を欠く「ブラックボックス」と見なされることがよくあります。
+                - link "説明可能な AI" [ref=f5e206] [cursor=pointer]:
+                  - /url: https://blogs.mathworks.com/deep-learning/2022/12/30/what-is-explainable-ai/
+                - text: として知られる新しい分野では、ディープラーニング モデルの動作を人間の言葉で説明する手法を提供しています。たとえば、
+                - link "Grad-CAM" [ref=f5e207] [cursor=pointer]:
+                  - /url: /help/deeplearning/ref/gradcam.html
+                - text: および
+                - link "LIME" [ref=f5e208] [cursor=pointer]:
+                  - /url: /help/deeplearning/ref/imagelime.html
+                - text: を使用して、画像分類タスクにおけるディープラーニング モデルの予測を説明することができます。
+              - paragraph [ref=f5e209]: ディープラーニング モデルは、もはやデスクトップにのみ存在するものではありません。大規模化と複雑化が進むディープラーニング モデルをリソースに制約のあるデバイスに展開することは、多くのディープラーニング実務者が直面する大きな課題となっています。ディープラーニング モデルを圧縮する手法は数多くあり、それらを使用することで、高い精度を維持しながら、ディープラーニング モデルのディスク上のサイズ、ランタイムメモリ、および推論時間を削減できます。
+            - figure "全結合層の射影。射影はネットワーク圧縮の一手法。" [ref=f5e216]:
+              - img "射影の使用による全結合層の圧縮。層の演算は図の下に記述。" [ref=f5e217]
+              - paragraph [ref=f5e219]: 全結合層の射影。射影はネットワーク圧縮の一手法。
+            - generic [ref=f5e223]:
+              - heading "このトピックについてさらに詳しく" [level=4] [ref=f5e226]
+              - link " ネットワーク射影を使用したニューラル ネットワークの圧縮" [ref=f5e228] [cursor=pointer]:
+                - /url: /company/technical-articles/compressing-neural-networks-using-network-projection.html
+              - link " ディープラーニング アプリケーションのエッジへの展開" [ref=f5e230] [cursor=pointer]:
+                - /url: /solutions/embedded-ai.html
+          - generic [ref=f5e234]:
+            - generic [ref=f5e236]:
+              - heading "ディープラーニングが重要な理由" [level=2] [ref=f5e237]
+              - paragraph [ref=f5e238]: ディープラーニングは、無人自動車の実現を支える主要技術であり、一時停止標識の認識や歩行者と街灯の識別を可能にします。電話、タブレット、テレビ、ハンズフリー スピーカーなどの消費者向けデバイスの音声制御にも不可欠な技術です。ディープラーニングは、最近多くの注目を集めていますが、それにはもっともな理由があります。ディープラーニングを使用すると、コンピューターやシステムは複雑なタスクをより高精度かつ高度に自動化して実行できるようになります。
+              - heading "ディープラーニングの用途" [level=3] [ref=f5e239]
+              - paragraph [ref=f5e240]:
+                - text: ディープラーニングは、コンピューター ビジョン、画像処理、自動運転、信号処理、その他の多くの領域で応用されています。ディープラーニングの用途の各領域には、副次的な用途領域が含まれることがあります。たとえば、画像分類、
+                - link "オブジェクト検出" [ref=f5e241] [cursor=pointer]:
+                  - /url: /discovery/object-detection.html
+                - text: 、および
+                - link "セマンティック セグメンテーション" [ref=f5e242] [cursor=pointer]:
+                  - /url: /help/vision/ug/semantic-segmentation-using-deep-learning.html
+                - text: は、コンピューター ビジョンの副次的な用途です。ディープラーニングの手法や技術が新たに開発されるにしたがい、ディープラーニングの用途も拡大を続け、ディープラーニングの精度向上につながる副次的な用途が見いだされます。
+            - generic [ref=f5e244]:
+              - heading [level=4] [ref=f5e256]:
+                - link "コンピューター ビジョン" [ref=f5e257] [cursor=pointer]:
+                  - /url: /solutions/artificial-intelligence/ai-computer-vision.html
+              - heading [level=4] [ref=f5e269]:
+                - link "信号処理" [ref=f5e270] [cursor=pointer]:
+                  - /url: /solutions/artificial-intelligence/ai-signal-processing.html
+              - heading [level=4] [ref=f5e282]:
+                - link "ロボティクス" [ref=f5e283] [cursor=pointer]:
+                  - /url: /solutions/artificial-intelligence/ai-robotics.html
+              - heading [level=4] [ref=f5e295]:
+                - link "自然言語処理" [ref=f5e296] [cursor=pointer]:
+                  - /url: /discovery/natural-language-processing.html
+              - heading [level=4] [ref=f5e308]:
+                - link "自動運転" [ref=f5e309] [cursor=pointer]:
+                  - /url: /solutions/automated-driving.html
+              - heading [level=4] [ref=f5e321]:
+                - link "予知保全" [ref=f5e322] [cursor=pointer]:
+                  - /url: /solutions/predictive-maintenance.html
+            - heading "業務におけるディープラーニングの活用例" [level=3] [ref=f5e325]
+            - generic [ref=f5e327]:
+              - paragraph [ref=f5e332]:
+                - link "外観検査" [ref=f5e333] [cursor=pointer]:
+                  - /url: /discovery/visual-inspection.html
+                - text: とは、画像を使用して部品の外観をチェックする検査です。カメラでテスト対象の部品をスキャンして、故障や品質上の欠陥がないかを確認します。ディープラーニングとコンピューター ビジョンの手法を使用することで、生命工学、自動車、半導体など多くの産業分野において、製造上の欠陥を検出する外観検査を自動化できます。
+              - figure [ref=f5e338]:
+                - generic [ref=f5e339]:
+                  - link [ref=f5e341] [cursor=pointer]:
+                    - /url: /help/visual-inspection/ug/detect-pcb-defects-using-yolox-deep-learning.html
+                    - img "YOLOX ネットワークを使用したプリント基板の欠陥の検出。" [ref=f5e342]
+                  - figure "YOLOX ネットワークを使用したプリント基板の欠陥の検出。" [ref=f5e344]:
+                    - paragraph [ref=f5e346]:
+                      - link "YOLOX ネットワークを使用したプリント基板の欠陥の検出。" [ref=f5e347] [cursor=pointer]:
+                        - /url: /help/visual-inspection/ug/detect-pcb-defects-using-yolox-deep-learning.html
+            - generic [ref=f5e349]:
+              - paragraph [ref=f5e354]:
+                - text: 脳波 (EEG) 信号は、最も入手しやすく、当然のことながら最も調査されている脳信号です。ディープラーニングを使用すると、EEG 信号でてんかんを自動的に診断し、てんかん発作を予測できます。AI技術の適用によって、医療の質を向上させ効率を高める取り組みである
+                - link "医療AI" [ref=f5e355] [cursor=pointer]:
+                  - /url: /discovery/medical-ai.html
+                - text: の活用が進んでいます。
+              - figure [ref=f5e360]:
+                - generic [ref=f5e361]:
+                  - link [ref=f5e363] [cursor=pointer]:
+                    - /url: /help/deeplearning/ug/time-frequency-convolutional-network-for-eeg-data-classification.html
+                    - img "時間-周波数畳み込みネットワークを使用した EEG データの分類。" [ref=f5e364]
+                  - figure "時間-周波数畳み込みネットワークを使用した EEG データの分類。" [ref=f5e366]:
+                    - paragraph [ref=f5e368]:
+                      - link "時間-周波数畳み込みネットワークを使用した EEG データの分類。" [ref=f5e369] [cursor=pointer]:
+                        - /url: /help/deeplearning/ug/time-frequency-convolutional-network-for-eeg-data-classification.html
+            - generic [ref=f5e371]:
+              - paragraph [ref=f5e376]: リアルタイムの監視と制御が求められるシステムや、物理センサーの使用が現実的でなかったり費用が高くなったりするシステムでは、バーチャルセンサーを使用できます。ディープラーニングとモデルベースデザイン (MBD、モデルベース開発) を組み合わせて、バーチャルセンサーを設計することができます。
+              - figure [ref=f5e381]:
+                - generic [ref=f5e382]:
+                  - link [ref=f5e384] [cursor=pointer]:
+                    - /url: https://blogs.mathworks.com/deep-learning/2023/08/11/virtual-sensors-with-ai-and-model-based-design/
+                    - img "AI とモデルベースデザインを使用したバーチャルセンサーの設計。" [ref=f5e385]
+                  - figure "AI とモデルベースデザインを使用したバーチャルセンサーの設計。" [ref=f5e387]:
+                    - paragraph [ref=f5e389]:
+                      - link "AI とモデルベースデザインを使用したバーチャルセンサーの設計。" [ref=f5e390] [cursor=pointer]:
+                        - /url: https://blogs.mathworks.com/deep-learning/2023/08/11/virtual-sensors-with-ai-and-model-based-design/
+            - generic [ref=f5e394]:
+              - heading "ディープラーニングの用途についてさらに詳しく" [level=4] [ref=f5e397]
+              - link " ディープラーニングの用途" [ref=f5e399] [cursor=pointer]:
+                - /url: /help/deeplearning/applications.html
+              - link " 特定領域への AI の適用" [ref=f5e401] [cursor=pointer]:
+                - /url: /solutions/artificial-intelligence/tutorials-examples.html#applications
+            - generic [ref=f5e405]:
+              - generic [ref=f5e407]:
+                - heading "ディープラーニングをがん研究に応用" [level=4] [ref=f5e408]
+                - paragraph [ref=f5e409]:
+                  - link "Moffit Cancer Center" [ref=f5e410] [cursor=pointer]:
+                    - /url: /company/user_stories/moffitt-cancer-center-uses-machine-learning-to-accelerate-cancer-research.html
+                  - text: が、ディープラーニングを使用して科学的発見を加速させ、治療計画をパーソナライズした方法をご覧ください。
+              - generic [ref=f5e412]:
+                - blockquote [ref=f5e417]:
+                  - paragraph [ref=f5e418]:
+                    - text: MATLAB
+                    - superscript [ref=f5e419]: ®
+                    - text: には、画像処理およびラジオミクスへの AI 適用に必要なすべてのツールが用意されていました。MATLAB を使用して、データ前処理、ノイズ除去 (デノイズ)、画像セグメンテーションなどのタスクを行いました。
+                - figure [ref=f5e424]:
+                  - link [ref=f5e427] [cursor=pointer]:
+                    - /url: /company/user_stories/moffitt-cancer-center-uses-machine-learning-to-accelerate-cancer-research.html
+                    - img "Moffitt Cancer Center が機械学習を利用してがん研究を加速" [ref=f5e428]
+          - generic [ref=f5e432]:
+            - generic [ref=f5e434]:
+              - heading "MATLAB によるディープラーニング" [level=2] [ref=f5e435]
+              - paragraph [ref=f5e436]:
+                - link "MATLAB" [ref=f5e437] [cursor=pointer]:
+                  - /url: /products/matlab.html
+                - text: を
+                - link "Deep Learning Toolbox™" [ref=f5e438] [cursor=pointer]:
+                  - /url: /products/deep-learning.html
+                - text: とともに使用すると、ディープラーニング ネットワークの設計、解析、シミュレーションを行えます。ディープラーニングのワークフローは、他のツールボックス (
+                - link "Computer Vision Toolbox™" [ref=f5e439] [cursor=pointer]:
+                  - /url: /products/computer-vision.html
+                - text: 、
+                - link "Signal Processing Toolbox™" [ref=f5e440] [cursor=pointer]:
+                  - /url: /products/signal.html
+                - text: 、
+                - link "Text Analytics Toolbox™" [ref=f5e441] [cursor=pointer]:
+                  - /url: /products/text-analytics.html
+                - text: など) を使用することで、多くの用途 (コンピューター ビジョン、信号処理、自然言語処理など) に拡張できます。
+            - figure "データ準備から展開に至るまでのディープラーニングのワークフローの可視化。" [ref=f5e444]:
+              - img "ディープラーニングのワークフローには、データの前処理やラベル付け、AI モデルの構築、モデルの判断の可視化、AI システムのシミュレーション、ターゲットへの展開があります。" [ref=f5e445]
+              - paragraph [ref=f5e447]: データ準備から展開に至るまでのディープラーニングのワークフローの可視化。
+            - generic [ref=f5e449]:
+              - heading "ディープラーニング用のデータ" [level=4] [ref=f5e450]
+              - paragraph [ref=f5e451]:
+                - text: ディープラーニングには膨大な量の良質なデータが必要です。
+                - link "データストア" [ref=f5e452] [cursor=pointer]:
+                  - /url: /help/deeplearning/ug/datastores-for-deep-learning.html
+                - text: を使用すると、大きすぎて一度ではメモリに収まらないデータコレクションを簡単に管理できます。ローコードアプリと組み込み関数を使用して、データ品質を向上させ、
+                - link "グラウンド トゥルースに自動的にラベル付け" [ref=f5e453] [cursor=pointer]:
+                  - /url: /help/vision/ug/choose-a-labeling-app.html
+                - text: できます。
+              - heading "ディープラーニング モデルの設計" [level=3] [ref=f5e454]
+              - paragraph [ref=f5e455]
+            - generic [ref=f5e457]:
+              - generic [ref=f5e461]:
+                - heading "ゼロから構築するネットワーク" [level=4] [ref=f5e462]
+                - list [ref=f5e463]:
+                  - listitem [ref=f5e464]: わずか数行のコードで、CNN、LSTM、GAN、およびトランスフォーマーなどのディープラーニング ネットワークを作成できます。
+                  - listitem [ref=f5e465]: 複数の GPU、クラウド、クラスターを使用して学習を高速化します。ディープラーニング モデルの学習において、MATLAB は GPU を使用します (利用可能な場合)。それらの GPU を明示的にプログラムする必要はありません。
+              - figure "プログラムによる LSTM ネットワークの作成。" [ref=f5e470]:
+                - img "わずか数行の MATLAB コードで、LSTM ディープラーニング ネットワークを作成します。" [ref=f5e471]
+                - paragraph [ref=f5e473]: プログラムによる LSTM ネットワークの作成。
+            - generic [ref=f5e475]:
+              - generic [ref=f5e479]:
+                - heading "事前学習済みのネットワーク" [level=4] [ref=f5e480]
+                - list [ref=f5e481]:
+                  - listitem [ref=f5e482]: 事前学習済みのモデルをタスクに直接適用したり、転移学習を実行して適応させたり、特徴抽出器として使用します。
+                  - listitem [ref=f5e483]:
+                    - link "MATLAB Deep Learning Model Hub" [ref=f5e484] [cursor=pointer]:
+                      - /url: https://github.com/matlab-deep-learning/MATLAB-Deep-Learning-Model-Hub
+                    - text: から、カテゴリごとの最新モデルにアクセスし、事前学習済みのモデルをコマンドラインで読み込みます。
+                  - listitem [ref=f5e485]:
+                    - link "インポート関数" [ref=f5e486] [cursor=pointer]:
+                      - /url: /help/deeplearning/networks-from-external-platforms.html
+                    - text: を使用して TensorFlow™、PyTorch
+                    - superscript [ref=f5e487]: ®
+                    - text: 、ONNX™ モデルを MATLAB ネットワークに変換します。学習済みのネットワークと学習していないネットワークを Deep Learning Toolbox から TensorFlow および ONNX にエクスポートします。
+                  - listitem [ref=f5e488]: 再学習用に層の置き換えと学習率の調整を行う組み込み関数を使用して、転移学習の実行を簡素化します。
+              - figure "ディープラーニングのタスクに適応させる事前学習済みのモデルの入手。" [ref=f5e493]:
+                - img "事前学習済みのディープラーニング モデルを MATLAB Deep Learning Model Hub、PyTorch、TensorFlow、ONNX から入手します。"
+                - paragraph [ref=f5e495]: ディープラーニングのタスクに適応させる事前学習済みのモデルの入手。
+            - generic [ref=f5e497]:
+              - generic [ref=f5e501]:
+                - heading "ローコードアプリ" [level=4] [ref=f5e502]
+                - list [ref=f5e503]:
+                  - listitem [ref=f5e504]:
+                    - link "ディープ ネットワーク デザイナー" [ref=f5e505] [cursor=pointer]:
+                      - /url: /help/deeplearning/ref/deepnetworkdesigner-app.html
+                    - text: アプリを使用すると、ネットワークを対話的に設計、分析、変更することができます。また、事前学習済みのネットワークを Deep Learning Toolbox、TensorFlow、PyTorch からインポートすることもできます。
+                  - listitem [ref=f5e506]:
+                    - link "実験マネージャー" [ref=f5e507] [cursor=pointer]:
+                      - /url: /help/deeplearning/ref/experimentmanager-app.html
+                    - text: アプリでは、複数のディープラーニングの実験の管理、学習パラメーターの追跡、結果の解析、およびさまざまな実験のコードの比較を行うことができます。
+                  - listitem [ref=f5e508]:
+                    - link "時系列モデラー" [ref=f5e509] [cursor=pointer]:
+                      - /url: /help/releases/R2026a/deeplearning/ref/timeseriesmodeler-app.html
+                    - text: アプリを使用すると、時系列予測、将来予測、回帰モデルを対話的に作成、学習、比較できます。学習済みモデルはワークスペースにエクスポートできるほか、そのモデルを使用して予測を行う MATLAB
+                    - superscript [ref=f5e510]: ®
+                    - text: コードを生成したり、Simulink
+                    - superscript [ref=f5e511]: ®
+                    - text: にエクスポートしたりすることもできます。
+              - figure "時系列モデラーを使用した時系列予測モデルおよび将来予測モデルの対話的な作成と学習" [ref=f5e516]:
+                - img "CNN ディープラーニング ネットワークの層を示すディープ ネットワーク デザイナー アプリのスクリーンショット。" [ref=f5e517]
+                - paragraph [ref=f5e519]: 時系列モデラーを使用した時系列予測モデルおよび将来予測モデルの対話的な作成と学習
+            - generic [ref=f5e521]:
+              - heading "エンジニアのためのディープラーニング" [level=3] [ref=f5e522]
+              - heading "説明可能で堅牢性の高いディープラーニング" [level=4] [ref=f5e523]
+              - paragraph [ref=f5e524]:
+                - text: MATLAB を使用すると、
+                - link "ディープラーニング モデルおよびモデルによる予測結果を可視化して検証" [ref=f5e525] [cursor=pointer]:
+                  - /url: /help/deeplearning/visualize-and-verify-deep-neural-networks.html
+                - text: できます。
+              - list [ref=f5e526]:
+                - listitem [ref=f5e527]: ディープラーニング モデルの学習プロセスを監視し、パフォーマンス メトリクスをプロットします。
+                - listitem [ref=f5e528]: Grad-CAM、オクルージョン感度、LIME、ディープドリームなどの説明可能性の手法を適用して、ディープラーニング モデルの出力を可視化します。これにより、ディープラーニング モデルがどのように予測を行うかを把握できます。
+                - listitem [ref=f5e529]:
+                  - text: 堅牢性の高いディープラーニング モデルの学習を行い、モデルの堅牢性を検証します。ネットワークのロバスト特性の検証、ネットワークの出力境界の計算、敵対的サンプルの発見、分布外のデータの検出、および
+                  - link "業界標準への準拠の検証" [ref=f5e530] [cursor=pointer]:
+                    - /url: https://blogs.mathworks.com/deep-learning/2023/07/11/the-road-to-ai-certification-the-importance-of-verification-and-validation-in-ai/
+                  - text: を行うことができます。
+              - heading "システムレベル シミュレーション" [level=4] [ref=f5e531]
+              - paragraph [ref=f5e532]:
+                - text: Deep Learning Toolbox のブロックを使用して、学習済みのネットワークと Simulink
+                - superscript [ref=f5e533]: ®
+                - text: システムを統合します。これにより、ディープラーニング モデルとシステムの他の部分との統合をテストできます。
+              - heading "ターゲットへの展開" [level=4] [ref=f5e534]
+              - paragraph [ref=f5e535]:
+                - text: ディープラーニング モデルは、エッジデバイス、組み込みシステム、または
+                - link "クラウド" [ref=f5e536] [cursor=pointer]:
+                  - /url: /help/deeplearning/ug/deep-learning-in-the-cloud.html
+                - text: に展開できます。展開する前に、量子化、射影、または枝刈りを実行することにより、
+                - link "モデルを圧縮" [ref=f5e537] [cursor=pointer]:
+                  - /url: /help/deeplearning/quantization.html
+                - text: できます。
+        - generic [ref=f5e544]:
+          - generic [ref=f5e550]:
+            - heading "リソース" [level=3] [ref=f5e551]
+            - paragraph [ref=f5e552]: ドキュメンテーション、例、ビデオなどを通じて知識を広げましょう。
+          - generic [ref=f5e554]:
+            - generic [ref=f5e556]:
+              - figure [ref=f5e559]:
+                - img "セクション" [ref=f5e560]
+              - heading "ドキュメンテーション" [level=4] [ref=f5e563]
+              - list [ref=f5e565]:
+                - listitem [ref=f5e566]:
+                  - link "並列処理、GPU、クラウドでディープラーニングをスケールアップ" [ref=f5e567] [cursor=pointer]:
+                    - /url: /help/deeplearning/ug/scale-up-deep-learning-in-parallel-on-gpus-and-in-the-cloud.html
+            - generic [ref=f5e569]:
+              - figure [ref=f5e572]:
+                - img "セクション" [ref=f5e573]
+              - heading "関連情報" [level=4] [ref=f5e576]
+              - list [ref=f5e578]:
+                - listitem [ref=f5e579]:
+                  - link "ディープラーニングのシステムレベル設計への統合" [ref=f5e580] [cursor=pointer]:
+                    - /url: /campaigns/offers/embedded-ai-system-level-design.html
+                - listitem [ref=f5e581]:
+                  - link "MATLAB を使用したディープラーニングのチュートリアルおよび例" [ref=f5e582] [cursor=pointer]:
+                    - /url: /products/deep-learning/tutorials.html
+                  - text: "- 概要"
+        - generic [ref=f5e591]:
+          - generic [ref=f5e593]:
+            - generic [ref=f5e595]:
+              - heading "関連するトピック" [level=3] [ref=f5e596]
+              - paragraph [ref=f5e597]: MATLAB および Simulink 製品がよく使用される類似分野のトピックを見る。
+            - list [ref=f5e600]:
+              - listitem [ref=f5e601]:
+                - link "人工知能 (AI)" [ref=f5e602] [cursor=pointer]:
+                  - /url: /discovery/artificial-intelligence.html
+              - listitem [ref=f5e603]:
+                - link "機械学習とは?" [ref=f5e604] [cursor=pointer]:
+                  - /url: /discovery/machine-learning.html
+          - generic [ref=f5e609]:
+            - paragraph [ref=f5e611]:
+              - link "ディープラーニング入門" [ref=f5e612] [cursor=pointer]:
+                - /url: https://matlabacademy.mathworks.com/details/deep-learning-onramp/deeplearning
+            - link "今すぐ始める" [ref=f5e613] [cursor=pointer]:
+              - /url: https://matlabacademy.mathworks.com/details/deep-learning-onramp/deeplearning
+    - text:   
+  - contentinfo [ref=f5e614]:
+    - generic [ref=f5e622]:
+      - generic [ref=f5e626]:
+        - paragraph [ref=f5e627]: MathWorks
+        - paragraph [ref=f5e628]: Accelerating the pace of engineering and science
+      - generic [ref=f5e632]:
+        - paragraph [ref=f5e637]:
+          - button "製品を見る" [ref=f5e638] [cursor=pointer]
+        - paragraph [ref=f5e643]:
+          - button "評価版の入手・製品の購入" [ref=f5e644] [cursor=pointer]
+        - paragraph [ref=f5e649]:
+          - button "使い方を学ぶ" [ref=f5e650] [cursor=pointer]
+        - paragraph [ref=f5e655]:
+          - button "サポートを受ける" [ref=f5e656] [cursor=pointer]
+        - paragraph [ref=f5e661]:
+          - button "会社名" [ref=f5e662] [cursor=pointer]
+    - generic [ref=f5e665]:
+      - generic [ref=f5e666]:
+        - navigation "フッター ナビゲーション" [ref=f5e667]:
+          - list [ref=f5e668]:
+            - listitem [ref=f5e669]:
+              - button "Web サイトの選択  日本" [ref=f5e670] [cursor=pointer]:
+                - generic [ref=f5e671]: Web サイトの選択
+                - generic [ref=f5e672]: 
+                - text: 日本
+          - list [ref=f5e674]:
+            - listitem [ref=f5e675]:
+              - link "トラストセンター" [ref=f5e676] [cursor=pointer]:
+                - /url: /company/trust-center.html?s_tid=gf_tc
+            - listitem [ref=f5e677]:
+              - link "商標" [ref=f5e678] [cursor=pointer]:
+                - /url: /company/trust-center/trademarks.html?s_tid=gf_trd
+            - listitem [ref=f5e679]:
+              - link "プライバシー ポリシー" [ref=f5e680] [cursor=pointer]:
+                - /url: /company/trust-center/privacy-policy.html?s_tid=gf_priv
+            - listitem [ref=f5e681]:
+              - link "違法コピー防止" [ref=f5e682] [cursor=pointer]:
+                - /url: /company/trust-center/piracy.html?s_tid=gf_pir
+            - listitem [ref=f5e683]:
+              - link "アプリケーション ステータス" [ref=f5e684] [cursor=pointer]:
+                - /url: https://status.mathworks.com/?s_tid=gf_application
+            - listitem [ref=f5e685]:
+              - link "お問い合わせ" [ref=f5e686] [cursor=pointer]:
+                - /url: /company/aboutus/contact_us.html?s_tid=gf_contact
+        - paragraph [ref=f5e687]: © 1994-2026 The MathWorks, Inc.
+      - list [ref=f5e695]:
+        - listitem [ref=f5e696]:
+          - link [ref=f5e697] [cursor=pointer]:
+            - /url: https://www.facebook.com/MATLABJapan/
+            - img "Facebook" [ref=f5e698]
+        - listitem [ref=f5e699]:
+          - link [ref=f5e700] [cursor=pointer]:
+            - /url: https://twitter.com/MATLAB_Japan
+            - img "Twitter" [ref=f5e701]
+        - listitem [ref=f5e702]:
+          - link [ref=f5e703] [cursor=pointer]:
+            - /url: https://www.instagram.com/matlab/
+            - img "Instagram" [ref=f5e704]
+        - listitem [ref=f5e705]:
+          - link [ref=f5e706] [cursor=pointer]:
+            - /url: https://www.youtube.com/c/MATLABJapan
+            - img "YouTube" [ref=f5e707]
+        - listitem [ref=f5e708]:
+          - link [ref=f5e709] [cursor=pointer]:
+            - /url: https://www.linkedin.com/company/the-mathworks_2
+            - img "LinkedIn" [ref=f5e710]
+        - listitem [ref=f5e711]:
+          - link [ref=f5e712] [cursor=pointer]:
+            - /url: /company/rss.html
+            - img "RSS" [ref=f5e713]
+  - link [aria-hidden]:
+    - /url: "#"
+    - generic: 

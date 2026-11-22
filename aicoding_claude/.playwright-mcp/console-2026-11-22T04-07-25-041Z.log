@@ -1,0 +1,14 @@
+[     480ms] [ERROR] Executing inline event handler violates the following Content Security Policy directive 'script-src 'nonce-szy4UP4g37ZeyTbdHrgjzQ' 'strict-dynamic' 'report-sample' 'unsafe-eval' 'unsafe-inline' https: http:'. Note that 'unsafe-inline' is ignored if either a hash or nonce value is present in the source list. The action has been blocked. @ https://www.google.com/search?q=AI+agent:1
+[   15905ms] TypeError: window[r].init is not a function
+    at a.onload (<anonymous>:1:197)
+[   15906ms] TypeError: window[r].init is not a function
+    at a.onload (<anonymous>:1:197)
+[   15906ms] TypeError: window[r].init is not a function
+    at a.onload (<anonymous>:1:197)
+[   19908ms] [WARNING] Unrecognized feature: 'attribution-reporting'. @ https://cdn.microad.jp/js/track.js:2
+[   19909ms] [WARNING] Unrecognized feature: 'attribution-reporting'. @ https://cdn.microad.jp/js/track.js:2
+[   19910ms] [WARNING] Unrecognized feature: 'attribution-reporting'. @ https://cdn.microad.jp/js/track.js:2
+[   20040ms] [WARNING] Unrecognized feature: 'attribution-reporting'. @ https://cdn.microad.jp/js/track.js:2
+[   20298ms] [WARNING] [Meta Pixel] - Duplicate Pixel ID: 696353002299859. @ https://connect.facebook.net/en_US/fbevents.js:206
+[   21380ms] [ERROR] Failed to load resource: the server responded with a status of 413 (Request Entity Too Large) @ https://ds-aksb-a.akamaihd.net/RRT:1
+[   21603ms] [LOG] --- cookieToken --- 7a153c53-2137-4b3e-9580-339240f2bfd4 @ https://www.analytics.sales-marker.jp/:1

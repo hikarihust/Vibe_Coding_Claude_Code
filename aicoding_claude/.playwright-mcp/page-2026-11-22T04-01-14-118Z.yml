@@ -1,0 +1,52 @@
+- generic [ref=e2]:
+  - navigation [ref=e3]:
+    - link "Googleについて" [ref=e4] [cursor=pointer]:
+      - /url: https://about.google/?fg=1&utm_source=google-JP&utm_medium=referral&utm_campaign=hp-header
+    - link "ストア" [ref=e5] [cursor=pointer]:
+      - /url: https://store.google.com/JP?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=ja-JP
+    - generic [ref=e7]:
+      - generic [ref=e8]:
+        - link "Gmail" [ref=e10] [cursor=pointer]:
+          - /url: https://mail.google.com/mail/&ogbl
+        - link "画像を検索する" [ref=e12] [cursor=pointer]:
+          - /url: https://www.google.com/imghp?hl=ja&ogbl
+          - text: 画像
+      - button "Google アプリ" [ref=e15] [cursor=pointer]
+      - link "ログイン" [ref=e20] [cursor=pointer]:
+        - /url: https://accounts.google.com/ServiceLogin?hl=ja&passive=true&continue=https://www.google.com/&ec=futura_exp_og_so_72776762_e
+  - img "Google" [ref=e23]
+  - search [ref=e31]:
+    - generic [ref=e33]:
+      - generic [ref=e34]:
+        - generic [ref=e35]:
+          - status [ref=e36]
+          - alert [ref=e37]
+        - generic [ref=e38]:
+          - button "ファイルとツールを追加し、モデルを選択します" [ref=e44] [cursor=pointer]
+          - combobox "検索" [active] [ref=e49]
+          - generic [ref=e50]:
+            - generic [ref=e51]:
+              - button "音声で検索" [ref=e54] [cursor=pointer]
+              - button "画像で検索" [ref=e59] [cursor=pointer]
+            - button "AI モード" [ref=e63] [cursor=pointer]
+      - generic [ref=e72]:
+        - button "画像を作成" [ref=e73] [cursor=pointer]
+        - button "ファイルについて質問する" [ref=e79] [cursor=pointer]
+        - button "ブレインストーミング" [ref=e84] [cursor=pointer]
+        - button "I'm Feeling Lucky" [ref=e89] [cursor=pointer]
+  - contentinfo [ref=e93]:
+    - generic [ref=e94]: 日本
+    - generic [ref=e95]:
+      - generic [ref=e96]:
+        - link "広告" [ref=e97] [cursor=pointer]:
+          - /url: https://www.google.com/intl/ja_jp/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1
+        - link "ビジネス" [ref=e98] [cursor=pointer]:
+          - /url: https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1
+        - link "検索の仕組み" [ref=e99] [cursor=pointer]:
+          - /url: https://google.com/search/howsearchworks/?fg=1
+      - generic [ref=e100]:
+        - link "プライバシー" [ref=e101] [cursor=pointer]:
+          - /url: https://policies.google.com/privacy?hl=ja&fg=1
+        - link "規約" [ref=e102] [cursor=pointer]:
+          - /url: https://policies.google.com/terms?hl=ja&fg=1
+        - button "設定" [ref=e106] [cursor=pointer]

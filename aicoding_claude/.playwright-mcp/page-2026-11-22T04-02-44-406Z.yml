@@ -1,0 +1,556 @@
+- generic [active] [ref=f1e1]:
+  - generic:
+    - generic:
+      - link "メイン コンテンツにスキップ" [ref=f1e2] [cursor=pointer]
+      - link "ユーザー補助ヘルプ" [ref=f1e3] [cursor=pointer]:
+        - /url: https://support.google.com/websearch/answer/181196?hl=ja
+  - generic [ref=f1e8]:
+    - search [ref=f1e9]:
+      - generic [ref=f1e12]:
+        - link [ref=f1e13] [cursor=pointer]:
+          - /url: https://www.google.com/webhp?hl=ja&ictx=0&sa=X&ved=2ahUKEwi0rYTk2JqYAxXgnq8BHc3eK2gQpYkNegQIBhAG
+          - img "Google ホームへ" [ref=f1e14]
+        - generic [ref=f1e20]:
+          - status [ref=f1e21]
+          - alert [ref=f1e22]
+        - generic [ref=f1e23]:
+          - combobox "検索" [ref=f1e25]: AI agent AI agent
+          - button "消去" [ref=f1e30] [cursor=pointer]
+    - generic [ref=f1e34]:
+      - button "設定" [ref=f1e36] [cursor=pointer]
+      - button "共有" [ref=f1e41] [cursor=pointer]
+      - generic [ref=f1e47]:
+        - button "Google アプリ" [ref=f1e49] [cursor=pointer]
+        - link "ログイン" [ref=f1e54] [cursor=pointer]:
+          - /url: https://accounts.google.com/ServiceLogin?hl=ja&passive=true&continue=https://www.google.com/search%3Fq%3DAI%2Bagent%26sca_esv%3Df2f6f2be87c99aac%26sxsrf%3DAKL5yDigR683K1JP3DBiWFz_QF5Na_r9Bg%253A1795320073119%26source%3Dhp%26ei%3DCWkCa_vfBeukvr0PppaswQY%26iflsig%3DAHSINFcAAAAAawJ3GTd3iLPtT5Mozkh5qVaMjHSMDdJh%26uact%3D5%26oq%3DAI%2Bagent%26gs_lp%3DEgdnd3Mtd2l6IghBSSBhZ2VudEgYUABYAHAAeACQAQCYAQCgAQCqAQCwAQC4AQPIAQD4AQGYAgCgAgCYAwDiAwQYACBd4gMEGAAgXuIDBBgAIF_iAwQYACBg4gMEGAAgYeIDBBgAIGKSBwCgBwCyBwC4BwDCBwDIBwCACAE%26sclient%3Dgws-wiz&ec=futura_srp_og_si_72236_p
+  - generic [ref=f1e56]:
+    - navigation [ref=f1e62]:
+      - generic [ref=f1e64]:
+        - generic [ref=f1e68]:
+          - list [ref=f1e69]:
+            - listitem [ref=f1e70]:
+              - link "AI モード" [ref=f1e73] [cursor=pointer]:
+                - /url: /search?q=AI+agent&sca_esv=f2f6f2be87c99aac&sxsrf=AKL5yDirvWpbZEGtyBApaU2moll4AABYZg:1795320161842&udm=50&source=hp&fbs=ACAhTvzuGPnhhKBQWrKMUdkFBX4UiwH_5hMr0o8VoVQQPNtedPVAH8N6dxCGaxGq3eSygiIj_AFHwRE0mgSdek-4GCkXCDe4kqFjrWzgwUpX1QLvBgI2WSRfwjmG3t2y1oBe8PQFTMNLJJU39RGraKzdA5f_0E3uZuq1LnA49U08yIB-_38Q0-uPCS40AGxh2GCyOwLQ1LFA9CiwJzrIGuPQUevkwKekAHJZzOw2uiWJo5FeBfUPSw8&vsint=&aep=1&ntc=1&cs=0&sa=X&ved=2ahUKEwi0rYTk2JqYAxXgnq8BHc3eK2gQ2J8OegQIHxAD
+            - listitem [ref=f1e77]:
+              - link "すべて" [disabled] [ref=f1e78]
+            - listitem [ref=f1e81]:
+              - link "画像" [ref=f1e82] [cursor=pointer]:
+                - /url: /search?sca_esv=f2f6f2be87c99aac&sxsrf=AKL5yDirvWpbZEGtyBApaU2moll4AABYZg:1795320161842&udm=2&fbs=ACAhTvzuGPnhhKBQWrKMUdkFBX4UiwH_5hMr0o8VoVQQPNtedPVAH8N6dxCGaxGq3eSygiIj_AFHwRE0mgSdek-4GCkXCDe4kqFjrWzgwUpX1QLvBgI2WSRfwjmG3t2y1oBe8PQFTMNLJJU39RGraKzdA5f_0E3uZuq1LnA49U08yIB-_38Q0-uPCS40AGxh2GCyOwLQ1LFA9CiwJzrIGuPQUevkwKekAHJZzOw2uiWJo5FeBfUPSw8&q=AI+agent&sa=X&ved=2ahUKEwi0rYTk2JqYAxXgnq8BHc3eK2gQtKgLegQIIxAB
+            - listitem [ref=f1e85]:
+              - link "動画" [ref=f1e86] [cursor=pointer]:
+                - /url: /search?sca_esv=f2f6f2be87c99aac&sxsrf=AKL5yDirvWpbZEGtyBApaU2moll4AABYZg:1795320161842&udm=vids&fbs=ACAhTvzuGPnhhKBQWrKMUdkFBX4UiwH_5hMr0o8VoVQQPNtedPVAH8N6dxCGaxGq3eSygiIj_AFHwRE0mgSdek-4GCkXCDe4kqFjrWzgwUpX1QLvBgI2WSRfwjmG3t2y1oBe8PQFTMNLJJU39RGraKzdA5f_0E3uZuq1LnA49U08yIB-_38Q0-uPCS40AGxh2GCyOwLQ1LFA9CiwJzrIGuPQUevkwKekAHJZzOw2uiWJo5FeBfUPSw8&q=AI+agent&sa=X&ved=2ahUKEwi0rYTk2JqYAxXgnq8BHc3eK2gQtKgLegQIJBAB
+            - listitem [ref=f1e89]:
+              - link "ニュース" [ref=f1e90] [cursor=pointer]:
+                - /url: /search?sca_esv=f2f6f2be87c99aac&sxsrf=AKL5yDirvWpbZEGtyBApaU2moll4AABYZg:1795320161842&q=AI+agent&tbm=nws&source=lnms&fbs=ACAhTvzuGPnhhKBQWrKMUdkFBX4UiwH_5hMr0o8VoVQQPNtedPVAH8N6dxCGaxGq3eSygiIj_AFHwRE0mgSdek-4GCkXCDe4kqFjrWzgwUpX1QLvBgI2WSRfwjmG3t2y1oBe8PQFTMNLJJU39RGraKzdA5f_0E3uZuq1LnA49U08yIB-_38Q0-uPCS40AGxh2GCyOwLQ1LFA9CiwJzrIGuPQUevkwKekAHJZzOw2uiWJo5FeBfUPSw8&sa=X&ved=2ahUKEwi0rYTk2JqYAxXgnq8BHc3eK2gQ0pQJegQIJRAB
+            - listitem [ref=f1e93]:
+              - link "ショッピング" [ref=f1e94] [cursor=pointer]:
+                - /url: /search?sca_esv=f2f6f2be87c99aac&sxsrf=AKL5yDirvWpbZEGtyBApaU2moll4AABYZg:1795320161842&udm=28&fbs=ACAhTvzuGPnhhKBQWrKMUdkFBX4UiwH_5hMr0o8VoVQQPNtedPVAH8N6dxCGaxGq3eSygiIj_AFHwRE0mgSdek-4GCkXCDe4kqFjrWzgwUpX1QLvBgI2WSRfwjmG3t2y1oBe8PQFTMNLJJU39RGraKzdA5f_0E3uZuq1LnA49U08yIB-_38Q0-uPCS40AGxh2GCyOwLQ1LFA9CiwJzrIGuPQUevkwKekAHJZzOw2uiWJo5FeBfUPSw8&q=AI+agent&ved=1t:220175&ictx=111
+            - listitem [ref=f1e97]:
+              - link "ショート動画" [ref=f1e98] [cursor=pointer]:
+                - /url: /search?sca_esv=f2f6f2be87c99aac&sxsrf=AKL5yDirvWpbZEGtyBApaU2moll4AABYZg:1795320161842&udm=short_vids&fbs=ACAhTvzuGPnhhKBQWrKMUdkFBX4UiwH_5hMr0o8VoVQQPNtedPVAH8N6dxCGaxGq3eSygiIj_AFHwRE0mgSdek-4GCkXCDe4kqFjrWzgwUpX1QLvBgI2WSRfwjmG3t2y1oBe8PQFTMNLJJU39RGraKzdA5f_0E3uZuq1LnA49U08yIB-_38Q0-uPCS40AGxh2GCyOwLQ1LFA9CiwJzrIGuPQUevkwKekAHJZzOw2uiWJo5FeBfUPSw8&q=AI+agent&sa=X&ved=2ahUKEwi0rYTk2JqYAxXgnq8BHc3eK2gQs6gLegQIIhAB
+            - listitem [ref=f1e101]:
+              - button [ref=f1e102] [cursor=pointer]:
+                - generic "その他のフィルタ" [ref=f1e103]: もっと見る
+          - button "ツール" [ref=f1e110] [cursor=pointer]
+        - button [aria-hidden] [ref=f1e117] [cursor=pointer]
+    - heading "検索結果" [level=1] [ref=f1e123]
+    - main [ref=f1e132]:
+      - generic [ref=f1e145]:
+        - generic [ref=f1e162]:
+          - heading [level=2] [ref=f1e167]:
+            - strong [ref=f1e168]: AI による概要
+          - generic [ref=f1e171]:
+            - generic [ref=f1e172]:
+              - generic [ref=f1e173]:
+                - strong [ref=f1e174]: AIエージェント
+                - text: とは、
+                - mark [ref=f1e175]: 与えられた目標を達成するために状況を把握し、自ら計画を立てて外部ツールやシステムを操作しながら自律的にタスクを実行するAIシステム
+                - text: です。
+                - generic [ref=f1e179]:
+                  - link "NTTドコモビジネス" [ref=f1e180] [cursor=pointer]:
+                    - /url: /goto?url=CAESgQEBxCJF10VUkDHNU818xO9a5_ad0xYfuhveAHtGt8EmRZ7NJy6udrl_G8QCvQ-9oa-kagPJ74EDCwplIaJseKZVOTjIky2lnYeDyLzGK5Zw3YN1oZLwUxwED2vQ4y54tl5e7sJ1uejW30tzYUJVHFpngpZ2UGu-mogirk7tlbghono
+                  - button "NTTドコモビジネス（+2）- 関連する検索結果" [ref=f1e181] [cursor=pointer]:
+                    - generic [ref=f1e183]:
+                      - generic [ref=f1e184]: NTTドコモビジネス
+                      - generic [ref=f1e185]: "+2"
+              - heading "生成AIとの違い" [level=3] [ref=f1e186]
+              - list [ref=f1e187]:
+                - listitem [ref=f1e189]:
+                  - generic [ref=f1e190]:
+                    - strong [ref=f1e191]: 生成AI（指示応答型）
+                    - text: ：質問や指示に対して、文章・画像・コードなどを生成して返す仕組みです。次の手順や外部操作は基本的に人間が指示します。
+                  - generic [ref=f1e195]:
+                    - link [ref=f1e196] [cursor=pointer]:
+                      - /url: /goto?url=CAESbAHEIkXXijHoyq8MhCsfbrr-ZidvblSuqBMgBw4EBSDPDrb-64e2djQZwq-fa8PaKPZZTrAFLL3MheW3qdtyu5WgKezKb9Uq8jN-hDm_Io4tBusCY9BxAPWNIpUGCMYfRJY2uJZ21WoBOU0HuA
+                    - button [ref=f1e197] [cursor=pointer]:
+                      - generic [ref=f1e198]: Gartner Japan
+                - listitem [ref=f1e202]:
+                  - generic [ref=f1e203]:
+                    - strong [ref=f1e204]: AIエージェント（自律実行型）
+                    - text: ：ゴールを伝えるだけで、必要な作業に分解し、検索やAPI・ファイル操作などを組み合わせて最後までやり遂げます。状況が変われば手順も見直します。
+                  - generic [ref=f1e208]:
+                    - link [ref=f1e209] [cursor=pointer]:
+                      - /url: /goto?url=CAEScwHEIkXXb91R87udEUrnhTAsGs1NhlP3edh1_UT4UUl4FEc7ejOhbOAxKO-rULVxi77u35aEAIx-qkA8PtQt6Rg-ZVk_zyFginaVj3SjGTxOh3spKBuCm7jFCWbT3xbPgZ-y9v0Cw1SiFL8GSnDSXDX_lew
+                    - button [ref=f1e210] [cursor=pointer]:
+                      - generic [ref=f1e212]:
+                        - generic [ref=f1e213]: YouTube
+                        - generic [ref=f1e214]: ·キノコード / AI・プログラミング学習チャンネル
+                        - generic [ref=f1e215]: "+2"
+              - heading [level=3] [ref=f1e217]: 主な仕組みと構成要素
+              - list [aria-hidden] [ref=f1e218]:
+                - listitem [ref=f1e220]:
+                  - generic [ref=f1e221]:
+                    - strong [ref=f1e222]: 推論・計画（LLM / Planning）
+                    - text: ：目標を解釈し、実行手順や優先順位を組み立てます。
+                - listitem [ref=f1e224]:
+                  - generic [ref=f1e225]:
+                    - strong [ref=f1e226]: ツール利用（Tools / Action）
+                    - text: ：Web検索、社内システムやAPIの連携、コード実行、ブラウザ・ファイル操作などで外部に働きかけます。
+                - listitem [ref=f1e228]:
+                  - generic [ref=f1e229]:
+                    - strong [ref=f1e230]: メモリ（Memory）
+                    - text: ：過去のやり取りや文脈を保持し、判断やパーソナライズに活かします。
+                - listitem [ref=f1e232]:
+                  - generic [ref=f1e233]:
+                    - strong [ref=f1e234]: 実行ループ（観測 → 判断 → 行動 → 評価）
+                    - text: ：結果を確認しながら処理を進め、必要に応じて修正します。
+                  - generic [ref=f1e239]:
+                    - link [ref=f1e240] [cursor=pointer]:
+                      - /url: /goto?url=CAESbQHEIkXX9HlFIUCOuMowyO3hyOCZit7cggEvYDvpwYBlNQvC4KGsgREt6i6JZqN2B2lGn16pe3O6B7a7AQ_y_5VpaFeoBi-eiOLhVwoskHbGOkMv7LO13AIAMOfMlUS6TFhEnwcbCkDyO12fZQU
+                    - button [ref=f1e241] [cursor=pointer]:
+                      - generic [ref=f1e243]:
+                        - generic [ref=f1e244]: IBM
+                        - generic [ref=f1e245]: "+3"
+              - generic [ref=f1e246]:
+                - heading [level=3] [ref=f1e248]: 代表的な活用例・注意点
+                - list [aria-hidden] [ref=f1e249]:
+                  - listitem [ref=f1e251]:
+                    - generic [ref=f1e252]:
+                      - strong [ref=f1e253]: 活用例
+                      - text: ：社内ヘルプデスクの一次対応・起票、顧客対応・営業支援、調査・レポート作成、日程や予約の手配、業務システムの定型・複合処理など。
+                  - listitem [ref=f1e255]:
+                    - generic [ref=f1e256]:
+                      - strong [ref=f1e257]: 注意点
+                      - text: ：誤作動やハルシネーション、機密データの漏洩、外部ツール操作による意図しない変更などのリスクがあるため、権限管理や人間の承認フロー（Human-in-the-loop）、ガバナンス設計が重要です。
+                    - generic [ref=f1e261]:
+                      - link [ref=f1e262] [cursor=pointer]:
+                        - /url: /goto?url=CAESWgHEIkXXFK0kxvJ9waLBNJABH_jL1OAbw-_6d73L69jM3QrYRHjkXa7KXNgU7R0hnZgd_iaMGWzs4zWqalBd4g1szVHAWfD0T2ox1FhotqJGo_Guoa6PuvbkvQ
+                      - button [ref=f1e263] [cursor=pointer]:
+                        - generic [ref=f1e265]:
+                          - generic [ref=f1e266]: JAPAN AI株式会社
+                          - generic [ref=f1e267]: "+5"
+                - generic [ref=f1e269]:
+                  - text: 詳しい解説については
+                  - link [ref=f1e272] [cursor=pointer]:
+                    - /url: /goto?url=CAESbAHEIkXXijHoyq8MhCsfbrr-ZidvblSuqBMgBw4EBSDPDrb-64e2djQZwq-fa8PaKPZZTrAFLL3MheW3qdtyu5WgKezKb9Uq8jN-hDm_Io4tBusCY9BxAPWNIpUGCMYfRJY2uJZ21WoBOU0HuA
+                    - text: Gartner
+                  - text: 、
+                  - link [ref=f1e275] [cursor=pointer]:
+                    - /url: /goto?url=CAESgQEBxCJF10VUkDHNU818xO9a5_ad0xYfuhveAHtGt8EmRZ7NJy6udrl_G8QCvQ-9oa-kagPJ74EDCwplIaJseKZVOTjIky2lnYeDyLzGK5Zw3YN1oZLwUxwED2vQ4y54tl5e7sJ1uejW30tzYUJVHFpngpZ2UGu-mogirk7tlbghono
+                    - text: NTTドコモビジネス
+                  - text: 、
+                  - link [ref=f1e278] [cursor=pointer]:
+                    - /url: /goto?url=CAESewHEIkXXzHpoEfkSLA3AZyj4uqAZ11qSTditt6Dg4OV4o6BbZxSSXhDqTHHahEQLbvsgv2qZ5MnIJaYd54wsMfvGyoECtXdThTDIUq9i1YW_DtERoS_-F9Yu1PmQ5Vqheza1uZdGOf28OCEf2rNFKabln9XMCZ1zs42wOQ
+                    - text: NTTデータ
+                  - text: などの情報も参考になります。
+                  - generic [ref=f1e282]:
+                    - link [ref=f1e283] [cursor=pointer]:
+                      - /url: /goto?url=CAESewHEIkXXzHpoEfkSLA3AZyj4uqAZ11qSTditt6Dg4OV4o6BbZxSSXhDqTHHahEQLbvsgv2qZ5MnIJaYd54wsMfvGyoECtXdThTDIUq9i1YW_DtERoS_-F9Yu1PmQ5Vqheza1uZdGOf28OCEf2rNFKabln9XMCZ1zs42wOQ
+                    - button [ref=f1e284] [cursor=pointer]:
+                      - generic [ref=f1e286]:
+                        - generic [ref=f1e287]: NTT Data
+                        - generic [ref=f1e288]: "+2"
+            - generic [ref=f1e294]:
+              - generic [ref=f1e295]:
+                - status [ref=f1e296]
+                - button [ref=f1e298] [cursor=pointer]
+              - button [ref=f1e308] [cursor=pointer]
+              - generic [ref=f1e314]:
+                - button [ref=f1e316] [cursor=pointer]
+                - button [ref=f1e321] [cursor=pointer]
+              - button [ref=f1e328] [cursor=pointer]
+        - button "その他の AI による概要を表示" [ref=f1e337]:
+          - generic [ref=f1e338] [cursor=pointer]: もっと見る
+      - generic [ref=f1e345]:
+        - generic [ref=f1e349]:
+          - region "広告" [ref=f1e353]:
+            - generic [ref=f1e354]:
+              - heading "スポンサー広告" [level=2] [ref=f1e361]
+              - generic [ref=f1e362]:
+                - generic [ref=f1e369]:
+                  - generic [ref=f1e374]:
+                    - generic [ref=f1e375]:
+                      - link "ChatGPTで自動化 | 自動化ロジックを制御 OpenAI https://www.chatgpt.com" [ref=f1e376] [cursor=pointer]:
+                        - /url: /goto?url=CAESWgHEIkXXw4Gp5vd6MVxiRACUXkdbb_zK7kMjIuQIUom9MiJtUi0MNl-CNotKQlQmdZAIrmuiveVQ82uJ-867F-orcOxpIRetxglP8iHmYK9mjGMrKkrhnlFCBQ&gsessionid=2T2qWAs5pIQ3oC6T9wWl7I9kO3ekXNOEXXVqgvbUMJNHHaEa58Om1w
+                        - heading "ChatGPTで自動化 | 自動化ロジックを制御" [level=3] [ref=f1e377]
+                        - generic [ref=f1e383]:
+                          - generic [ref=f1e384]: OpenAI
+                          - generic [ref=f1e386]: https://www.chatgpt.com
+                      - button "広告の表示について" [ref=f1e389] [cursor=pointer]
+                    - generic [ref=f1e395]:
+                      - text: ChatGPTは、最強の業務用AIを活用して、ワークフロー、タスク、プロセスを自動化します。 プロセスを標準化し、組織全体で自動化を拡大します。 ChatGPTに何でも質問。
+                      - link "続きを読む" [ref=f1e397] [cursor=pointer]:
+                        - /url: /aclk?sa=L&pf=1&ai=DChsSEwi-konk2JqYAxX1ktYIHbjyMFsYACICCAEQDBoCdGw&co=1&ase=2&gclid=EAIaIQobChMIvpKJ5NiamAMV9ZLWCB248jBbEAAYASAGEgI8A_D_BwE&cid=CAASugHkaANptd0GcOkOKOB5GypNpSlu4HOr44d8AOQ6k3PwPQ-MKF-NMXV_dwHcQd3LgkkCK4Nc6DVRgKLAVJKuBD7BAN4j5wuVMXAPLSgSz-0GWOqkLbTU0pDbxcFxcsYFhKUx_I_X6VRBTFLzwIdub3ROUllMjHXJXTnVnk5RLS2i-FP6JAeXIugeYfqOSzrPv-DK864zGMtHkH0magEqKA_iDp-8o86k0U2OesFXfK0BS6sq2A1IIM0P0mA&cce=2&category=acrcp_v1_32&sig=AOD64_2oDqBVehjLbbaiaub90N-v9kd5QQ&adurl=https://chatgpt.com/business/%3Futm_source%3Dgoogle%26utm_medium%3Dpaid_search%26c_id%3D23792250163%26c_agid%3D201948812851%26c_crid%3D807916012986%26c_kwid%3Dkwd-2482985210539%26c_ims%3D%26c_pms%3D1009310%26c_nw%3Dg%26c_dvc%3Dc%26utm_campaign%3D23792250163%26gad_source%3D1%26gad_campaignid%3D23792250163%26gbraid%3D0AAAAA-I0E5fJofx370nEEtr1cLHRKkX0D%26gclid%3DEAIaIQobChMIvpKJ5NiamAMV9ZLWCB248jBbEAAYASAGEgI8A_D_BwE
+                    - generic [ref=f1e402]:
+                      - link "ChatGPTエージェントを活用" [ref=f1e405] [cursor=pointer]:
+                        - /url: /goto?url=CAESmQEBxCJF1y9jru4tCcL8EHFVU10XEVmi4eSlhPvvw82kjieM6xGkmmbamylloXuso3nNV0BCu3BPhQzH1DGpf1lZUymqFEKYtaM04DQTETdLGhdHKe1A-aa_7MLYk9C6b2EvFLiiqFdKgjQbv3PpNu3iqkV9PbxIUZ8ZDc-AKsk1AoLqaVz6-lGmL5DtCS94ilzxr7icKg0ZZFU&gsessionid=2T2qWAs5pIQ3oC6T9wWl7I9kO3ekXNOEXXVqgvbUMJNHHaEa58Om1w
+                      - link "業務向けAIエージェント" [ref=f1e412] [cursor=pointer]:
+                        - /url: /aclk?sa=L&pf=1&ai=DChsSEwi-konk2JqYAxX1ktYIHbjyMFsYACICCAEQCxoCdGw&co=1&ase=2&gclid=EAIaIQobChMIvpKJ5NiamAMV9ZLWCB248jBbEAAYASAFEgKEvfD_BwE&cid=CAASugHkaANptd0GcOkOKOB5GypNpSlu4HOr44d8AOQ6k3PwPQ-MKF-NMXV_dwHcQd3LgkkCK4Nc6DVRgKLAVJKuBD7BAN4j5wuVMXAPLSgSz-0GWOqkLbTU0pDbxcFxcsYFhKUx_I_X6VRBTFLzwIdub3ROUllMjHXJXTnVnk5RLS2i-FP6JAeXIugeYfqOSzrPv-DK864zGMtHkH0magEqKA_iDp-8o86k0U2OesFXfK0BS6sq2A1IIM0P0mA&cce=2&category=acrcp_v1_32&sig=AOD64_22pUy2eA7rYBMZOOOssuLZja-rzw&q=&ved=2ahUKEwi0rYTk2JqYAxXgnq8BHc3eK2gQwgUoA3oECBQQEg&adurl=https://chatgpt.com/business/%3Futm_source%3Dgoogle%26utm_medium%3Dpaid_search%26c_id%3D23792250163%26c_agid%3D201948812851%26c_crid%3D807916012986%26c_kwid%3Dkwd-2482985210539%26c_ims%3D%26c_pms%3D1009310%26c_nw%3Dg%26c_dvc%3Dc%26utm_campaign%3D23792250163%26gad_source%3D1%26gad_campaignid%3D23792250163%26gbraid%3D0AAAAA-I0E5fJofx370nEEtr1cLHRKkX0D%26gclid%3DEAIaIQobChMIvpKJ5NiamAMV9ZLWCB248jBbEAAYASAFEgKEvfD_BwE
+                      - link "職場でのAIエージェント" [ref=f1e419] [cursor=pointer]:
+                        - /url: /goto?url=CAESmQEBxCJF1_JPKLn1cXGzOUJA_JxdgyJ5n8w4RUj6Hvf3P_cANJ8sqGm4gJbqcNCI7110QBtS2e57qzL_uS4DosQyegePuozY7oyc59vmVxr-AKBTR2vJv3cOFBZQNRgeDEkJrxAsra_TjkbV_3RCWqptsphT6d8Lwuc30aW5XXV6lSiTzD5A6FThiGoWxV4oHenwzV67wub7DN0&gsessionid=2T2qWAs5pIQ3oC6T9wWl7I9kO3ekXNOEXXVqgvbUMJNHHaEa58Om1w
+                      - link "ChatGPTをレベルアップ" [ref=f1e426] [cursor=pointer]:
+                        - /url: /goto?url=CAESkgEBxCJF13XQXVAQ9fbCHY8ULSf1yVn_MzoTzMePYOZeiJ_Ruc_dcE22WbpZy91ZC_WzvBe9yIQwp3ax6AHEU0folzhpegtZt5OsiZhfFYtc43PdGolSVwxX446AVZLziUC-h_T4d6N1sepqoFWgMn830NIeQmMRYkYNcF8c_Hd5fE12XDIS3UlE1wSKh8FA_b7Dgg&gsessionid=2T2qWAs5pIQ3oC6T9wWl7I9kO3ekXNOEXXVqgvbUMJNHHaEa58Om1w
+                      - link "OpenAIツールをチェック" [ref=f1e433] [cursor=pointer]:
+                        - /url: /goto?url=CAESkwEBxCJF15IVs3njFUmcpCrIsF2zKna3rkSmYyiiCS-rAGbJ0XF1WxnWslbyu6UBn8w7GBDZdowTYw_GnUCnyDSZfHbBxCo8b7PEYlWCHU8BuoM39JXhZVVWeZrrydea5Ay5RY3MIxKidAJgyI5ecMTeGJa_Nja7mf69SGwY7oH4vcF-A5a_3NrqaCfZGFUwb_vemZQ&gsessionid=2T2qWAs5pIQ3oC6T9wWl7I9kO3ekXNOEXXVqgvbUMJNHHaEa58Om1w
+                  - generic [ref=f1e443]:
+                    - generic [ref=f1e444]:
+                      - link "Claude - AnthropicによるClaude Code Claude https://www.claude.com" [ref=f1e445] [cursor=pointer]:
+                        - /url: /goto?url=CAESYwHEIkXXg1GDNctijJ3rBNYAieLx-WvY4z2oGXgbliEmMcV4YRZFUGGk8qdTlRI2l69UFcw2ih1M59989sI30LaN_tDvNx3fH1t94U6w7MeD9iQGo_nqh1A8huR-1xg-m1Ui8w&gsessionid=2T2qWAs5pIQ3oC6T9wWl7I9kO3ekXNOEXXVqgvbUMJNHHaEa58Om1w
+                        - heading "Claude - AnthropicによるClaude Code" [level=3] [ref=f1e446]
+                        - generic [ref=f1e452]:
+                          - generic [ref=f1e453]: Claude
+                          - generic [ref=f1e455]: https://www.claude.com
+                      - button "広告の表示について" [ref=f1e458] [cursor=pointer]
+                    - generic [ref=f1e462]: 必要なものを説明しよう。Claudeは、コードを生成し、説明し、適切になるまで合理化する。
+                    - generic [ref=f1e466]:
+                      - text: ‎
+                      - link "Meet Claude" [ref=f1e467] [cursor=pointer]:
+                        - /url: /goto?url=CAESYAHEIkXXY7ddebGqNdOfOZ7vfunpRf-zk4d37xTjCAH2w_s9hcIA90UJDF4IlPDupZ60byQSoS90-6t1PsT5Bdxd_u0qCpihghQQR-Wv6qA33yyGI4qgRz-qsr6_b8sYuw&gsessionid=2T2qWAs5pIQ3oC6T9wWl7I9kO3ekXNOEXXVqgvbUMJNHHaEa58Om1w
+                      - text: · ‎
+                      - link "アイデアをコードに変換" [ref=f1e468] [cursor=pointer]:
+                        - /url: /aclk?sa=L&ai=DChsSEwi-konk2JqYAxX1ktYIHbjyMFsYACICCAEQDRoCdGw&ae=2&co=1&ase=2&gclid=EAIaIQobChMIvpKJ5NiamAMV9ZLWCB248jBbEAAYAiAEEgLNGfD_BwE&cid=CAASugHkaANptd0GcOkOKOB5GypNpSlu4HOr44d8AOQ6k3PwPQ-MKF-NMXV_dwHcQd3LgkkCK4Nc6DVRgKLAVJKuBD7BAN4j5wuVMXAPLSgSz-0GWOqkLbTU0pDbxcFxcsYFhKUx_I_X6VRBTFLzwIdub3ROUllMjHXJXTnVnk5RLS2i-FP6JAeXIugeYfqOSzrPv-DK864zGMtHkH0magEqKA_iDp-8o86k0U2OesFXfK0BS6sq2A1IIM0P0mA&cce=2&category=acrcp_v1_71&sig=AOD64_03oCuxIteJIYB3TxHsaWx5YWmgVw&adurl=&q=
+                      - text: · ‎
+                      - link "Plans & Pricing" [ref=f1e469] [cursor=pointer]:
+                        - /url: /goto?url=CAESVwHEIkXXD7SkUyjaVERmCAcVzLLkfvpv6mjfKjG_tjKwK0K7SiENmUJmtpFbcHMHQZNHO4SLinztrKiJXNLF377fyaZPKh73FYZs7yVmsTwBDsdtsz2bFg&gsessionid=2T2qWAs5pIQ3oC6T9wWl7I9kO3ekXNOEXXVqgvbUMJNHHaEa58Om1w
+                      - text: · ‎
+                      - link "開発者に最適なAI" [ref=f1e470] [cursor=pointer]:
+                        - /url: /aclk?sa=L&ai=DChsSEwi-konk2JqYAxX1ktYIHbjyMFsYACICCAEQDhoCdGw&ae=2&co=1&ase=2&gclid=EAIaIQobChMIvpKJ5NiamAMV9ZLWCB248jBbEAAYAiAFEgKnkvD_BwE&cid=CAASugHkaANptd0GcOkOKOB5GypNpSlu4HOr44d8AOQ6k3PwPQ-MKF-NMXV_dwHcQd3LgkkCK4Nc6DVRgKLAVJKuBD7BAN4j5wuVMXAPLSgSz-0GWOqkLbTU0pDbxcFxcsYFhKUx_I_X6VRBTFLzwIdub3ROUllMjHXJXTnVnk5RLS2i-FP6JAeXIugeYfqOSzrPv-DK864zGMtHkH0magEqKA_iDp-8o86k0U2OesFXfK0BS6sq2A1IIM0P0mA&cce=2&category=acrcp_v1_71&sig=AOD64_2jF2CmJl0pDisApzKeOhPXiheK4Q&adurl=&q=
+                      - text: · ‎
+                      - link "Get Team plan" [ref=f1e471] [cursor=pointer]:
+                        - /url: /goto?url=CAESZAHEIkXXXDdB7vab3yKm18vYKnEtCrfqwUL44KYpLIzDG6KJbD904Tss9SZJiA6DCpP1IT2cBD3XPk1Txyprx3TJnfjI0xtTRmt0zA87LcpYBBaIR09nQQ6I-5_MWuEZEdb4ao4&gsessionid=2T2qWAs5pIQ3oC6T9wWl7I9kO3ekXNOEXXVqgvbUMJNHHaEa58Om1w
+                  - generic [ref=f1e476]:
+                    - generic [ref=f1e477]:
+                      - link "人間中心のAI設計 - エージェンティックAIフレーム kyndryl.com https://www.kyndryl.com" [ref=f1e478] [cursor=pointer]:
+                        - /url: /goto?url=CAEShwEBxCJF19g-jQrv21MlICPwNmFQDALV_PwS5iA8u5jUnDSm7edpvAe5Ad7xsXKT-7_N6OY3lbNcLzzrz3FSwgDyPZCnivCEaiv3LcWMEO29sMJEuuvDR717n0ylFsaHhdFmL7AATQqDXryOGQwwkfeMWax-cD5GMOhvKQlIx6UjSZsTCbTnWsc&gsessionid=2T2qWAs5pIQ3oC6T9wWl7I9kO3ekXNOEXXVqgvbUMJNHHaEa58Om1w
+                        - heading "人間中心のAI設計 - エージェンティックAIフレーム" [level=3] [ref=f1e479]
+                        - generic [ref=f1e485]:
+                          - generic [ref=f1e486]: kyndryl.com
+                          - generic [ref=f1e488]: https://www.kyndryl.com
+                      - button "広告の表示について" [ref=f1e491] [cursor=pointer]
+                    - generic [ref=f1e495]: 自律型や自己学習型AIエージェントが人と協働し、複雑なワークフローの実行を支援します。
+                  - generic [ref=f1e502]:
+                    - generic [ref=f1e503]:
+                      - link "AI導入の進め方を解説 - AI導入は何から始める？ 株式会社Lbose https://www.lbose.co.jp" [ref=f1e504] [cursor=pointer]:
+                        - /url: /goto?url=CAESWwHEIkXXJk0TAn2bEuTLl-yzOkW75mhpeFeJoaWkghm6pLb9ymRQTfl3dPc_hH1nR2mJq3fPti5j7wDIvx2yoZtmbEIVl8DU5DG7b1QH7QQCqVl6FynB3ZNvwAc&gsessionid=2T2qWAs5pIQ3oC6T9wWl7I9kO3ekXNOEXXVqgvbUMJNHHaEa58Om1w
+                        - heading "AI導入の進め方を解説 - AI導入は何から始める？" [level=3] [ref=f1e505]
+                        - generic [ref=f1e511]:
+                          - generic [ref=f1e512]: 株式会社Lbose
+                          - generic [ref=f1e514]: https://www.lbose.co.jp
+                      - button "広告の表示について" [ref=f1e517] [cursor=pointer]
+                    - generic [ref=f1e521]: AIツール導入だけで終わらせない。現場の業務に合わせた活用方法と進め方をご紹介します。
+                - button "「スポンサー」検索結果を非表示" [ref=f1e525]:
+                  - separator [aria-hidden] [ref=f1e526]
+          - generic [ref=f1e533]:
+            - generic [ref=f1e536]:
+              - heading "ウェブ検索結果" [level=2] [ref=f1e537]
+              - generic [ref=f1e538]:
+                - generic [ref=f1e541]:
+                  - link "AIエージェントとは？生成AIとの違い、活用例をわかりやすく解説 Gartner Japan https://www.gartner.co.jp › articles › ai-agents" [ref=f1e543] [cursor=pointer]:
+                    - /url: /goto?url=CAESbAHEIkXXTm6lR7Y11uW08SrtEUHnyiAVM8udTCjrc60IoSP37986EBmvRvsF5nJGEgGh6Lt9qlI9lMdqko8MKBW4jaLWRtWQbuTzmm-DVRrnZaKVb2n4nvV46WIGaJvjLCTVE17RuKWq5HFkLw&gsessionid=2T2qWAs5pIQ3oC6T9wWl7I9kO3ekXNOEXXVqgvbUMJNHHaEa58Om1w
+                    - heading "AIエージェントとは？生成AIとの違い、活用例をわかりやすく解説" [level=3] [ref=f1e544]
+                    - generic [ref=f1e550]:
+                      - generic [ref=f1e551]: Gartner Japan
+                      - generic [ref=f1e553]: https://www.gartner.co.jp › articles › ai-agents
+                  - button "この結果について" [ref=f1e559] [cursor=pointer]
+                - generic [ref=f1e566]:
+                  - emphasis [ref=f1e567]: AIエージェント
+                  - text: は、目標を理解して、計画し、必要な道具（ツール）を使い、学習しながら作業を進める自動実行プログラムです。この一連の流れを安全・確実に回すために、 ...
+            - generic [ref=f1e572]:
+              - heading "関連する質問" [level=2] [ref=f1e574]
+              - generic [ref=f1e575]:
+                - button "AIエージェントとは何ですか?" [ref=f1e581] [cursor=pointer]
+                - button "AgentGPTの料金はいくらですか?" [ref=f1e595] [cursor=pointer]
+                - button "無料で使えるAIエージェントのおすすめは?" [ref=f1e609] [cursor=pointer]
+                - button "AIエージェントと生成AIの違いは何ですか?" [ref=f1e623] [cursor=pointer]
+            - generic [ref=f1e633]:
+              - heading "ウェブ検索結果" [level=2] [ref=f1e634]
+              - generic [ref=f1e635]:
+                - generic [ref=f1e638]:
+                  - link "AIエージェントとは？仕組みや生成AIとの違い、ユースケースを ... NTTドコモビジネス https://www.ntt.com › ... › AIエージェント（AI Agent）" [ref=f1e640] [cursor=pointer]:
+                    - /url: /goto?url=CAESgQEBxCJF1y22pcvTrG448FY2G5Ud6JqrC7i2OG9l2t8ObOCn49_9qftlBHB--8Lm034YRWwC3Sn0q1LsMu54nMTx6zmc4bqtxAS33kBNmYY2h1-o96siV321htWfE22qb9dnTZY17nknFrYbJUozblS3GcJXbA1rarXQiYOJ8bpH0Ug&gsessionid=2T2qWAs5pIQ3oC6T9wWl7I9kO3ekXNOEXXVqgvbUMJNHHaEa58Om1w
+                    - heading "AIエージェントとは？仕組みや生成AIとの違い、ユースケースを ..." [level=3] [ref=f1e641]
+                    - generic [ref=f1e647]:
+                      - generic [ref=f1e648]: NTTドコモビジネス
+                      - generic [ref=f1e650]: https://www.ntt.com › ... › AIエージェント（AI Agent）
+                  - button "この結果について" [ref=f1e656] [cursor=pointer]
+                - generic [ref=f1e663]:
+                  - emphasis [ref=f1e664]: AIエージェント
+                  - text: とは、人が事細かく指示を与えなくても、業務の目標を理解したAIが自ら計画を立て、さまざまなツールを自動的に使い分けながらタスクに取り組む高度な自律型 ...
+            - generic [ref=f1e668]:
+              - generic [ref=f1e671]:
+                - link "AIエージェントとは IBM https://www.ibm.com › jp-ja › think › topics › ai-agents" [ref=f1e673] [cursor=pointer]:
+                  - /url: /goto?url=CAESbQHEIkXXohLMvGjTZTZ9wZolvsVXEaU1OfstK-N5XjWzM-nBpY5QB6w50oth37sLVmeZ_MYrr0OtKeowDxDWqU3CBaPmobXVDABr0w2GUtiPg5ojTDQJTcq1LapZjzkJNDyBf7fiUv3GDnYTWVs&gsessionid=2T2qWAs5pIQ3oC6T9wWl7I9kO3ekXNOEXXVqgvbUMJNHHaEa58Om1w
+                  - heading "AIエージェントとは" [level=3] [ref=f1e674]
+                  - generic [ref=f1e680]:
+                    - generic [ref=f1e681]: IBM
+                    - generic [ref=f1e683]: https://www.ibm.com › jp-ja › think › topics › ai-agents
+                - button "この結果について" [ref=f1e689] [cursor=pointer]
+              - generic [ref=f1e696]:
+                - emphasis [ref=f1e697]: AIエージェント
+                - text: は、人的資源を必要とする複雑なタスクを自動化できるAIツールです。このシフトは、目標を安価に、迅速に、大規模に達成できることを意味します。これらの ...
+            - generic [ref=f1e703]:
+              - generic [ref=f1e704]:
+                - heading "関連する商品やサービスを探す" [level=2] [ref=f1e706]
+                - button "ソースについて" [ref=f1e709] [cursor=pointer]
+              - list [ref=f1e715]:
+                - listitem [ref=f1e716]:
+                  - link "AIエージェントツール" [ref=f1e717] [cursor=pointer]:
+                    - /url: /search?sca_esv=f2f6f2be87c99aac&sxsrf=AKL5yDirvWpbZEGtyBApaU2moll4AABYZg:1795320161842&q=AI%E3%82%A8%E3%83%BC%E3%82%B8%E3%82%A7%E3%83%B3%E3%83%88%E3%83%84%E3%83%BC%E3%83%AB&mrq=1&mrqri=0&mrqei=YWkCa_T4MuC9vr0Pzb2vwQY&mrqrs=1&sa=X&ved=2ahUKEwi0rYTk2JqYAxXgnq8BHc3eK2gQyO0OKAB6BAhcEAU
+                - listitem [ref=f1e723]:
+                  - link "AI Agent おすすめ" [ref=f1e724] [cursor=pointer]:
+                    - /url: /search?sca_esv=f2f6f2be87c99aac&sxsrf=AKL5yDirvWpbZEGtyBApaU2moll4AABYZg:1795320161842&q=AI+Agent+%E3%81%8A%E3%81%99%E3%81%99%E3%82%81&mrq=1&mrqri=1&mrqei=YWkCa_T4MuC9vr0Pzb2vwQY&mrqrs=1&sa=X&ved=2ahUKEwi0rYTk2JqYAxXgnq8BHc3eK2gQyO0OKAF6BAhcEAY
+                - listitem [ref=f1e730]:
+                  - link "AI Agent 比較" [ref=f1e731] [cursor=pointer]:
+                    - /url: /search?sca_esv=f2f6f2be87c99aac&sxsrf=AKL5yDirvWpbZEGtyBApaU2moll4AABYZg:1795320161842&q=AI+Agent+%E6%AF%94%E8%BC%83&mrq=1&mrqri=2&mrqei=YWkCa_T4MuC9vr0Pzb2vwQY&mrqrs=1&sa=X&ved=2ahUKEwi0rYTk2JqYAxXgnq8BHc3eK2gQyO0OKAJ6BAhcEAc
+                - listitem [ref=f1e737]:
+                  - link "AI agent Claude" [ref=f1e738] [cursor=pointer]:
+                    - /url: /search?sca_esv=f2f6f2be87c99aac&sxsrf=AKL5yDirvWpbZEGtyBApaU2moll4AABYZg:1795320161842&q=AI+agent+Claude&mrq=1&mrqri=3&mrqei=YWkCa_T4MuC9vr0Pzb2vwQY&mrqrs=1&sa=X&ved=2ahUKEwi0rYTk2JqYAxXgnq8BHc3eK2gQyO0OKAN6BAhcEAg
+                - listitem [ref=f1e744]:
+                  - link "エージェント i" [ref=f1e745] [cursor=pointer]:
+                    - /url: /search?sca_esv=f2f6f2be87c99aac&sxsrf=AKL5yDirvWpbZEGtyBApaU2moll4AABYZg:1795320161842&q=%E3%82%A8%E3%83%BC%E3%82%B8%E3%82%A7%E3%83%B3%E3%83%88+i&mrq=1&mrqri=4&mrqei=YWkCa_T4MuC9vr0Pzb2vwQY&mrqrs=1&sa=X&ved=2ahUKEwi0rYTk2JqYAxXgnq8BHc3eK2gQyO0OKAR6BAhcEAk
+                - listitem [ref=f1e751]:
+                  - link "AI エージェント Gemini" [ref=f1e752] [cursor=pointer]:
+                    - /url: /search?sca_esv=f2f6f2be87c99aac&sxsrf=AKL5yDirvWpbZEGtyBApaU2moll4AABYZg:1795320161842&q=AI+%E3%82%A8%E3%83%BC%E3%82%B8%E3%82%A7%E3%83%B3%E3%83%88+Gemini&mrq=1&mrqri=5&mrqei=YWkCa_T4MuC9vr0Pzb2vwQY&mrqrs=1&sa=X&ved=2ahUKEwi0rYTk2JqYAxXgnq8BHc3eK2gQyO0OKAV6BAhcEAo
+              - generic [ref=f1e758]: これらの検索は、広告主からの関連性の高い特典を見つけるのに役立ちます
+            - generic [ref=f1e764]:
+              - generic [ref=f1e767]:
+                - link "AI エージェントとは何ですか? - 人工知能のエージェントの説明 Amazon Web Services https://aws.amazon.com › ... › AI › AI エージェントとは?" [ref=f1e769] [cursor=pointer]:
+                  - /url: /goto?url=CAESaQHEIkXXRDjwJ7oLUfTaLM4tE9hhF1L6GmMg1fEANUVrlhZANbYWU21VMoIMlu0aJrSDyWltmNl7h7-0NSfMQ2kZZhms7ZtUgAO0QtLkcFAlACuOGs1FoK6R-T5iF5nTxN-J_biuk01Qqw&gsessionid=2T2qWAs5pIQ3oC6T9wWl7I9kO3ekXNOEXXVqgvbUMJNHHaEa58Om1w
+                  - heading "AI エージェントとは何ですか? - 人工知能のエージェントの説明" [level=3] [ref=f1e770]
+                  - generic [ref=f1e776]:
+                    - generic [ref=f1e777]: Amazon Web Services
+                    - generic [ref=f1e779]: https://aws.amazon.com › ... › AI › AI エージェントとは?
+                - button "この結果について" [ref=f1e785] [cursor=pointer]
+              - generic [ref=f1e792]:
+                - emphasis [ref=f1e793]: AI エージェント
+                - text: は、推論能力を持つ合理的なエンティティです。環境内のデータをドメイン知識や過去のコンテキストと組み合わせて、情報に基づいた意思決定を行い、最適な ...
+            - generic [ref=f1e797]:
+              - generic [ref=f1e800]:
+                - link "AIエージェントとは何か。仕組み、事例など徹底解説 Salesforce https://www.salesforce.com › Home › Recent Stories" [ref=f1e802] [cursor=pointer]:
+                  - /url: /goto?url=CAEScwHEIkXXyG-J_5q3LGrB9RLRdZmAaqQCm8jFGTsHTE8sQEyOEWbHvWOvS1rd7WB1jN6wF8vb1k9JNksLbWniEFUZ1HfrHF3kK4zL2FEteoQ4yU_bZJ6WVgT46NmqsvTZPtr7NvDiaP0wB7UUK3gzxJjSGY0&gsessionid=2T2qWAs5pIQ3oC6T9wWl7I9kO3ekXNOEXXVqgvbUMJNHHaEa58Om1w
+                  - heading "AIエージェントとは何か。仕組み、事例など徹底解説" [level=3] [ref=f1e803]
+                  - generic [ref=f1e809]:
+                    - generic [ref=f1e810]: Salesforce
+                    - generic [ref=f1e812]: https://www.salesforce.com › Home › Recent Stories
+                - button "この結果について" [ref=f1e818] [cursor=pointer]
+              - generic [ref=f1e824]:
+                - generic [ref=f1e825]: 2026/06/23 —
+                - generic [ref=f1e826]:
+                  - emphasis [ref=f1e827]: AIエージェント
+                  - text: は、データに基づいて推論するので、意思決定内容や行動の精度が保たれ、かつ一貫性があり、説得力も備えます。人の場合、属人的で根拠が ...
+            - generic [ref=f1e831]:
+              - generic [ref=f1e834]:
+                - link "JAPAN AI AGENT - 法人向けAIエージェント JAPAN AI株式会社 https://japan-ai.co.jp › agent" [ref=f1e836] [cursor=pointer]:
+                  - /url: /goto?url=CAESWgHEIkXX1cPscED4vwWWnOFIz726DXXCUdmzr17-2FNSboxZl-BAKCHc8jz0YJCXHxSdv64wfapmocoaajDojE6jqM2LGANMUGPx5dzJK6jKTH35mPfNtXFUug&gsessionid=2T2qWAs5pIQ3oC6T9wWl7I9kO3ekXNOEXXVqgvbUMJNHHaEa58Om1w
+                  - heading "JAPAN AI AGENT - 法人向けAIエージェント" [level=3] [ref=f1e837]
+                  - generic [ref=f1e843]:
+                    - generic [ref=f1e844]: JAPAN AI株式会社
+                    - generic [ref=f1e846]: https://japan-ai.co.jp › agent
+                - button "この結果について" [ref=f1e852] [cursor=pointer]
+              - generic [ref=f1e859]:
+                - text: 「JAPAN
+                - emphasis [ref=f1e860]: AI AGENT
+                - text: 」は、
+                - emphasis [ref=f1e861]: AIエージェント
+                - text: をノーコードで作成し、高精度RAGや外部ツール連携で業務自動化を実現する法人向けサービスです。定型作業の工数削減と属人化 ...
+            - generic [ref=f1e865]:
+              - heading "画像" [level=2] [ref=f1e869]
+              - generic [ref=f1e873]:
+                - generic [ref=f1e877] [cursor=pointer]:
+                  - link "AI Agents' Analytical Capabilities and Application - OneAsia OneAsia Network Limited" [ref=f1e878]:
+                    - /url: /goto?url=CAESaAHEIkXXJJJenbF7gYKhZLM3D27m3fOEiblgEAHHvb_ezPaelUev50vyPrnIhNdlXUkjeEXq6iUWYceT_oiwZmhuGwCyv91mtAI-3F-9Vd6wFeJpJPpf_LKsiz5eOWxQTq-uk9pSAjnc&gsessionid=2T2qWAs5pIQ3oC6T9wWl7I9kO3ekXNOEXXVqgvbUMJNHHaEa58Om1w
+                  - button [ref=f1e880]:
+                    - img "AI Agents' Analytical Capabilities and Application - OneAsia" [ref=f1e882]
+                  - generic [ref=f1e884]:
+                    - generic [ref=f1e886]: AI Agents' Analytical Capabilities and Application - OneAsia
+                    - generic [ref=f1e887]:
+                      - generic [ref=f1e889]: OneAsia Network Limited
+                      - button "この結果について" [ref=f1e899]
+                - generic [ref=f1e907] [cursor=pointer]:
+                  - link "What are AI Agents? - ByteByteGo Newsletter ByteByteGo Newsletter" [ref=f1e908]:
+                    - /url: /goto?url=CAESbQHEIkXXNvIMOYDSTPApCOiC_JQuQ4IrvVziah0-IZuge3KKDSGsb4qNpeUfNQnUPoRtrOy3StKdOBF4oBSVkBqMjMyjhUlZdTZDxsdvqqm9sGsaHymaArpi43-_nHfhwIm2dIzy4VeVQ95g3wI&gsessionid=2T2qWAs5pIQ3oC6T9wWl7I9kO3ekXNOEXXVqgvbUMJNHHaEa58Om1w
+                  - button [ref=f1e910]:
+                    - img "What are AI Agents? - ByteByteGo Newsletter" [ref=f1e912]
+                  - generic [ref=f1e914]:
+                    - generic [ref=f1e916]: What are AI Agents? - ByteByteGo Newsletter
+                    - generic [ref=f1e917]:
+                      - generic [ref=f1e919]: ByteByteGo Newsletter
+                      - button "この結果について" [ref=f1e929]
+                - generic [ref=f1e937] [cursor=pointer]:
+                  - link "How AI agents work – Computerworld Computerworld" [ref=f1e938]:
+                    - /url: /goto?url=CAESggEBxCJF1zgoQj6eFR-QhZ6oV3Enl0nIUPZXbvFxlpCDpDlspWa8DbBB0WNHQl_ny4AvtrZLiMKXrY_bA3cM_dRzIjkB3nWGmV8EskhkobtMIIDZU1pk_5USo4tSMELi-0QWVeUMCfx76JuRN58xON2tukeeAKBCh9G92DFfmj5DYpc5&gsessionid=2T2qWAs5pIQ3oC6T9wWl7I9kO3ekXNOEXXVqgvbUMJNHHaEa58Om1w
+                  - button [ref=f1e940]:
+                    - img "How AI agents work – Computerworld" [ref=f1e942]
+                  - generic [ref=f1e944]:
+                    - generic [ref=f1e946]: How AI agents work – Computerworld
+                    - generic [ref=f1e947]:
+                      - generic [ref=f1e949]: Computerworld
+                      - button "この結果について" [ref=f1e959]
+              - button "その他の画像を表示" [ref=f1e965]:
+                - separator [aria-hidden] [ref=f1e966]
+            - generic [ref=f1e975]:
+              - heading "ウェブ検索結果" [level=2] [ref=f1e976]
+              - generic [ref=f1e977]:
+                - generic [ref=f1e980]:
+                  - link "AIエージェントとは：用語解説｜富士通 Fujitsu Global https://global.fujitsu › ja-JP › library › ai-agents" [ref=f1e982] [cursor=pointer]:
+                    - /url: /goto?url=CAESawHEIkXXpMYjv69n8lUj9f61OA0rwY8Pn8I68UnB2c-NzSawDE7-6sUVDWbnYZoF5LyBWd7IECtmkWJwAsAGDW8P4bKxCY30RcYV4siz912zYsfyRsO84_V16mLrDsNohFoz-pjp_OMR6U6V&gsessionid=2T2qWAs5pIQ3oC6T9wWl7I9kO3ekXNOEXXVqgvbUMJNHHaEa58Om1w
+                    - heading "AIエージェントとは：用語解説｜富士通" [level=3] [ref=f1e983]
+                    - generic [ref=f1e989]:
+                      - generic [ref=f1e990]: Fujitsu Global
+                      - generic [ref=f1e992]: https://global.fujitsu › ja-JP › library › ai-agents
+                  - button "この結果について" [ref=f1e998] [cursor=pointer]
+                - generic [ref=f1e1005]:
+                  - emphasis [ref=f1e1006]: AIエージェント
+                  - text: とは、自律的または半自律的に目標達成のために観察、思考、判断、実行を繰り返すソフトウェアで、意思決定の高度化を支援します。
+                  - emphasis [ref=f1e1007]: AIエージェント
+                  - text: の特徴 ...
+            - generic [ref=f1e1011]:
+              - generic [ref=f1e1014]:
+                - link "AIエージェントとは？自律型AIと生成AIの違い、メカニズムや ... コンカー https://www.concur.co.jp › blog › article › ai-agent" [ref=f1e1016] [cursor=pointer]:
+                  - /url: /goto?url=CAESawHEIkXXQEUy94ffsBU4S0Hoj2lSMdBl5o5lNnoN3jKcesktUjFKWX0GzXavx6-60qUXonJRc0GpAZDr7YiJiNNydj5BZ0taj3kEFzGkgMSbDl63hf8wV1IoWRtAATYl4j92JXKnFlJqLmP8&gsessionid=2T2qWAs5pIQ3oC6T9wWl7I9kO3ekXNOEXXVqgvbUMJNHHaEa58Om1w
+                  - heading "AIエージェントとは？自律型AIと生成AIの違い、メカニズムや ..." [level=3] [ref=f1e1017]
+                  - generic [ref=f1e1023]:
+                    - generic [ref=f1e1024]: コンカー
+                    - generic [ref=f1e1026]: https://www.concur.co.jp › blog › article › ai-agent
+                - button "この結果について" [ref=f1e1032] [cursor=pointer]
+              - generic [ref=f1e1038]:
+                - generic [ref=f1e1039]: 2026/04/14 —
+                - generic [ref=f1e1040]:
+                  - emphasis [ref=f1e1041]: AIエージェント
+                  - text: とは、与えられた目標に対して、自ら計画を立て、必要な行動を選択・実行し、結果を評価しながら継続的に改善するAIシステムのことです。
+            - region "広告" [ref=f1e1045]:
+              - generic [ref=f1e1046]:
+                - heading "スポンサー広告" [level=2] [ref=f1e1053]
+                - generic [ref=f1e1054]:
+                  - generic [ref=f1e1061]:
+                    - generic [ref=f1e1066]:
+                      - generic [ref=f1e1067]:
+                        - link "【2026年最新】AIエージェントの教科書｜基礎知識からカテゴリ... Udemy, Inc. https://www.udemy.com" [ref=f1e1068] [cursor=pointer]:
+                          - /url: /goto?url=CAESbAHEIkXX4T9gk2eHkCxaxgWLf4V9v25xkzaUzCM8JRyKGTnwwP1AIM7WblSC0gikeHZ_DwR00MhVKdtn7FT2dsa-5QQnsFvdZdAJMzUFyBs-dlSSymE6_i56xqbOGOiWWRy345faO_pjuSMMpA&gsessionid=2T2qWAs5pIQ3oC6T9wWl7I9kO3ekXNOEXXVqgvbUMJNHHaEa58Om1w
+                          - heading "【2026年最新】AIエージェントの教科書｜基礎知識からカテゴリ..." [level=3] [ref=f1e1069]
+                          - generic [ref=f1e1075]:
+                            - generic [ref=f1e1076]: Udemy, Inc.
+                            - generic [ref=f1e1078]: https://www.udemy.com
+                        - button "広告の表示について" [ref=f1e1081] [cursor=pointer]
+                      - generic [ref=f1e1085]: 個人向け定額プランで学ぼう。ITとソフトウェアを探求し、道を選ぼう。
+                      - generic [ref=f1e1088]: "過去 1 か月間のアクセス数: 100 万件以上"
+                      - link "全てのコースを見る プログラミングやビジネススキル、 デザインも学べる" [ref=f1e1097] [cursor=pointer]:
+                        - /url: /goto?url=CAESUwHEIkXXsjlSCfSFln9N_HcVtzw0EQ7AHXYUIFt2k7uccZOWY-WQuCw6DpMlbXJHnrqLb6iGFqY3pJwU6CZbfHVUTT3sTGLj__ReOpRD2EBalVni&gsessionid=2T2qWAs5pIQ3oC6T9wWl7I9kO3ekXNOEXXVqgvbUMJNHHaEa58Om1w
+                        - generic [ref=f1e1098]: 全てのコースを見る
+                        - generic [ref=f1e1101]: プログラミングやビジネススキル、 デザインも学べる
+                    - generic [ref=f1e1107]:
+                      - link [ref=f1e1109] [cursor=pointer]:
+                        - /url: https://www.google.com/aclk?sa=L&ai=DChsSEwi-konk2JqYAxX1ktYIHbjyMFsYACICCAIQBRoCdGw&ae=2&co=1&ase=2&gclid=EAIaIQobChMIvpKJ5NiamAMV9ZLWCB248jBbEAMYAiADEgIpPvD_BwE&cid=CAASugHkaANptd0GcOkOKOB5GypNpSlu4HOr44d8AOQ6k3PwPQ-MKF-NMXV_dwHcQd3LgkkCK4Nc6DVRgKLAVJKuBD7BAN4j5wuVMXAPLSgSz-0GWOqkLbTU0pDbxcFxcsYFhKUx_I_X6VRBTFLzwIdub3ROUllMjHXJXTnVnk5RLS2i-FP6JAeXIugeYfqOSzrPv-DK864zGMtHkH0magEqKA_iDp-8o86k0U2OesFXfK0BS6sq2A1IIM0P0mA&cce=2&category=acrcp_v1_71&sig=AOD64_1XNdY1KzQ7mDbsVnDcx9R5iTAFNw&q=&nis=4&ved=2ahUKEwi0rYTk2JqYAxXgnq8BHc3eK2gQh78CegQIZRAB&adurl=
+                        - img "ibm.com からの画像" [ref=f1e1111]
+                      - generic [ref=f1e1112]:
+                        - link "IBM AIエージェント - ビジネスのためのAI ibm.com https://www.ibm.com" [ref=f1e1113] [cursor=pointer]:
+                          - /url: /goto?url=CAESagHEIkXXxe9DsQSziUhivvrx0-3eRf6QbFRgLQDaRjQAzAb3SX2rXwggBcccifb6mph8IKxSiL191BOEZBiwxbQ4KJ44Td2tHhpgwGEGmkvlZ7tP9PY8MELkDsnthcNAfT1lKDAtYJhtNSc&gsessionid=2T2qWAs5pIQ3oC6T9wWl7I9kO3ekXNOEXXVqgvbUMJNHHaEa58Om1w
+                          - heading "IBM AIエージェント - ビジネスのためのAI" [level=3] [ref=f1e1115]
+                          - generic [ref=f1e1124]:
+                            - generic [ref=f1e1125]: ibm.com
+                            - generic [ref=f1e1127]: https://www.ibm.com
+                        - button "広告の表示について" [ref=f1e1130] [cursor=pointer]
+                      - generic [ref=f1e1134]: ノーコードで誰でも構築でき、既存システムと連携して複雑な業務を自動化します。 営業・調達・開発など業務...
+                      - generic [ref=f1e1138]:
+                        - text: ‎
+                        - link "AIを活用した企業実例から学ぶ" [ref=f1e1139] [cursor=pointer]:
+                          - /url: /aclk?sa=L&ai=DChsSEwi-konk2JqYAxX1ktYIHbjyMFsYACICCAIQBhoCdGw&ae=2&co=1&ase=2&gclid=EAIaIQobChMIvpKJ5NiamAMV9ZLWCB248jBbEAMYAiAEEgJ-9_D_BwE&cid=CAASugHkaANptd0GcOkOKOB5GypNpSlu4HOr44d8AOQ6k3PwPQ-MKF-NMXV_dwHcQd3LgkkCK4Nc6DVRgKLAVJKuBD7BAN4j5wuVMXAPLSgSz-0GWOqkLbTU0pDbxcFxcsYFhKUx_I_X6VRBTFLzwIdub3ROUllMjHXJXTnVnk5RLS2i-FP6JAeXIugeYfqOSzrPv-DK864zGMtHkH0magEqKA_iDp-8o86k0U2OesFXfK0BS6sq2A1IIM0P0mA&cce=2&category=acrcp_v1_71&sig=AOD64_3JNQnBYEVLLUJo38pm0gUK0CJzZg&adurl=&q=
+                        - text: · ‎
+                        - link "AIでワークフローを自動化" [ref=f1e1140] [cursor=pointer]:
+                          - /url: /aclk?sa=L&ai=DChsSEwi-konk2JqYAxX1ktYIHbjyMFsYACICCAIQBxoCdGw&ae=2&co=1&ase=2&gclid=EAIaIQobChMIvpKJ5NiamAMV9ZLWCB248jBbEAMYAiAFEgKh3PD_BwE&cid=CAASugHkaANptd0GcOkOKOB5GypNpSlu4HOr44d8AOQ6k3PwPQ-MKF-NMXV_dwHcQd3LgkkCK4Nc6DVRgKLAVJKuBD7BAN4j5wuVMXAPLSgSz-0GWOqkLbTU0pDbxcFxcsYFhKUx_I_X6VRBTFLzwIdub3ROUllMjHXJXTnVnk5RLS2i-FP6JAeXIugeYfqOSzrPv-DK864zGMtHkH0magEqKA_iDp-8o86k0U2OesFXfK0BS6sq2A1IIM0P0mA&cce=2&category=acrcp_v1_71&sig=AOD64_3_ZH9-kyE_j2LNcp48UMcXCw6HLw&adurl=&q=
+                        - text: · ‎
+                        - link "製造業×エージェント型AI" [ref=f1e1141] [cursor=pointer]:
+                          - /url: /goto?url=CAEShwEBxCJF1_7PMRfKO1EgvoUdbezEyKhElvMbvl-ntCcmfX7h7cfhCX8QJ-rrDkVbFIHXi32jzT2u4t3Qr14JAWKy_uxfq_Gpcin3dNAGZG77JAzf_LEIjE6d1Y_jPoDDVAd_vxy2wX13J2M0cWtzv5hvCg6BlDZoVqH86gP4hQg-m2yQGDpCVWg&gsessionid=2T2qWAs5pIQ3oC6T9wWl7I9kO3ekXNOEXXVqgvbUMJNHHaEa58Om1w
+                        - text: · ‎
+                        - link "IBM Bob" [ref=f1e1142] [cursor=pointer]:
+                          - /url: /goto?url=CAESUwHEIkXXPdSbgBK-kg6ZmhYlIjtn1SNsX4yJlw5NXZzk1UUbQG2HMhnc4oOL0bh2Wus0Uu0OB8LWasviJdidCmiMa0WWvrFkf2a7rkViL6kGY7SD&gsessionid=2T2qWAs5pIQ3oC6T9wWl7I9kO3ekXNOEXXVqgvbUMJNHHaEa58Om1w
+                      - generic [ref=f1e1143]: "過去 1 か月間のアクセス数: 100 万件以上"
+                  - button "「スポンサー」検索結果を非表示" [ref=f1e1149]:
+                    - separator [aria-hidden] [ref=f1e1150]
+        - generic [ref=f1e1158]:
+          - generic [ref=f1e1163]:
+            - heading "他の人はこちらも検索" [level=2] [ref=f1e1165]
+            - generic [ref=f1e1167]:
+              - generic [ref=f1e1168]:
+                - link "AI Agent ツール" [ref=f1e1172] [cursor=pointer]:
+                  - /url: /search?sca_esv=f2f6f2be87c99aac&sxsrf=AKL5yDirvWpbZEGtyBApaU2moll4AABYZg:1795320161842&q=AI+Agent+%E3%83%84%E3%83%BC%E3%83%AB&sa=X&ved=2ahUKEwi0rYTk2JqYAxXgnq8BHc3eK2gQ1QJ6BAhLEAE
+                - link "AI Agent アプリ" [ref=f1e1186] [cursor=pointer]:
+                  - /url: /search?sca_esv=f2f6f2be87c99aac&sxsrf=AKL5yDirvWpbZEGtyBApaU2moll4AABYZg:1795320161842&q=AI+Agent+%E3%82%A2%E3%83%97%E3%83%AA&sa=X&ved=2ahUKEwi0rYTk2JqYAxXgnq8BHc3eK2gQ1QJ6BAhREAE
+                - link "AIエージェント 作り方" [ref=f1e1200] [cursor=pointer]:
+                  - /url: /search?sca_esv=f2f6f2be87c99aac&sxsrf=AKL5yDirvWpbZEGtyBApaU2moll4AABYZg:1795320161842&q=AI%E3%82%A8%E3%83%BC%E3%82%B8%E3%82%A7%E3%83%B3%E3%83%88+%E4%BD%9C%E3%82%8A%E6%96%B9&sa=X&ved=2ahUKEwi0rYTk2JqYAxXgnq8BHc3eK2gQ1QJ6BAhQEAE
+                - link "AIエージェントと生成AIの違い" [ref=f1e1214] [cursor=pointer]:
+                  - /url: /search?sca_esv=f2f6f2be87c99aac&sxsrf=AKL5yDirvWpbZEGtyBApaU2moll4AABYZg:1795320161842&q=AI%E3%82%A8%E3%83%BC%E3%82%B8%E3%82%A7%E3%83%B3%E3%83%88%E3%81%A8%E7%94%9F%E6%88%90AI%E3%81%AE%E9%81%95%E3%81%84&sa=X&ved=2ahUKEwi0rYTk2JqYAxXgnq8BHc3eK2gQ1QJ6BAhPEAE
+              - generic [ref=f1e1225]:
+                - link "AIエージェント 例" [ref=f1e1229] [cursor=pointer]:
+                  - /url: /search?sca_esv=f2f6f2be87c99aac&sxsrf=AKL5yDirvWpbZEGtyBApaU2moll4AABYZg:1795320161842&q=AI%E3%82%A8%E3%83%BC%E3%82%B8%E3%82%A7%E3%83%B3%E3%83%88+%E4%BE%8B&sa=X&ved=2ahUKEwi0rYTk2JqYAxXgnq8BHc3eK2gQ1QJ6BAhOEAE
+                - link "AI agent ChatGPT" [ref=f1e1243] [cursor=pointer]:
+                  - /url: /search?sca_esv=f2f6f2be87c99aac&sxsrf=AKL5yDirvWpbZEGtyBApaU2moll4AABYZg:1795320161842&q=AI+agent+ChatGPT&sa=X&ved=2ahUKEwi0rYTk2JqYAxXgnq8BHc3eK2gQ1QJ6BAhNEAE
+                - link "AIエージェント 種類" [ref=f1e1257] [cursor=pointer]:
+                  - /url: /search?sca_esv=f2f6f2be87c99aac&sxsrf=AKL5yDirvWpbZEGtyBApaU2moll4AABYZg:1795320161842&q=AI%E3%82%A8%E3%83%BC%E3%82%B8%E3%82%A7%E3%83%B3%E3%83%88+%E7%A8%AE%E9%A1%9E&sa=X&ved=2ahUKEwi0rYTk2JqYAxXgnq8BHc3eK2gQ1QJ6BAhMEAE
+                - link "AI agent wiki" [ref=f1e1271] [cursor=pointer]:
+                  - /url: /search?sca_esv=f2f6f2be87c99aac&sxsrf=AKL5yDirvWpbZEGtyBApaU2moll4AABYZg:1795320161842&q=AI+agent+wiki&sa=X&ved=2ahUKEwi0rYTk2JqYAxXgnq8BHc3eK2gQ1QJ6BAhKEAE
+          - navigation [ref=f1e1282]:
+            - heading "ページの操作" [level=1] [ref=f1e1283]
+            - text: "1"
+            - link "2 ページ" [ref=f1e1286] [cursor=pointer]:
+              - /url: /search?q=AI+agent&sca_esv=f2f6f2be87c99aac&sxsrf=AKL5yDirvWpbZEGtyBApaU2moll4AABYZg:1795320161842&ei=YWkCa_T4MuC9vr0Pzb2vwQY&start=10&sa=N&sstk=AYl2yk8QrdhWxeY_KKiv2Vl_jTxNTPDziHMJ6CQ6JGTAZLU79idQqMGKAcvsXw5DpimlIt4K8b11C1VC_p-X-8Sh4n-OaVU6VX-MJw&ved=2ahUKEwi0rYTk2JqYAxXgnq8BHc3eK2gQ8tMDegQIRRAE
+              - text: "2"
+            - link "3 ページ" [ref=f1e1288] [cursor=pointer]:
+              - /url: /search?q=AI+agent&sca_esv=f2f6f2be87c99aac&sxsrf=AKL5yDirvWpbZEGtyBApaU2moll4AABYZg:1795320161842&ei=YWkCa_T4MuC9vr0Pzb2vwQY&start=20&sa=N&sstk=AYl2yk8QrdhWxeY_KKiv2Vl_jTxNTPDziHMJ6CQ6JGTAZLU79idQqMGKAcvsXw5DpimlIt4K8b11C1VC_p-X-8Sh4n-OaVU6VX-MJw&ved=2ahUKEwi0rYTk2JqYAxXgnq8BHc3eK2gQ8tMDegQIRRAG
+              - text: "3"
+            - link "4 ページ" [ref=f1e1290] [cursor=pointer]:
+              - /url: /search?q=AI+agent&sca_esv=f2f6f2be87c99aac&sxsrf=AKL5yDirvWpbZEGtyBApaU2moll4AABYZg:1795320161842&ei=YWkCa_T4MuC9vr0Pzb2vwQY&start=30&sa=N&sstk=AYl2yk8QrdhWxeY_KKiv2Vl_jTxNTPDziHMJ6CQ6JGTAZLU79idQqMGKAcvsXw5DpimlIt4K8b11C1VC_p-X-8Sh4n-OaVU6VX-MJw&ved=2ahUKEwi0rYTk2JqYAxXgnq8BHc3eK2gQ8tMDegQIRRAI
+              - text: "4"
+            - link "5 ページ" [ref=f1e1292] [cursor=pointer]:
+              - /url: /search?q=AI+agent&sca_esv=f2f6f2be87c99aac&sxsrf=AKL5yDirvWpbZEGtyBApaU2moll4AABYZg:1795320161842&ei=YWkCa_T4MuC9vr0Pzb2vwQY&start=40&sa=N&sstk=AYl2yk8QrdhWxeY_KKiv2Vl_jTxNTPDziHMJ6CQ6JGTAZLU79idQqMGKAcvsXw5DpimlIt4K8b11C1VC_p-X-8Sh4n-OaVU6VX-MJw&ved=2ahUKEwi0rYTk2JqYAxXgnq8BHc3eK2gQ8tMDegQIRRAK
+              - text: "5"
+            - link "6 ページ" [ref=f1e1294] [cursor=pointer]:
+              - /url: /search?q=AI+agent&sca_esv=f2f6f2be87c99aac&sxsrf=AKL5yDirvWpbZEGtyBApaU2moll4AABYZg:1795320161842&ei=YWkCa_T4MuC9vr0Pzb2vwQY&start=50&sa=N&sstk=AYl2yk8QrdhWxeY_KKiv2Vl_jTxNTPDziHMJ6CQ6JGTAZLU79idQqMGKAcvsXw5DpimlIt4K8b11C1VC_p-X-8Sh4n-OaVU6VX-MJw&ved=2ahUKEwi0rYTk2JqYAxXgnq8BHc3eK2gQ8tMDegQIRRAM
+              - text: "6"
+            - link "7 ページ" [ref=f1e1296] [cursor=pointer]:
+              - /url: /search?q=AI+agent&sca_esv=f2f6f2be87c99aac&sxsrf=AKL5yDirvWpbZEGtyBApaU2moll4AABYZg:1795320161842&ei=YWkCa_T4MuC9vr0Pzb2vwQY&start=60&sa=N&sstk=AYl2yk8QrdhWxeY_KKiv2Vl_jTxNTPDziHMJ6CQ6JGTAZLU79idQqMGKAcvsXw5DpimlIt4K8b11C1VC_p-X-8Sh4n-OaVU6VX-MJw&ved=2ahUKEwi0rYTk2JqYAxXgnq8BHc3eK2gQ8tMDegQIRRAO
+              - text: "7"
+            - link "8 ページ" [ref=f1e1298] [cursor=pointer]:
+              - /url: /search?q=AI+agent&sca_esv=f2f6f2be87c99aac&sxsrf=AKL5yDirvWpbZEGtyBApaU2moll4AABYZg:1795320161842&ei=YWkCa_T4MuC9vr0Pzb2vwQY&start=70&sa=N&sstk=AYl2yk8QrdhWxeY_KKiv2Vl_jTxNTPDziHMJ6CQ6JGTAZLU79idQqMGKAcvsXw5DpimlIt4K8b11C1VC_p-X-8Sh4n-OaVU6VX-MJw&ved=2ahUKEwi0rYTk2JqYAxXgnq8BHc3eK2gQ8tMDegQIRRAQ
+              - text: "8"
+            - link "9 ページ" [ref=f1e1300] [cursor=pointer]:
+              - /url: /search?q=AI+agent&sca_esv=f2f6f2be87c99aac&sxsrf=AKL5yDirvWpbZEGtyBApaU2moll4AABYZg:1795320161842&ei=YWkCa_T4MuC9vr0Pzb2vwQY&start=80&sa=N&sstk=AYl2yk8QrdhWxeY_KKiv2Vl_jTxNTPDziHMJ6CQ6JGTAZLU79idQqMGKAcvsXw5DpimlIt4K8b11C1VC_p-X-8Sh4n-OaVU6VX-MJw&ved=2ahUKEwi0rYTk2JqYAxXgnq8BHc3eK2gQ8tMDegQIRRAS
+              - text: "9"
+            - link "10 ページ" [ref=f1e1302] [cursor=pointer]:
+              - /url: /search?q=AI+agent&sca_esv=f2f6f2be87c99aac&sxsrf=AKL5yDirvWpbZEGtyBApaU2moll4AABYZg:1795320161842&ei=YWkCa_T4MuC9vr0Pzb2vwQY&start=90&sa=N&sstk=AYl2yk8QrdhWxeY_KKiv2Vl_jTxNTPDziHMJ6CQ6JGTAZLU79idQqMGKAcvsXw5DpimlIt4K8b11C1VC_p-X-8Sh4n-OaVU6VX-MJw&ved=2ahUKEwi0rYTk2JqYAxXgnq8BHc3eK2gQ8tMDegQIRRAU
+              - text: "10"
+            - heading [level=2] [ref=f1e1304]:
+              - link "次へ" [ref=f1e1305] [cursor=pointer]:
+                - /url: /search?q=AI+agent&sca_esv=f2f6f2be87c99aac&sxsrf=AKL5yDirvWpbZEGtyBApaU2moll4AABYZg:1795320161842&ei=YWkCa_T4MuC9vr0Pzb2vwQY&start=10&sa=N&sstk=AYl2yk8QrdhWxeY_KKiv2Vl_jTxNTPDziHMJ6CQ6JGTAZLU79idQqMGKAcvsXw5DpimlIt4K8b11C1VC_p-X-8Sh4n-OaVU6VX-MJw&ved=2ahUKEwi0rYTk2JqYAxXgnq8BHc3eK2gQ8NMDegQIRRAW
+        - navigation
+    - contentinfo [ref=f1e1308]:
+      - heading "フッターのリンク" [level=1] [ref=f1e1309]
+      - generic [ref=f1e1313]:
+        - generic [ref=f1e1315]:
+          - text: 日本
+          - generic [ref=f1e1317]:
+            - 'button "新宿区、東京都 - ソース: あなたの IP アドレス" [ref=f1e1319] [cursor=pointer]':
+              - generic [ref=f1e1320]: 新宿区、東京都
+              - generic [ref=f1e1322]:
+                - text: "-"
+                - generic [ref=f1e1323]: "ソース: あなたの IP アドレス"
+            - text: "-"
+            - button "現在地を更新" [ref=f1e1325] [cursor=pointer]
+        - generic [ref=f1e1328]:
+          - link "ヘルプ" [ref=f1e1329] [cursor=pointer]:
+            - /url: https://support.google.com/websearch/?p=ws_results_help&hl=ja&fg=1
+          - button "フィードバックを送信" [ref=f1e1331] [cursor=pointer]
+          - link "プライバシー" [ref=f1e1333] [cursor=pointer]:
+            - /url: https://policies.google.com/privacy?hl=ja&fg=1
+          - link "規約" [ref=f1e1334] [cursor=pointer]:
+            - /url: https://policies.google.com/terms?hl=ja&fg=1

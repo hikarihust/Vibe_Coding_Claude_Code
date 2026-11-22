@@ -1,0 +1,494 @@
+- generic [active] [ref=f1e1]:
+  - generic:
+    - generic:
+      - link "メイン コンテンツにスキップ" [ref=f1e2] [cursor=pointer]
+      - link "ユーザー補助ヘルプ" [ref=f1e3] [cursor=pointer]:
+        - /url: https://support.google.com/websearch/answer/181196?hl=ja
+  - generic [ref=f1e8]:
+    - search [ref=f1e9]:
+      - generic [ref=f1e12]:
+        - link [ref=f1e13] [cursor=pointer]:
+          - /url: https://www.google.com/webhp?hl=ja&ictx=0&sa=X&ved=2ahUKEwiFrt_p25qYAxVUiK8BHamSGpYQpYkNegQIBhAG
+          - img "Google ホームへ" [ref=f1e14]
+        - generic [ref=f1e20]:
+          - status [ref=f1e21]
+          - alert [ref=f1e22]
+        - generic [ref=f1e23]:
+          - combobox "検索" [ref=f1e25]: Deep Learning Deep Learning
+          - button "消去" [ref=f1e30] [cursor=pointer]
+    - generic [ref=f1e34]:
+      - button "設定" [ref=f1e36] [cursor=pointer]
+      - button "共有" [ref=f1e41] [cursor=pointer]
+      - generic [ref=f1e47]:
+        - button "Google アプリ" [ref=f1e49] [cursor=pointer]
+        - link "ログイン" [ref=f1e54] [cursor=pointer]:
+          - /url: https://accounts.google.com/ServiceLogin?hl=ja&passive=true&continue=https://www.google.com/search%3Fq%3DDeep%2BLearning%26sca_esv%3Df2f6f2be87c99aac%26sxsrf%3DAKL5yDgv2GtStWNL4SE081LSmQpWw7eUsg%253A1795320939741%26source%3Dhp%26ei%3Da2wCa8bvK-b-1e8PrN_ZuQo%26iflsig%3DAHSINFcAAAAAawJ6e2kWaeVMhXAmknPuvj94MoCK09an%26uact%3D5%26oq%3DDeep%2BLearning%26gs_lp%3DEgdnd3Mtd2l6Ig1EZWVwIExlYXJuaW5nSBtQAFgAcAB4AJABAJgBAKABAKoBALABALgBA8gBAPgBAZgCAKACAJgDAOIDBBgAIF3iAwQYACBe4gMEGAAgX-IDBBgAIGDiAwQYACBh4gMEGAAgYpIHAKAHALIHALgHAMIHAMgHAIAIAQ%26sclient%3Dgws-wiz&ec=futura_srp_og_si_72236_p
+  - generic [ref=f1e56]:
+    - navigation [ref=f1e62]:
+      - generic [ref=f1e64]:
+        - generic [ref=f1e68]:
+          - list [ref=f1e69]:
+            - listitem [ref=f1e70]:
+              - link "AI モード" [ref=f1e73] [cursor=pointer]:
+                - /url: /search?q=Deep+Learning&sca_esv=f2f6f2be87c99aac&sxsrf=AKL5yDhHu2fjy0ypQOJ2gnHjt8GPEcDQ_w:1795320979125&udm=50&source=hp&fbs=ACAhTvwnGAT4TnE6GQMAxcIUwfYjSOAwl5vNdB3q_ehiLmjt9OKaYIgg2HNzwqfU_ASUMtND2IyZ0mQjtUG8Typf73ad6ppwvdv0Bah1BrrwABjLUeAFY0tf-hwK-fohU-SkFzUhx4AXXTJyNRs27tKWqWw9k3apQFZ6PDTcC1sxG_JkibGgAesooYACQoI5QXMyixHEGy3krkDeNybhzi7wcvShtX6z_kc-TSUpQ-p8PSEZ8y8x_Lc&vsint=&aep=1&ntc=1&cs=0&sa=X&ved=2ahUKEwiFrt_p25qYAxVUiK8BHamSGpYQ2J8OegQIHxAD
+            - listitem [ref=f1e77]:
+              - link "すべて" [disabled] [ref=f1e78]
+            - listitem [ref=f1e81]:
+              - link "画像" [ref=f1e82] [cursor=pointer]:
+                - /url: /search?sca_esv=f2f6f2be87c99aac&sxsrf=AKL5yDhHu2fjy0ypQOJ2gnHjt8GPEcDQ_w:1795320979125&udm=2&fbs=ACAhTvwnGAT4TnE6GQMAxcIUwfYjSOAwl5vNdB3q_ehiLmjt9OKaYIgg2HNzwqfU_ASUMtND2IyZ0mQjtUG8Typf73ad6ppwvdv0Bah1BrrwABjLUeAFY0tf-hwK-fohU-SkFzUhx4AXXTJyNRs27tKWqWw9k3apQFZ6PDTcC1sxG_JkibGgAesooYACQoI5QXMyixHEGy3krkDeNybhzi7wcvShtX6z_kc-TSUpQ-p8PSEZ8y8x_Lc&q=Deep+Learning&sa=X&ved=2ahUKEwiFrt_p25qYAxVUiK8BHamSGpYQtKgLegQIJRAB
+            - listitem [ref=f1e85]:
+              - link "動画" [ref=f1e86] [cursor=pointer]:
+                - /url: /search?sca_esv=f2f6f2be87c99aac&sxsrf=AKL5yDhHu2fjy0ypQOJ2gnHjt8GPEcDQ_w:1795320979125&udm=vids&fbs=ACAhTvwnGAT4TnE6GQMAxcIUwfYjSOAwl5vNdB3q_ehiLmjt9OKaYIgg2HNzwqfU_ASUMtND2IyZ0mQjtUG8Typf73ad6ppwvdv0Bah1BrrwABjLUeAFY0tf-hwK-fohU-SkFzUhx4AXXTJyNRs27tKWqWw9k3apQFZ6PDTcC1sxG_JkibGgAesooYACQoI5QXMyixHEGy3krkDeNybhzi7wcvShtX6z_kc-TSUpQ-p8PSEZ8y8x_Lc&q=Deep+Learning&sa=X&ved=2ahUKEwiFrt_p25qYAxVUiK8BHamSGpYQtKgLegQIJBAB
+            - listitem [ref=f1e89]:
+              - link "ショート動画" [ref=f1e90] [cursor=pointer]:
+                - /url: /search?sca_esv=f2f6f2be87c99aac&sxsrf=AKL5yDhHu2fjy0ypQOJ2gnHjt8GPEcDQ_w:1795320979125&udm=short_vids&fbs=ACAhTvwnGAT4TnE6GQMAxcIUwfYjSOAwl5vNdB3q_ehiLmjt9OKaYIgg2HNzwqfU_ASUMtND2IyZ0mQjtUG8Typf73ad6ppwvdv0Bah1BrrwABjLUeAFY0tf-hwK-fohU-SkFzUhx4AXXTJyNRs27tKWqWw9k3apQFZ6PDTcC1sxG_JkibGgAesooYACQoI5QXMyixHEGy3krkDeNybhzi7wcvShtX6z_kc-TSUpQ-p8PSEZ8y8x_Lc&q=Deep+Learning&sa=X&ved=2ahUKEwiFrt_p25qYAxVUiK8BHamSGpYQs6gLegQIIRAB
+            - listitem [ref=f1e93]:
+              - link "ニュース" [ref=f1e94] [cursor=pointer]:
+                - /url: /search?sca_esv=f2f6f2be87c99aac&sxsrf=AKL5yDhHu2fjy0ypQOJ2gnHjt8GPEcDQ_w:1795320979125&q=Deep+Learning&tbm=nws&source=lnms&fbs=ACAhTvwnGAT4TnE6GQMAxcIUwfYjSOAwl5vNdB3q_ehiLmjt9OKaYIgg2HNzwqfU_ASUMtND2IyZ0mQjtUG8Typf73ad6ppwvdv0Bah1BrrwABjLUeAFY0tf-hwK-fohU-SkFzUhx4AXXTJyNRs27tKWqWw9k3apQFZ6PDTcC1sxG_JkibGgAesooYACQoI5QXMyixHEGy3krkDeNybhzi7wcvShtX6z_kc-TSUpQ-p8PSEZ8y8x_Lc&sa=X&ved=2ahUKEwiFrt_p25qYAxVUiK8BHamSGpYQ0pQJegQIIhAB
+            - listitem [ref=f1e97]:
+              - link "ショッピング" [ref=f1e98] [cursor=pointer]:
+                - /url: /search?sca_esv=f2f6f2be87c99aac&sxsrf=AKL5yDhHu2fjy0ypQOJ2gnHjt8GPEcDQ_w:1795320979125&udm=28&fbs=ACAhTvwnGAT4TnE6GQMAxcIUwfYjSOAwl5vNdB3q_ehiLmjt9OKaYIgg2HNzwqfU_ASUMtND2IyZ0mQjtUG8Typf73ad6ppwvdv0Bah1BrrwABjLUeAFY0tf-hwK-fohU-SkFzUhx4AXXTJyNRs27tKWqWw9k3apQFZ6PDTcC1sxG_JkibGgAesooYACQoI5QXMyixHEGy3krkDeNybhzi7wcvShtX6z_kc-TSUpQ-p8PSEZ8y8x_Lc&q=Deep+Learning&ved=1t:220175&ictx=111
+            - listitem [ref=f1e101]:
+              - button [ref=f1e102] [cursor=pointer]:
+                - generic "その他のフィルタ" [ref=f1e103]: もっと見る
+          - button "ツール" [ref=f1e110] [cursor=pointer]
+        - button [aria-hidden] [ref=f1e117] [cursor=pointer]
+    - heading "検索結果" [level=1] [ref=f1e123]
+    - main [ref=f1e132]:
+      - generic [ref=f1e145]:
+        - generic [ref=f1e162]:
+          - heading [level=2] [ref=f1e167]:
+            - strong [ref=f1e168]: AI による概要
+          - generic [ref=f1e171]:
+            - generic [ref=f1e172]:
+              - generic [ref=f1e173]:
+                - button [ref=f1e176]:
+                  - img "Introduction to Deep Learning - GeeksforGeeks" [ref=f1e177]
+                - text: ディープラーニング（深層学習）とは、
+                - mark [ref=f1e178]: 人間の脳神経回路を模した「多層のニューラルネットワーク」を用いて、データから特徴量を自動的に抽出しながら学習を行う機械学習の手法
+                - text: です。
+                - generic [ref=f1e182]:
+                  - link "MathWorks" [ref=f1e183] [cursor=pointer]:
+                    - /url: /goto?url=CAEScgHEIkXXRT7Z915EvF7jNZFnFYoteYOmSop2kL5jpoMeXedFDmPFuZNbtHZbTbD9zCOWtBI4E1iIDS3E_96h_cOlIuiNvEoNJBcFSwWa5uINgYKisjQbo9AGHNrWeJZuxcg-8t65IGhkzlUfF7Fu8OUUPw
+                  - button "MathWorks（+2）- 関連する検索結果" [ref=f1e184] [cursor=pointer]:
+                    - generic [ref=f1e186]:
+                      - generic [ref=f1e187]: MathWorks
+                      - generic [ref=f1e188]: "+2"
+              - heading "ディープラーニングの特徴" [level=3] [ref=f1e189]
+              - list [ref=f1e190]:
+                - listitem [ref=f1e192]:
+                  - generic [ref=f1e193]:
+                    - strong [ref=f1e194]: 特徴量の自動抽出
+                    - text: ": 従来の機械学習では人間が特徴量を設計・設定していましたが、ディープラーニングはデータから自らパターンや特徴を見つけ出します。"
+                  - generic [ref=f1e198]:
+                    - link [ref=f1e199] [cursor=pointer]:
+                      - /url: /goto?url=CAESfwHEIkXX2FmhH9UaEOAs6_TcTJFDQRlYe5Gybjun-8D5I96QoH21xeoglJegvIHUSUV8bVR7OS_akPPHyxh5h9-CzdnqwNKsuR7B5wWk7k_tUiTdT0_1H8TXGQneay2K0htuAMSsQ96nlsbUK9xxZgCAf89iYuBeNVFfu3nZrMs
+                    - button [ref=f1e200] [cursor=pointer]:
+                      - generic [ref=f1e202]:
+                        - generic [ref=f1e203]: NEC
+                        - generic [ref=f1e204]: "+1"
+                - listitem [ref=f1e206]:
+                  - generic [ref=f1e207]:
+                    - strong [ref=f1e208]: 多層構造（DNN）
+                    - text: ": 入力層と出力層の間に「隠れ層（中間層）」を4層以上（あるいは複数層）積み重ねることで、より抽象的で複雑な表現を学習できます。"
+                  - generic [ref=f1e212]:
+                    - link [ref=f1e213] [cursor=pointer]:
+                      - /url: /goto?url=CAESrAEBxCJF1wX6Oy5wLZ3qWiVRfWIsnLKAjSRWgyFDvfvzConbm-PADQ7zqXQhQQJY53KJzGk0d6GWbAVGx_dH27UQVy9GYiiSeAOLXGKTy-R0ivuLnOko9Qp6D3Iqi6ZD5Sogt6uxlVlaYZXEz8rq1x4as3hgGgS-Izeo_zkion9rmkNjanME5RifcDvFqtf92QlUxn5E9-lLpkZrEB9CZdUid70obsJffkpyXfja
+                    - button [ref=f1e214] [cursor=pointer]:
+                      - generic [ref=f1e216]:
+                        - generic [ref=f1e217]: Wikipedia
+                        - generic [ref=f1e218]: "+1"
+                - listitem [ref=f1e220]:
+                  - generic [ref=f1e221]:
+                    - strong [ref=f1e222]: 高い精度と大量データ
+                    - text: ": 膨大なデータとGPUなどの高い計算資源を使うことで、画像認識や自然言語処理などで人間の認識精度を超える成果を上げています。"
+                  - generic [ref=f1e226]:
+                    - link [ref=f1e227] [cursor=pointer]:
+                      - /url: /goto?url=CAEScQHEIkXX-R-kK52YWdYkVEx678daIzGyxMeSSu4dRYYwk1MRnagnoRlsmw3i1hex51PslvPWAtG-76DD4nJm30sM_TJQ6zjmdWfVXjParWufzgqIzaFtOdpG23ETe__99s4QDNQDwARqkEBegfYKFO3-
+                    - button [ref=f1e228] [cursor=pointer]:
+                      - generic [ref=f1e230]:
+                        - generic [ref=f1e231]: IBM
+                        - generic [ref=f1e232]: "+1"
+              - heading [level=3] [ref=f1e234]: 主なアルゴリズムと応用例
+              - list [aria-hidden] [ref=f1e235]:
+                - listitem [ref=f1e237]:
+                  - generic [ref=f1e238]:
+                    - strong [ref=f1e239]: CNN（畳み込みニューラルネットワーク）
+                    - text: ": 画像分類、物体検出、画像セグメンテーションなど画像・映像処理で広く使われます。"
+                - listitem [ref=f1e241]:
+                  - generic [ref=f1e242]:
+                    - strong [ref=f1e243]: RNN / Transformer（再帰型・注意機構）
+                    - text: ": 自然言語処理、自動翻訳、音声認識、チャットボットや生成AI（LLM）などに活用されています。"
+                - listitem [ref=f1e245]:
+                  - generic [ref=f1e246]:
+                    - strong [ref=f1e247]: GAN（敵対的生成ネットワーク）
+                    - text: ": 2つのネットワークを競わせることで、本物そっくりの画像やデータを生み出す生成モデルに使われます。"
+                - listitem [ref=f1e250]:
+                  - generic [ref=f1e251]:
+                    - strong [ref=f1e252]: 強化学習（深層強化学習）
+                    - text: ": 囲碁AIや自動運転、ロボット制御など、環境からの報酬を最大化する判断に利用されています。"
+                  - generic [ref=f1e256]:
+                    - link [ref=f1e257] [cursor=pointer]:
+                      - /url: /goto?url=CAESaAHEIkXXt85rU0G3GAVxCx_OTWPKGInkyquXop7oRATLu9oQvswoLoWcV1xCVvmS9fVAbWwhHKyyFoCUtLlVdml-JtQxGT7UY0GUuPW9bbp90pU_EvMdbviMzPCPaZWBMiKHfGa3dMGB
+                    - button [ref=f1e258] [cursor=pointer]:
+                      - generic [ref=f1e260]:
+                        - generic [ref=f1e261]: Ｓｋｙ株式会社
+                        - generic [ref=f1e262]: "+2"
+              - generic [ref=f1e263]:
+                - separator [ref=f1e265]
+                - generic [ref=f1e267]: ディープラーニングの基礎や活用事例について、映像でも解説が提供されています。
+                - generic [ref=f1e269]:
+                  - generic [ref=f1e270]: ディープラーニングの仕組みや基本概念を分かりやすく解説した動画です：
+                  - generic [ref=f1e273]:
+                    - list [ref=f1e274]:
+                      - listitem [ref=f1e275]:
+                        - generic [ref=f1e277]:
+                          - button [ref=f1e282] [cursor=pointer]:
+                            - generic [ref=f1e283]: 2:50
+                          - generic [ref=f1e292]:
+                            - link [ref=f1e293] [cursor=pointer]:
+                              - /url: /goto?url=CAESaAHEIkXXFoKjogUDJWVIMfOHbG4f0IOdVaPBqaBEDcRd1qEYSQOXPwQ1QDP1UmnUPWWjVtHt2rxWhYL85Ton-F3XjPgsQT6_c768fMbV-92bCpti8-llpwMcAC_7laHu_vJUAaax3Pay
+                            - generic [ref=f1e294]: 深層学習（ディープラーニング）の仕組みを学ぼう
+                            - generic [ref=f1e295]:
+                              - generic [ref=f1e296]:
+                                - generic [ref=f1e297]:
+                                  - generic [ref=f1e298]: 視聴回数 2002 回
+                                  - text: · 1 年前
+                                - generic [ref=f1e299]: YouTube · GLOBIS学び放題×知見録
+                              - button [ref=f1e304] [cursor=pointer]
+                      - listitem [ref=f1e309]:
+                        - generic [ref=f1e311]:
+                          - button [ref=f1e316] [cursor=pointer]:
+                            - generic [ref=f1e317]: 10:06
+                          - generic [ref=f1e324]:
+                            - link [ref=f1e325] [cursor=pointer]:
+                              - /url: /goto?url=CAESaAHEIkXXkrbkyHgc3Ky6LWyG4f-n-eYifpTIc-bM4waZut0yybdBf0Eiz4eJTZfoz1GtXMofYJJnqIN97frgw4yC_HWRlds2CV0La1zr1AfBaGXCWF9QE633tJcLqx18n3FGbGjOzEdt
+                            - generic [ref=f1e326]: Deep Learning入門：Deep Learningとは？
+                            - generic [ref=f1e327]:
+                              - generic [ref=f1e328]:
+                                - generic [ref=f1e329]:
+                                  - generic [ref=f1e330]: 視聴回数 12万 回
+                                  - text: · 8 年前
+                                - generic [ref=f1e331]: YouTube · Neural Network Console
+                              - button [ref=f1e336] [cursor=pointer]
+                      - listitem [ref=f1e341]:
+                        - generic [ref=f1e343]:
+                          - button [ref=f1e348] [cursor=pointer]:
+                            - generic [ref=f1e349]: 1m
+                          - generic [ref=f1e361]:
+                            - link [ref=f1e362] [cursor=pointer]:
+                              - /url: /goto?url=CAESbgHEIkXXhMGrXFYoxil_3CgbHRhpum4UB5mZTrWZXIHXzdPBcvh92GPQzn2-6z3Cq_3RCEX6DcWM5JbVbRZdw3hSc2gKY0nIh-fequAvpGmW_KxwWIKyu63PZQWWl1e4brM9B4dD2TDUFy5bvLpw
+                            - generic [ref=f1e363]: How Neural Networks Work | Chapter 1, Deep Learning
+                            - generic [ref=f1e364]:
+                              - generic [ref=f1e365]:
+                                - generic [ref=f1e366]:
+                                  - generic [ref=f1e367]: 視聴回数 67万 回
+                                  - text: · 3 年前
+                                - generic [ref=f1e368]: YouTube · 3Blue1BrownJapan
+                              - button [ref=f1e373] [cursor=pointer]
+                    - button [aria-hidden] [ref=f1e378] [cursor=pointer]
+            - generic [ref=f1e386]:
+              - generic [ref=f1e387]:
+                - status [ref=f1e388]
+                - button [ref=f1e390] [cursor=pointer]
+              - button [ref=f1e400] [cursor=pointer]
+              - generic [ref=f1e406]:
+                - button [ref=f1e408] [cursor=pointer]
+                - button [ref=f1e413] [cursor=pointer]
+              - button [ref=f1e420] [cursor=pointer]
+        - button "その他の AI による概要を表示" [ref=f1e429]:
+          - generic [ref=f1e430] [cursor=pointer]: もっと見る
+      - generic [ref=f1e437]:
+        - generic [ref=f1e441]:
+          - region "広告" [ref=f1e445]:
+            - generic [ref=f1e446]:
+              - heading "スポンサー広告" [level=2] [ref=f1e453]
+              - generic [ref=f1e454]:
+                - generic [ref=f1e461]:
+                  - generic [ref=f1e466]:
+                    - generic [ref=f1e467]:
+                      - link "東大データサイエンススクール - 社会人から学ぶAI講座 東京大学エクステンション https://www.utokyo-ext.co.jp › 東京大学 › 100%出資" [ref=f1e468] [cursor=pointer]:
+                        - /url: /goto?url=CAESaQHEIkXXvmEuKZhSR_PgDUQajsg2peV7TUTFUF0QR2M4FEYDaraEmP68Bg0DJS5T5rIJVNbYh4eDQ2BiwzYBkst2wsImJkuk9dfN-wtscRgOAvlTWj1LqGw0Rp9omAcNC55fzU1Gg9E81Q&gsessionid=fM-zVF3zHwB4g-WJpd9nxt4NtBTJoyKGFbWhp3HyjBSw80fzpkjyLA
+                        - heading "東大データサイエンススクール - 社会人から学ぶAI講座" [level=3] [ref=f1e469]
+                        - generic [ref=f1e475]:
+                          - generic [ref=f1e476]: 東京大学エクステンション
+                          - generic [ref=f1e478]: https://www.utokyo-ext.co.jp › 東京大学 › 100%出資
+                      - button "広告の表示について" [ref=f1e481] [cursor=pointer]
+                    - generic [ref=f1e485]: 東京大学の知見を活かした質の高いデータサイエンス教育で、短時間で正しく本質を学ぶ。東大講師陣が企業・社会人向けに開講するAI講座／東京大学エクステンション。深く本質から学ぶ。
+                  - generic [ref=f1e492]:
+                    - generic [ref=f1e493]:
+                      - 'link "ディープラーニング : Pythonでゼロから構築し学ぶ人工知能と... Udemy, Inc. https://www.udemy.com" [ref=f1e494] [cursor=pointer]':
+                        - /url: /goto?url=CAESYwHEIkXX7hjQ9u2oUw58tfjbOC5Fs4e9bpDt_B3kdwE6eL71E7wRVhxcE_WuoebMsT8EFMs8s4HadjKUaBRU8V3Gvi3wRTAc_acSjdf6m69Xe9BGpPXsooBfuBoGBf4IEaKkRA&gsessionid=fM-zVF3zHwB4g-WJpd9nxt4NtBTJoyKGFbWhp3HyjBSw80fzpkjyLA
+                        - 'heading "ディープラーニング : Pythonでゼロから構築し学ぶ人工知能と..." [level=3] [ref=f1e495]'
+                        - generic [ref=f1e501]:
+                          - generic [ref=f1e502]: Udemy, Inc.
+                          - generic [ref=f1e504]: https://www.udemy.com
+                      - button "広告の表示について" [ref=f1e507] [cursor=pointer]
+                    - generic [ref=f1e511]: 個人向け定額プランで自分の成長を操ろう。開発などの新しいスキルを習得。
+                    - generic [ref=f1e514]:
+                      - link "Claude Codeコース" [ref=f1e517] [cursor=pointer]:
+                        - /url: /goto?url=CAESngEBxCJF1wl6qp6ycWREG1MbUcVCbV1zfd5boAoN8vM8zuYNcHRjPw1YMhQ9KLi62QokKRDRJN5kPi5iMYrZhwTgV3jQccNzpuepH5wfSCGs-Xo6RZ5vObvl17yragnCEuJvzkeOMri1g4GzFefISu_Gfry8tVVH-o-ZzakcAaG7Au5aYqy1I9KKQ4df2Dm2Puw5DLIHoXQ6phzI8U2BAg&gsessionid=fM-zVF3zHwB4g-WJpd9nxt4NtBTJoyKGFbWhp3HyjBSw80fzpkjyLA
+                      - link "全てのコースを見る" [ref=f1e524] [cursor=pointer]:
+                        - /url: /goto?url=CAESjAEBxCJF19kPiyFeT3n1IjgytRmFXcNo1az1ONADY-7JeOmK6aOpOa5QFC-PW_zlgoY9WrDyEkwXM9M1p-jonjH9IoizOE8OIIUINhC985DlBcp5huoMu8Ukj51XrRIraZjvRo3BHHqde1umN3ZUhT3aVd0wJPC5OBW6e8S7kPgGRPObJXGmUIjSwx_j3g&gsessionid=fM-zVF3zHwB4g-WJpd9nxt4NtBTJoyKGFbWhp3HyjBSw80fzpkjyLA
+                      - generic [ref=f1e530]:
+                        - generic [ref=f1e531] [cursor=pointer]:
+                          - generic [ref=f1e532]: 人気のIT資格対策講座, AIコース
+                          - button "メニュー" [ref=f1e535]
+                        - generic [ref=f1e540]:
+                          - link [ref=f1e542] [cursor=pointer]:
+                            - /url: /goto?url=CAESqQEBxCJF19nw0VxmXtw5qEL8-UGJOkvtscVQOAVk6gX-OAxLpeMub4ARZzbTB8cUaDRo1Bgg4b8bLkll5vYYc5sviUqWB1W6Q_x3saVv9iMdXAVgYkVSw56YalowPwBasIdWm7FJrAssgAy8a2EwCK2O9Qlk-8efETMAuhMQnCTwmJp3WmY5HUqm2Yyj28jdHb5fv8RAsy83QAvvhY5dGIXLf3FvBP0FBE5K&gsessionid=fM-zVF3zHwB4g-WJpd9nxt4NtBTJoyKGFbWhp3HyjBSw80fzpkjyLA
+                            - generic [ref=f1e546]: 人気のIT資格対策講座
+                          - link [ref=f1e549] [cursor=pointer]:
+                            - /url: /goto?url=CAESqgEBxCJF12e4lR44HxJYyBjwBf487AG0wNSqTrex2iiPOonUMdY7h6aeGuVS045COxPJvsQjFeXlbukeZ3FVaH0eep4X6AO6slKNMIXRyJfAvgK2lejzkioPnslHejhSDXLVfeyo7Eey5DHKrIDc-YrF1MaooE2p3kBvpaWPN3Xz0PoXcOJ38FtwsbuvrxgbfJrc_e4Sl7FuT2Fnr84go_5GIFtjI8TOywVq1g&gsessionid=fM-zVF3zHwB4g-WJpd9nxt4NtBTJoyKGFbWhp3HyjBSw80fzpkjyLA
+                            - generic [ref=f1e553]: AIコース
+                  - generic [ref=f1e559]:
+                    - generic [ref=f1e560]:
+                      - link "Deep Learning on AWS Amazon Web Services https://aws.amazon.com" [ref=f1e561] [cursor=pointer]:
+                        - /url: /goto?url=CAESagHEIkXXwAXA2nysf-TF3pkSS0A-hJicoVhaR28AnsDfHX88ODYyNRHxxJCmgS60-vOBp_gPGvVJ6S5ft-WGC5tHXmtBEeZODGu-_Sje3KbBNu2fdKBSA7dUUXnzL9D89cBCFOmSAmmzY-8&gsessionid=fM-zVF3zHwB4g-WJpd9nxt4NtBTJoyKGFbWhp3HyjBSw80fzpkjyLA
+                        - heading "Deep Learning on AWS" [level=3] [ref=f1e562]
+                        - generic [ref=f1e568]:
+                          - generic [ref=f1e569]: Amazon Web Services
+                          - generic [ref=f1e571]: https://aws.amazon.com
+                      - button "広告の表示について" [ref=f1e574] [cursor=pointer]
+                    - generic [ref=f1e578]: Secure AWS AI Infrastructure — Deep Learning on AWS Allows You to Design, Develop & Train Deep Learning Apps Faster.
+                  - generic [ref=f1e585]:
+                    - link [ref=f1e587] [cursor=pointer]:
+                      - /url: https://www.google.com/aclk?sa=L&ai=DChsSEwj8r-Tp25qYAxWD5kwCHb5BENgYACICCAEQCBoCdG0&co=1&ase=2&gclid=EAIaIQobChMI_K_k6duamAMVg-ZMAh2-QRDYEAAYBCADEgLZU_D_BwE&cid=CAASugHkaFikopV5-DxFO7gXcDuRk60Q9Q_F-UiPPTYSQxfvFMdeqzMUP8-GqgBQMgxwUOOLwAWZ7t3Ch8-2WKBTFgaSAA1teQx1_MVihMIqD6POImeyh1Ce27L5Ht3c8SrpvSlO1brkATJofgjMbrbtQap96qCeHx_O2RY_K29MufRbBDz30EImmY3RQ8mOEZ6yUttwqt8ePfb-NqQZgCIQIAONW_-hYCHyXWi2QapjNz2vOD9WGlknhafgZko&cce=2&category=acrcp_v1_32&sig=AOD64_1L3h5vMEkQD4Rrk605yaXbrxrH8w&q=&nis=4&ved=2ahUKEwiFrt_p25qYAxVUiK8BHamSGpYQh78CegQIExAB&adurl=
+                      - img "jacasso.or.jp からの画像" [ref=f1e589]
+                    - generic [ref=f1e590]:
+                      - link "AIとは？基本から整理 - 今さら聞けないAIの話 jacasso.or.jp https://www.jacasso.or.jp" [ref=f1e591] [cursor=pointer]:
+                        - /url: /goto?url=CAESYQHEIkXXouAudtJOIRzOXqqPimQM2QSQuh9y6iPVGsUJLl_RMYT6YikD1HLfURYqyR46cliGZHwKDHHDgJDJvjX2QU-ilxShh1Ea4VOj81zVSSs7hGHvocsFlfG_uunDjvM&gsessionid=fM-zVF3zHwB4g-WJpd9nxt4NtBTJoyKGFbWhp3HyjBSw80fzpkjyLA
+                        - heading "AIとは？基本から整理 - 今さら聞けないAIの話" [level=3] [ref=f1e593]
+                        - generic [ref=f1e599]:
+                          - generic [ref=f1e600]: jacasso.or.jp
+                          - generic [ref=f1e602]: https://www.jacasso.or.jp
+                      - button "広告の表示について" [ref=f1e605] [cursor=pointer]
+                    - generic [ref=f1e609]: AIと生成AIの違いを、決まった仕事を繰り返すか新しく作るかという1つの軸で整理します。 生成AIに任せられる作業と、人が決めるしかないことを表で比べ...
+                    - generic [ref=f1e614]:
+                      - generic [ref=f1e615] [cursor=pointer]:
+                        - generic [ref=f1e617]:
+                          - text: 生成AIとは｜違いを解説, AIと生成AIの違い
+                          - generic [ref=f1e618]: "+2"
+                        - button "メニュー" [ref=f1e620]
+                      - generic [ref=f1e625]:
+                        - link [ref=f1e627] [cursor=pointer]:
+                          - /url: /aclk?sa=L&ai=DChsSEwj8r-Tp25qYAxWD5kwCHb5BENgYACICCAEQCRoCdG0&co=1&ase=2&gclid=EAIaIQobChMI_K_k6duamAMVg-ZMAh2-QRDYEAAYBCAEEgJbWPD_BwE&cid=CAASugHkaFikopV5-DxFO7gXcDuRk60Q9Q_F-UiPPTYSQxfvFMdeqzMUP8-GqgBQMgxwUOOLwAWZ7t3Ch8-2WKBTFgaSAA1teQx1_MVihMIqD6POImeyh1Ce27L5Ht3c8SrpvSlO1brkATJofgjMbrbtQap96qCeHx_O2RY_K29MufRbBDz30EImmY3RQ8mOEZ6yUttwqt8ePfb-NqQZgCIQIAONW_-hYCHyXWi2QapjNz2vOD9WGlknhafgZko&cce=2&category=acrcp_v1_32&sig=AOD64_1o88kPTEBXtNfx2Si_csRD1UKH9Q&q=&ved=2ahUKEwiFrt_p25qYAxVUiK8BHamSGpYQwgUoAXoECBMQEw&adurl=
+                          - generic [ref=f1e631]: 生成AIとは｜違いを解説
+                        - link [ref=f1e634] [cursor=pointer]:
+                          - /url: /aclk?sa=L&ai=DChsSEwj8r-Tp25qYAxWD5kwCHb5BENgYACICCAEQCxoCdG0&co=1&ase=2&gclid=EAIaIQobChMI_K_k6duamAMVg-ZMAh2-QRDYEAAYBCAFEgKHSvD_BwE&cid=CAASugHkaFikopV5-DxFO7gXcDuRk60Q9Q_F-UiPPTYSQxfvFMdeqzMUP8-GqgBQMgxwUOOLwAWZ7t3Ch8-2WKBTFgaSAA1teQx1_MVihMIqD6POImeyh1Ce27L5Ht3c8SrpvSlO1brkATJofgjMbrbtQap96qCeHx_O2RY_K29MufRbBDz30EImmY3RQ8mOEZ6yUttwqt8ePfb-NqQZgCIQIAONW_-hYCHyXWi2QapjNz2vOD9WGlknhafgZko&cce=2&category=acrcp_v1_32&sig=AOD64_121JSET5zVO46zLKcLDUMPAeS2ig&q=&ved=2ahUKEwiFrt_p25qYAxVUiK8BHamSGpYQwgUoA3oECBMQFQ&adurl=
+                          - generic [ref=f1e638]: AIと生成AIの違い
+                        - link [ref=f1e641] [cursor=pointer]:
+                          - /url: /goto?url=CAESoAEBxCJF19AuHTE992KV5NM48LsOSUSJCAS8Ze1Memb-Fe6xtlxrM0Ui777olagU7E2qY0xco6r05EYbh5h-tQn39v8Thrv6_NF4l8E3gmtPAyw-g1zLty6wTMXbsYYHY9qw0B51HKrJFxoVe7jGDivC-kPRh0deC3qY7rc11c7ypX18kRBs7bXtMtUXoDSeynEszsEbFOQ78BhOlMQ6JFPH&gsessionid=fM-zVF3zHwB4g-WJpd9nxt4NtBTJoyKGFbWhp3HyjBSw80fzpkjyLA
+                          - generic [ref=f1e645]: 起業ｱｲﾃﾞｱが見つからない？
+                        - link [ref=f1e648] [cursor=pointer]:
+                          - /url: /goto?url=CAESoQEBxCJF13C2uD5sZI90ItLKKt4SRxzbk9DjTPFZpSuF-Emg9dgDD2P6UYznCeSP8IUAiC2N8QCOMucpH0p-QLdZyC6B06VD2of6c0C9XRdmZnz36DZEUei8axHLIgYqaeEB49uAMTVHPA_COspYun9aoYfA6MWH9gnfkYf1_illQfUk1Q93avSBjVYDUxHofLsR-sjy_vI2LlKseEIVCJZ-XQ&gsessionid=fM-zVF3zHwB4g-WJpd9nxt4NtBTJoyKGFbWhp3HyjBSw80fzpkjyLA
+                          - generic [ref=f1e652]: どうやって開業するの？
+                - button "「スポンサー」検索結果を非表示" [ref=f1e655]:
+                  - separator [aria-hidden] [ref=f1e656]
+          - generic [ref=f1e663]:
+            - generic [ref=f1e666]:
+              - heading "ウェブ検索結果" [level=2] [ref=f1e667]
+              - generic [ref=f1e668]:
+                - generic [ref=f1e671]:
+                  - link "ディープラーニング (深層学習) | これだけは知っておきたい3 ... MathWorks https://jp.mathworks.com › discovery › deep-learning" [ref=f1e673] [cursor=pointer]:
+                    - /url: /goto?url=CAEScgHEIkXX9kRmU812kF0kL8R6IEAWsx0LlzcFkQxQvspc3mpIq6iyORQv62jum1Jvh6Ra-9l83rrFCfQcwncmffA56_GouwHTJDVFs8Sn9a-8u5acazjKivmrll0DnT9BBPnsqkJhGCGb-FkJFqaLUl9Vxw&gsessionid=fM-zVF3zHwB4g-WJpd9nxt4NtBTJoyKGFbWhp3HyjBSw80fzpkjyLA
+                    - heading "ディープラーニング (深層学習) | これだけは知っておきたい3 ..." [level=3] [ref=f1e674]
+                    - generic [ref=f1e680]:
+                      - generic [ref=f1e681]: MathWorks
+                      - generic [ref=f1e683]: https://jp.mathworks.com › discovery › deep-learning
+                  - button "この結果について" [ref=f1e689] [cursor=pointer]
+                - generic [ref=f1e696]:
+                  - emphasis [ref=f1e697]: ディープラーニング
+                  - text: (深層学習) とは、ニューラル ネットワークを使用する機械学習の一分野であり、例から学ぶという人間の自然な行動をコンピューターに学習させるための ...
+            - generic [ref=f1e702]:
+              - heading "関連する質問" [level=2] [ref=f1e704]
+              - generic [ref=f1e705]:
+                - button "ディープラーニングとLLMの違いは何ですか?" [ref=f1e711] [cursor=pointer]
+                - button "ディープラーニングはどうやってやるの?" [ref=f1e725] [cursor=pointer]
+                - button "ディープラーニングとAIの違いは何ですか?" [ref=f1e739] [cursor=pointer]
+                - button "ディープラーニングって、簡単に言うとどんなの?" [ref=f1e753] [cursor=pointer]
+            - generic [ref=f1e763]:
+              - heading "ウェブ検索結果" [level=2] [ref=f1e764]
+              - generic [ref=f1e765]:
+                - generic [ref=f1e768]:
+                  - link "ディープラーニングでできることとは？メリット・機械学習との ... MSIISM https://www.msiism.jp › article › what-is-deep-learning" [ref=f1e770] [cursor=pointer]:
+                    - /url: /goto?url=CAESdQHEIkXXBNdyhRrjzhduHIPrbG18CEqllA35ORITsBWeTH9quqrCga2AWpY0_B-I0eTzGp2upjRG6gc877hPCGNr7CLho48WcmTXpY0Pmjxf3wbelTHMj2GBPRad5XV9S7fI2JlED9usdDxRTHeUc2FyF8XvLg&gsessionid=fM-zVF3zHwB4g-WJpd9nxt4NtBTJoyKGFbWhp3HyjBSw80fzpkjyLA
+                    - heading "ディープラーニングでできることとは？メリット・機械学習との ..." [level=3] [ref=f1e771]
+                    - generic [ref=f1e777]:
+                      - generic [ref=f1e778]: MSIISM
+                      - generic [ref=f1e780]: https://www.msiism.jp › article › what-is-deep-learning
+                  - button "この結果について" [ref=f1e786] [cursor=pointer]
+                - generic [ref=f1e792]:
+                  - generic [ref=f1e793]: 2026/09/11 —
+                  - generic [ref=f1e794]:
+                    - emphasis [ref=f1e795]: ディープラーニング
+                    - text: （
+                    - emphasis [ref=f1e796]: Deep Learning
+                    - text: ）とはニューラルネットワークを発展させた機械学習手法です。 人間の脳の情報伝達はニューロン（神経細胞）の樹状突起 ...
+            - generic [ref=f1e800]:
+              - generic [ref=f1e803]:
+                - link "ディープラーニング（深層学習）とは？ 機械学習との違いや活用 ... Ｓｋｙ株式会社 https://www.skygroup.jp › ... › AI" [ref=f1e805] [cursor=pointer]:
+                  - /url: /goto?url=CAESaAHEIkXX5IqOJ6y2hYcw9sah6AjSXGDKbb90d73vxptr-NQsIJpREBm-u9pvpfqLMszXCTL6apgPYJ5jNO0c8QdL_gIq_pNCXFq-XLhCnOBINSh9PXp0I6O5RyLTlyMMQ02xgbBQdjoO&gsessionid=fM-zVF3zHwB4g-WJpd9nxt4NtBTJoyKGFbWhp3HyjBSw80fzpkjyLA
+                  - heading "ディープラーニング（深層学習）とは？ 機械学習との違いや活用 ..." [level=3] [ref=f1e806]
+                  - generic [ref=f1e812]:
+                    - generic [ref=f1e813]: Ｓｋｙ株式会社
+                    - generic [ref=f1e815]: https://www.skygroup.jp › ... › AI
+                - button "この結果について" [ref=f1e821] [cursor=pointer]
+              - generic [ref=f1e827]:
+                - generic [ref=f1e828]: 2026/01/20 —
+                - generic [ref=f1e829]:
+                  - emphasis [ref=f1e830]: ディープラーニング
+                  - text: （深層学習）は、AI技術の一つであり、コンピューターが膨大なデータを学習し、データに含まれるルールやパターンを発見する技術です。
+            - generic [ref=f1e834]:
+              - generic [ref=f1e837]:
+                - link "ディープ ラーニングとは? Microsoft Azure https://azure.microsoft.com › ja-jp › what-is-deep-learning" [ref=f1e839] [cursor=pointer]:
+                  - /url: /goto?url=CAESmQEBxCJF12sHCfHh2BO9IEyI4WmfWf_FChVPQgwnQOTa2sJ7GHlQXq0ytvE01EBk_JldC9OZQaxctt90ajxEoVfs45qPzNyeoOlV8_MfqIJvVfV_xeYku8TlaAuRx7GQ-V8n2XPwSUP33FSFiVtmZTjeIZiAvz8cc9VDJjTSsF3HwwzEiifKvMJa2ibGFVWHYBJeinukk_L4xCY&gsessionid=fM-zVF3zHwB4g-WJpd9nxt4NtBTJoyKGFbWhp3HyjBSw80fzpkjyLA
+                  - heading "ディープ ラーニングとは?" [level=3] [ref=f1e840]
+                  - generic [ref=f1e846]:
+                    - generic [ref=f1e847]: Microsoft Azure
+                    - generic [ref=f1e849]: https://azure.microsoft.com › ja-jp › what-is-deep-learning
+                - button "この結果について" [ref=f1e855] [cursor=pointer]
+              - generic [ref=f1e862]:
+                - text: 重要なポイント ·
+                - emphasis [ref=f1e863]: ディープ ラーニング
+                - text: は、デジタル システムにおける学習と意思決定を促進する機械学習の一種です。 ·
+                - emphasis [ref=f1e864]: ディープ ラーニング
+                - text: は、人間の脳の機能を模倣した ...
+            - generic [ref=f1e868]:
+              - generic [ref=f1e871]:
+                - link "AI 機械学習、ディープラーニング（深層学習）の違いとは？ NEC https://jpn.nec.com › dotdata › tips › deep-learning" [ref=f1e873] [cursor=pointer]:
+                  - /url: /goto?url=CAESfwHEIkXXuoJv3Bd7lpcIGg9lD0RUwcUD7NmADJS7R1pA4r7iTLa6Xrt4sb0zDz3V9Dd_ON9splAKP3npTYJF50RWa8hLeCHPMsiaoiL_KTWP5_4wVOACx29eJGie2SblcmTLHs-Wa2Pn-wqo9eMEBuBXs5NfIxRz1-NMX0xIYK8&gsessionid=fM-zVF3zHwB4g-WJpd9nxt4NtBTJoyKGFbWhp3HyjBSw80fzpkjyLA
+                  - heading "AI 機械学習、ディープラーニング（深層学習）の違いとは？" [level=3] [ref=f1e874]
+                  - generic [ref=f1e880]:
+                    - generic [ref=f1e881]: NEC
+                    - generic [ref=f1e883]: https://jpn.nec.com › dotdata › tips › deep-learning
+                - button "この結果について" [ref=f1e889] [cursor=pointer]
+              - generic [ref=f1e896]:
+                - emphasis [ref=f1e897]: ディープラーニング
+                - text: は機械学習の手法の1つで、人間の脳が持つ神経回路の仕組みを取り入れたニューラルネットワークを用いて、「特徴量」の探索までおこなうことが特長です ...
+            - generic [ref=f1e901]:
+              - generic [ref=f1e904]:
+                - link "Deep Learning JP Deep Learning JP https://deeplearning.jp › ..." [ref=f1e906] [cursor=pointer]:
+                  - /url: /goto?url=CAESWAHEIkXXYfs5tWe8k6aY8lQGJJQa2EKoZZQnYeZ1XLw0LhLeXs3nYk-wmGee1-w_T3l8DHYnscclt0c8jpUTtKi-7h0j9QNuOiPgCtH-4eh1I_MXD4azpcI&gsessionid=fM-zVF3zHwB4g-WJpd9nxt4NtBTJoyKGFbWhp3HyjBSw80fzpkjyLA
+                  - heading "Deep Learning JP" [level=3] [ref=f1e907]
+                  - generic [ref=f1e916]:
+                    - generic [ref=f1e917]: Deep Learning JP
+                    - generic [ref=f1e919]: https://deeplearning.jp › ...
+                - button "この結果について" [ref=f1e925] [cursor=pointer]
+              - generic [ref=f1e932]:
+                - emphasis [ref=f1e933]: Deep Learning
+                - text: は機械学習アルゴリズムの1つで、人間の脳を模した構造をもつニューラルネットワークを多層に重ねた構造をもちます。
+            - generic [ref=f1e937]:
+              - generic [ref=f1e940]:
+                - link "一般社団法人日本ディープラーニング協会【公式】 jdla.org https://www.jdla.org" [ref=f1e942] [cursor=pointer]:
+                  - /url: /goto?url=CAESUgHEIkXX1tUixK7ieYmhfpdFRlZj4-7FKUCuKQ2YT7tzbr4yvUFtpaDJBg9Qjtq0Erlvul1lkG0VHwgWfExV-vOjy3lTpHI8f2qjScqdQGj2GIQ&gsessionid=fM-zVF3zHwB4g-WJpd9nxt4NtBTJoyKGFbWhp3HyjBSw80fzpkjyLA
+                  - heading "一般社団法人日本ディープラーニング協会【公式】" [level=3] [ref=f1e943]
+                  - generic [ref=f1e949]:
+                    - generic [ref=f1e950]: jdla.org
+                    - generic [ref=f1e952]: https://www.jdla.org
+                - button "この結果について" [ref=f1e958] [cursor=pointer]
+              - generic [ref=f1e965]:
+                - text: 本協会（JDLA）は、
+                - emphasis [ref=f1e966]: ディープラーニング
+                - text: を中心とする技術による日本の産業競争力の向上を目指します。
+            - generic [ref=f1e970]:
+              - generic [ref=f1e973]:
+                - link "サイバーセキュリティのためのディープラーニングとは？ Deep Instinct https://www.deepinstinct.com › glossary › deep-learning" [ref=f1e975] [cursor=pointer]:
+                  - /url: /goto?url=CAEScwHEIkXXrm5FsAm3BaMSn1FHB2F7OCfy7pb7gwnyNz1U2P3Ij27Ma6R6RCniQ0WpnXBVLTiwG31mRhVoRAHuZGmMOVB6mFkSBZfF43C3Xiy2nQuwInsKHImYgH-yTSLgr8J3YqqTesaV1IbQCPfEARinz5U&gsessionid=fM-zVF3zHwB4g-WJpd9nxt4NtBTJoyKGFbWhp3HyjBSw80fzpkjyLA
+                  - heading "サイバーセキュリティのためのディープラーニングとは？" [level=3] [ref=f1e976]
+                  - generic [ref=f1e982]:
+                    - generic [ref=f1e983]: Deep Instinct
+                    - generic [ref=f1e985]: https://www.deepinstinct.com › glossary › deep-learning
+                - button "この結果について" [ref=f1e991] [cursor=pointer]
+              - generic [ref=f1e998]:
+                - emphasis [ref=f1e999]: ディープラーニング
+                - text: は人工知能（AI）の高度な一分野であり、脳の学習能力に着想を得ています。いったん脳が物体の識別を学習すれば、その識別はごく自然になります。
+            - generic [ref=f1e1003]:
+              - generic [ref=f1e1006]:
+                - link "深層学習 Deep Learning 基礎講座2026 ｜Autumn 東京大学松尾・岩澤研究室 https://weblab.t.u-tokyo.ac.jp › 講義 › 講義一覧" [ref=f1e1008] [cursor=pointer]:
+                  - /url: /goto?url=CAESfgHEIkXXuNKDtUmQTq4-AEwMEzPFMmtGQnh6phIsjwxNzfPsBLwDSl2XmGR-AON7_0aZc6XJukL2CQAA4IYr8bBgJy9YO6Hwy3_LRh9fTfHGkVpuNjYQZsTSEdxh0L6BveCZDvZmF-ItWZfAq2GN2RO_B7n-G_sTasrS-a0d5Q&gsessionid=fM-zVF3zHwB4g-WJpd9nxt4NtBTJoyKGFbWhp3HyjBSw80fzpkjyLA
+                  - heading "深層学習 Deep Learning 基礎講座2026 ｜Autumn" [level=3] [ref=f1e1009]
+                  - generic [ref=f1e1015]:
+                    - generic [ref=f1e1016]: 東京大学松尾・岩澤研究室
+                    - generic [ref=f1e1018]: https://weblab.t.u-tokyo.ac.jp › 講義 › 講義一覧
+                - button "この結果について" [ref=f1e1024] [cursor=pointer]
+              - generic [ref=f1e1031]:
+                - emphasis [ref=f1e1032]: ニューラルネットワークの基礎からDeep Learningの革新的技術まで実践的に学べる
+                - text: . 「Deep Learning基礎講座」は、今年で12年目を迎える松尾・岩澤研究室主催の公開講座 ...
+        - generic [ref=f1e1034]:
+          - generic [ref=f1e1039]:
+            - heading "他の人はこちらも検索" [level=2] [ref=f1e1041]
+            - generic [ref=f1e1043]:
+              - generic [ref=f1e1044]:
+                - link "Deep Learning 日本語" [ref=f1e1048] [cursor=pointer]:
+                  - /url: /search?sca_esv=f2f6f2be87c99aac&sxsrf=AKL5yDhHu2fjy0ypQOJ2gnHjt8GPEcDQ_w:1795320979125&q=Deep+Learning+%E6%97%A5%E6%9C%AC%E8%AA%9E&sa=X&ved=2ahUKEwiFrt_p25qYAxVUiK8BHamSGpYQ1QJ6BAhWEAE
+                - link "Deep learning AI" [ref=f1e1062] [cursor=pointer]:
+                  - /url: /search?sca_esv=f2f6f2be87c99aac&sxsrf=AKL5yDhHu2fjy0ypQOJ2gnHjt8GPEcDQ_w:1795320979125&q=Deep+learning+AI&sa=X&ved=2ahUKEwiFrt_p25qYAxVUiK8BHamSGpYQ1QJ6BAhXEAE
+                - link "Deep Learning 本" [ref=f1e1076] [cursor=pointer]:
+                  - /url: /search?sca_esv=f2f6f2be87c99aac&sxsrf=AKL5yDhHu2fjy0ypQOJ2gnHjt8GPEcDQ_w:1795320979125&q=Deep+Learning+%E6%9C%AC&sa=X&ved=2ahUKEwiFrt_p25qYAxVUiK8BHamSGpYQ1QJ6BAhYEAE
+                - link "ディープ ラーニング と AIの違い" [ref=f1e1090] [cursor=pointer]:
+                  - /url: /search?sca_esv=f2f6f2be87c99aac&sxsrf=AKL5yDhHu2fjy0ypQOJ2gnHjt8GPEcDQ_w:1795320979125&q=%E3%83%87%E3%82%A3%E3%83%BC%E3%83%97+%E3%83%A9%E3%83%BC%E3%83%8B%E3%83%B3%E3%82%B0+%E3%81%A8+AI%E3%81%AE%E9%81%95%E3%81%84&sa=X&ved=2ahUKEwiFrt_p25qYAxVUiK8BHamSGpYQ1QJ6BAhZEAE
+              - generic [ref=f1e1101]:
+                - link "ディープ ラーニング 活用事例" [ref=f1e1105] [cursor=pointer]:
+                  - /url: /search?sca_esv=f2f6f2be87c99aac&sxsrf=AKL5yDhHu2fjy0ypQOJ2gnHjt8GPEcDQ_w:1795320979125&q=%E3%83%87%E3%82%A3%E3%83%BC%E3%83%97+%E3%83%A9%E3%83%BC%E3%83%8B%E3%83%B3%E3%82%B0+%E6%B4%BB%E7%94%A8%E4%BA%8B%E4%BE%8B&sa=X&ved=2ahUKEwiFrt_p25qYAxVUiK8BHamSGpYQ1QJ6BAhgEAE
+                - link "ディープ ラーニング 仕組み" [ref=f1e1119] [cursor=pointer]:
+                  - /url: /search?sca_esv=f2f6f2be87c99aac&sxsrf=AKL5yDhHu2fjy0ypQOJ2gnHjt8GPEcDQ_w:1795320979125&q=%E3%83%87%E3%82%A3%E3%83%BC%E3%83%97+%E3%83%A9%E3%83%BC%E3%83%8B%E3%83%B3%E3%82%B0+%E4%BB%95%E7%B5%84%E3%81%BF&sa=X&ved=2ahUKEwiFrt_p25qYAxVUiK8BHamSGpYQ1QJ6BAhiEAE
+                - link "ディープ ラーニング 特徴" [ref=f1e1133] [cursor=pointer]:
+                  - /url: /search?sca_esv=f2f6f2be87c99aac&sxsrf=AKL5yDhHu2fjy0ypQOJ2gnHjt8GPEcDQ_w:1795320979125&q=%E3%83%87%E3%82%A3%E3%83%BC%E3%83%97+%E3%83%A9%E3%83%BC%E3%83%8B%E3%83%B3%E3%82%B0+%E7%89%B9%E5%BE%B4&sa=X&ved=2ahUKEwiFrt_p25qYAxVUiK8BHamSGpYQ1QJ6BAhhEAE
+                - link "ディープ ラーニング 生成AI" [ref=f1e1147] [cursor=pointer]:
+                  - /url: /search?sca_esv=f2f6f2be87c99aac&sxsrf=AKL5yDhHu2fjy0ypQOJ2gnHjt8GPEcDQ_w:1795320979125&q=%E3%83%87%E3%82%A3%E3%83%BC%E3%83%97+%E3%83%A9%E3%83%BC%E3%83%8B%E3%83%B3%E3%82%B0+%E7%94%9F%E6%88%90AI&sa=X&ved=2ahUKEwiFrt_p25qYAxVUiK8BHamSGpYQ1QJ6BAheEAE
+          - navigation [ref=f1e1158]:
+            - heading "ページの操作" [level=1] [ref=f1e1159]
+            - text: "1"
+            - link "2 ページ" [ref=f1e1162] [cursor=pointer]:
+              - /url: /search?q=Deep+Learning&sca_esv=f2f6f2be87c99aac&sxsrf=AKL5yDhHu2fjy0ypQOJ2gnHjt8GPEcDQ_w:1795320979125&ei=k2wCa8WYB9SQvr0PqaXqsAk&start=10&sa=N&sstk=AYl2yk9mpMyofMJgAx4KIA-_QUuAZ6OBvT_VHpaopKpfIG8jd7mhyT7e_UJObwFRM6SI_1tPsKP6i026-STQ1cW_AGDdSpLezPJdSw&ved=2ahUKEwiFrt_p25qYAxVUiK8BHamSGpYQ8tMDegQISRAE
+              - text: "2"
+            - link "3 ページ" [ref=f1e1164] [cursor=pointer]:
+              - /url: /search?q=Deep+Learning&sca_esv=f2f6f2be87c99aac&sxsrf=AKL5yDhHu2fjy0ypQOJ2gnHjt8GPEcDQ_w:1795320979125&ei=k2wCa8WYB9SQvr0PqaXqsAk&start=20&sa=N&sstk=AYl2yk9mpMyofMJgAx4KIA-_QUuAZ6OBvT_VHpaopKpfIG8jd7mhyT7e_UJObwFRM6SI_1tPsKP6i026-STQ1cW_AGDdSpLezPJdSw&ved=2ahUKEwiFrt_p25qYAxVUiK8BHamSGpYQ8tMDegQISRAG
+              - text: "3"
+            - link "4 ページ" [ref=f1e1166] [cursor=pointer]:
+              - /url: /search?q=Deep+Learning&sca_esv=f2f6f2be87c99aac&sxsrf=AKL5yDhHu2fjy0ypQOJ2gnHjt8GPEcDQ_w:1795320979125&ei=k2wCa8WYB9SQvr0PqaXqsAk&start=30&sa=N&sstk=AYl2yk9mpMyofMJgAx4KIA-_QUuAZ6OBvT_VHpaopKpfIG8jd7mhyT7e_UJObwFRM6SI_1tPsKP6i026-STQ1cW_AGDdSpLezPJdSw&ved=2ahUKEwiFrt_p25qYAxVUiK8BHamSGpYQ8tMDegQISRAI
+              - text: "4"
+            - link "5 ページ" [ref=f1e1168] [cursor=pointer]:
+              - /url: /search?q=Deep+Learning&sca_esv=f2f6f2be87c99aac&sxsrf=AKL5yDhHu2fjy0ypQOJ2gnHjt8GPEcDQ_w:1795320979125&ei=k2wCa8WYB9SQvr0PqaXqsAk&start=40&sa=N&sstk=AYl2yk9mpMyofMJgAx4KIA-_QUuAZ6OBvT_VHpaopKpfIG8jd7mhyT7e_UJObwFRM6SI_1tPsKP6i026-STQ1cW_AGDdSpLezPJdSw&ved=2ahUKEwiFrt_p25qYAxVUiK8BHamSGpYQ8tMDegQISRAK
+              - text: "5"
+            - link "6 ページ" [ref=f1e1170] [cursor=pointer]:
+              - /url: /search?q=Deep+Learning&sca_esv=f2f6f2be87c99aac&sxsrf=AKL5yDhHu2fjy0ypQOJ2gnHjt8GPEcDQ_w:1795320979125&ei=k2wCa8WYB9SQvr0PqaXqsAk&start=50&sa=N&sstk=AYl2yk9mpMyofMJgAx4KIA-_QUuAZ6OBvT_VHpaopKpfIG8jd7mhyT7e_UJObwFRM6SI_1tPsKP6i026-STQ1cW_AGDdSpLezPJdSw&ved=2ahUKEwiFrt_p25qYAxVUiK8BHamSGpYQ8tMDegQISRAM
+              - text: "6"
+            - link "7 ページ" [ref=f1e1172] [cursor=pointer]:
+              - /url: /search?q=Deep+Learning&sca_esv=f2f6f2be87c99aac&sxsrf=AKL5yDhHu2fjy0ypQOJ2gnHjt8GPEcDQ_w:1795320979125&ei=k2wCa8WYB9SQvr0PqaXqsAk&start=60&sa=N&sstk=AYl2yk9mpMyofMJgAx4KIA-_QUuAZ6OBvT_VHpaopKpfIG8jd7mhyT7e_UJObwFRM6SI_1tPsKP6i026-STQ1cW_AGDdSpLezPJdSw&ved=2ahUKEwiFrt_p25qYAxVUiK8BHamSGpYQ8tMDegQISRAO
+              - text: "7"
+            - link "8 ページ" [ref=f1e1174] [cursor=pointer]:
+              - /url: /search?q=Deep+Learning&sca_esv=f2f6f2be87c99aac&sxsrf=AKL5yDhHu2fjy0ypQOJ2gnHjt8GPEcDQ_w:1795320979125&ei=k2wCa8WYB9SQvr0PqaXqsAk&start=70&sa=N&sstk=AYl2yk9mpMyofMJgAx4KIA-_QUuAZ6OBvT_VHpaopKpfIG8jd7mhyT7e_UJObwFRM6SI_1tPsKP6i026-STQ1cW_AGDdSpLezPJdSw&ved=2ahUKEwiFrt_p25qYAxVUiK8BHamSGpYQ8tMDegQISRAQ
+              - text: "8"
+            - link "9 ページ" [ref=f1e1176] [cursor=pointer]:
+              - /url: /search?q=Deep+Learning&sca_esv=f2f6f2be87c99aac&sxsrf=AKL5yDhHu2fjy0ypQOJ2gnHjt8GPEcDQ_w:1795320979125&ei=k2wCa8WYB9SQvr0PqaXqsAk&start=80&sa=N&sstk=AYl2yk9mpMyofMJgAx4KIA-_QUuAZ6OBvT_VHpaopKpfIG8jd7mhyT7e_UJObwFRM6SI_1tPsKP6i026-STQ1cW_AGDdSpLezPJdSw&ved=2ahUKEwiFrt_p25qYAxVUiK8BHamSGpYQ8tMDegQISRAS
+              - text: "9"
+            - link "10 ページ" [ref=f1e1178] [cursor=pointer]:
+              - /url: /search?q=Deep+Learning&sca_esv=f2f6f2be87c99aac&sxsrf=AKL5yDhHu2fjy0ypQOJ2gnHjt8GPEcDQ_w:1795320979125&ei=k2wCa8WYB9SQvr0PqaXqsAk&start=90&sa=N&sstk=AYl2yk9mpMyofMJgAx4KIA-_QUuAZ6OBvT_VHpaopKpfIG8jd7mhyT7e_UJObwFRM6SI_1tPsKP6i026-STQ1cW_AGDdSpLezPJdSw&ved=2ahUKEwiFrt_p25qYAxVUiK8BHamSGpYQ8tMDegQISRAU
+              - text: "10"
+            - heading [level=2] [ref=f1e1180]:
+              - link "次へ" [ref=f1e1181] [cursor=pointer]:
+                - /url: /search?q=Deep+Learning&sca_esv=f2f6f2be87c99aac&sxsrf=AKL5yDhHu2fjy0ypQOJ2gnHjt8GPEcDQ_w:1795320979125&ei=k2wCa8WYB9SQvr0PqaXqsAk&start=10&sa=N&sstk=AYl2yk9mpMyofMJgAx4KIA-_QUuAZ6OBvT_VHpaopKpfIG8jd7mhyT7e_UJObwFRM6SI_1tPsKP6i026-STQ1cW_AGDdSpLezPJdSw&ved=2ahUKEwiFrt_p25qYAxVUiK8BHamSGpYQ8NMDegQISRAW
+        - navigation
+    - contentinfo [ref=f1e1184]:
+      - heading "フッターのリンク" [level=1] [ref=f1e1185]
+      - generic [ref=f1e1189]:
+        - generic [ref=f1e1191]:
+          - text: 日本
+          - generic [ref=f1e1193]:
+            - 'button "新宿区、東京都 - ソース: あなたの IP アドレス" [ref=f1e1195] [cursor=pointer]':
+              - generic [ref=f1e1196]: 新宿区、東京都
+              - generic [ref=f1e1198]:
+                - text: "-"
+                - generic [ref=f1e1199]: "ソース: あなたの IP アドレス"
+            - text: "-"
+            - button "現在地を更新" [ref=f1e1201] [cursor=pointer]
+        - generic [ref=f1e1204]:
+          - link "ヘルプ" [ref=f1e1205] [cursor=pointer]:
+            - /url: https://support.google.com/websearch/?p=ws_results_help&hl=ja&fg=1
+          - button "フィードバックを送信" [ref=f1e1207] [cursor=pointer]
+          - link "プライバシー" [ref=f1e1209] [cursor=pointer]:
+            - /url: https://policies.google.com/privacy?hl=ja&fg=1
+          - link "規約" [ref=f1e1210] [cursor=pointer]:
+            - /url: https://policies.google.com/terms?hl=ja&fg=1
