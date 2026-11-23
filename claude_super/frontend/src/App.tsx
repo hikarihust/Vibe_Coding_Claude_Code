@@ -60,6 +60,11 @@ export default function App() {
   };
 
   const selectSession = async (id: number) => {
+    // Bấm lại session đang mở không được huỷ câu trả lời đang stream.
+    if (id === activeId) {
+      setSidebarOpen(false);
+      return;
+    }
     stopStreaming();
     const view = ++viewRef.current;
     setActiveId(id);
