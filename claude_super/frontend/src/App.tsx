@@ -1,12 +1,37 @@
-import { useCallback, useEffect, useState } from "react";
-import { deleteSession, listSessions, renameSession, type Session } from "./api";
+import { useCallback, useEffect, useRef, useState } from "react";
+import {
+  createSession,
+  deleteSession,
+  listMessages,
+  listSessions,
+  renameSession,
+  streamMessage,
+  type Session,
+} from "./api";
+import ChatView from "./components/ChatView";
+import Composer from "./components/Composer";
 import Header from "./components/Header";
 import Sidebar from "./components/Sidebar";
+
+export type ChatMessage = {
+  key: string;
+  role: "user" | "assistant";
+  content: string;
+  error?: boolean;
+};
+
+let localKey = 0;
+const nextKey = () => `local-${++localKey}`;
 
 export default function App() {
   const [sessions, setSessions] = useState<Session[]>([]);
   const [activeId, setActiveId] = useState<number | null>(null);
   const [sidebarOpen, setSidebarOpen] = useState(false);
+  const [messages, setMessages] = useState<ChatMessage[]>([]);
+  const [streaming, setStreaming] = useState(false);
+  const abortRef = useRef<AbortController | null>(null);
+  // Tăng mỗi lần đổi khung chat, để bỏ kết quả load lịch sử đến muộn.
+  const viewRef = useRef(0);
 
   const refreshSessions = useCallback(async () => {
     try {
@@ -20,14 +45,79 @@ export default function App() {
     void refreshSessions();
   }, [refreshSessions]);
 
+  const stopStreaming = () => {
+    abortRef.current?.abort();
+    abortRef.current = null;
+    setStreaming(false);
+  };
+
   const newChat = () => {
+    stopStreaming();
+    viewRef.current++;
     setActiveId(null);
+    setMessages([]);
     setSidebarOpen(false);
   };
 
-  const selectSession = (id: number) => {
+  const selectSession = async (id: number) => {
+    stopStreaming();
+    const view = ++viewRef.current;
     setActiveId(id);
+    setMessages([]);
     setSidebarOpen(false);
+    try {
+      const loaded = await listMessages(id);
+      if (view !== viewRef.current) return;
+      setMessages(loaded.map((m) => ({ key: `m-${m.id}`, role: m.role, content: m.content })));
+    } catch (err) {
+      if (view !== viewRef.current) return;
+      setMessages([{ key: nextKey(), role: "assistant", content: (err as Error).message, error: true }]);
+    }
+  };
+
+  const send = async (text: string) => {
+    const controller = new AbortController();
+    abortRef.current = controller;
+    setStreaming(true);
+
+    const replyKey = nextKey();
+    const updateReply = (fn: (m: ChatMessage) => ChatMessage) =>
+      setMessages((list) => list.map((m) => (m.key === replyKey ? fn(m) : m)));
+
+    setMessages((list) => [
+      ...list,
+      { key: nextKey(), role: "user", content: text },
+      { key: replyKey, role: "assistant", content: "" },
+    ]);
+
+    try {
+      let sessionId = activeId;
+      if (sessionId === null) {
+        const created = await createSession(text);
+        if (controller.signal.aborted) return;
+        setSessions((list) => [created, ...list]);
+        setActiveId(created.id);
+        sessionId = created.id;
+      }
+      await streamMessage(
+        sessionId,
+        text,
+        (chunk) => {
+          if (!controller.signal.aborted) updateReply((m) => ({ ...m, content: m.content + chunk }));
+        },
+        controller.signal,
+      );
+      if (!controller.signal.aborted) void refreshSessions();
+    } catch (err) {
+      if (controller.signal.aborted) return;
+      // Câu trả lời dở dang không được lưu ở backend, nên thay hẳn bằng thông báo lỗi.
+      updateReply((m) => ({ ...m, content: (err as Error).message, error: true }));
+    } finally {
+      if (abortRef.current === controller) {
+        abortRef.current = null;
+        setStreaming(false);
+      }
+    }
   };
 
   const handleRename = async (id: number, title: string) => {
@@ -65,7 +155,10 @@ export default function App() {
           onRename={handleRename}
           onDelete={handleDelete}
         />
-        <main className="flex min-w-0 flex-1 flex-col" />
+        <main className="flex min-w-0 flex-1 flex-col">
+          <ChatView messages={messages} streaming={streaming} />
+          <Composer disabled={streaming} onSend={send} />
+        </main>
       </div>
     </div>
   );
