@@ -30,6 +30,8 @@ def connect(db_path: Path) -> Iterator[sqlite3.Connection]:
     try:
         conn.row_factory = sqlite3.Row
         conn.execute("PRAGMA foreign_keys = ON")
+        # Tạo lại bảng nếu chat.db bị xoá trong lúc backend đang chạy.
+        init_db(conn)
         yield conn
         conn.commit()
     finally:

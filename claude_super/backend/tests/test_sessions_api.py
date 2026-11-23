@@ -1,3 +1,16 @@
+from fastapi.testclient import TestClient
+
+from app.main import create_app
+
+
+def test_recovers_when_db_file_deleted_while_running(tmp_path):
+    path = tmp_path / "chat.db"
+    client = TestClient(create_app(path))
+    path.unlink()  # người dùng xoá chat.db khi backend đang chạy
+    assert client.get("/api/sessions").status_code == 200
+    assert client.post("/api/sessions", json={"first_message": "x"}).status_code == 200
+
+
 def test_create_list_get_messages(client):
     r = client.post("/api/sessions", json={"first_message": "Giải thích closure trong JavaScript"})
     assert r.status_code == 200
