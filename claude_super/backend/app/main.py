@@ -2,9 +2,12 @@ from pathlib import Path
 from typing import Annotated
 
 from fastapi import FastAPI, HTTPException, Response
+from fastapi.responses import StreamingResponse
 from pydantic import BaseModel, StringConstraints
 
-from app import db
+from app import db, llm
+
+OLLAMA_ERROR = "Không kết nối được Ollama. Kiểm tra Ollama đang chạy và đã `ollama signin`."
 
 NonBlank = Annotated[str, StringConstraints(strip_whitespace=True, min_length=1)]
 
@@ -47,6 +50,37 @@ def create_app(db_path: Path) -> FastAPI:
             if db.get_session(conn, session_id) is None:
                 raise _not_found()
             return db.list_messages(conn, session_id)
+
+    @app.post("/api/sessions/{session_id}/messages")
+    async def send_message(session_id: int, body: MessageCreate):
+        with db.connect(db_path) as conn:
+            if db.get_session(conn, session_id) is None:
+                raise _not_found()
+            db.add_message(conn, session_id, "user", body.content)
+            history = [
+                {"role": m["role"], "content": m["content"]}
+                for m in db.list_messages(conn, session_id)
+            ]
+
+        stream = llm.stream_chat(history)
+        try:
+            first = await anext(stream)
+        except StopAsyncIteration:
+            first = ""
+        except Exception:
+            raise HTTPException(502, OLLAMA_ERROR)
+
+        async def body_stream():
+            parts = [first]
+            yield first
+            # Lỗi giữa chừng hoặc client ngắt kết nối: exception thoát ra, không lưu câu trả lời dở.
+            async for chunk in stream:
+                parts.append(chunk)
+                yield chunk
+            with db.connect(db_path) as conn:
+                db.add_message(conn, session_id, "assistant", "".join(parts))
+
+        return StreamingResponse(body_stream(), media_type="text/plain; charset=utf-8")
 
     @app.patch("/api/sessions/{session_id}")
     def rename_session(session_id: int, body: SessionRename):
